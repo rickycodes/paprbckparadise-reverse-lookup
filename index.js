@@ -1,8 +1,12 @@
 const Twitter = require('twitter')
-const conf = require('./conf.json')
+const conf = require('./conf')
 const client = new Twitter(conf.twitter)
-const request = require('request')
 const cheerio = require('cheerio')
+const endpoint = 'http://images.google.ca/searchbyimage?image_url='
+const tags = /(#books|#usedbooks)/
+const qs = require('./qs')
+const GET = require('./get')
+const all = []
 
 const params = {
   screen_name: 'paprbckparadise',
@@ -10,35 +14,49 @@ const params = {
   count: 200 // max
 }
 
-const endpoint = 'http://images.google.ca/searchbyimage?image_url='
-const tags = /(#books|#usedbooks)/
-
-const headers = {
-  'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.70 Safari/537.36',
-  'Content-Type' : 'text/html'
+// collect all hrefs that open lightbox
+const collect = ($, arr) => {
+  const ex = /imgres\?imgurl/
+  const results = []
+  for (var i = 0; i < arr.length; i++) {
+    var href = $(arr[i]).attr('href')
+    if (ex.test(href)) {
+      results.push(qs(href))
+    }
+  }
+  return results
 }
 
-const GET = (url, cb) => request({
-  url: url, headers: headers
-}, (error, response, body) => !error
-  ? cb(body)
-  : console.log(error))
+// return index of tallest image
+const getTallest = (arr) => {
+  const heights = arr
+    .filter((result) => {
+      // filter results where Number(result.h) is NaN and ignore twitter/imgur results
+      return !isNaN(Number(result.h)) && !/(twitter|imgur)/.test(result.imgrefurl)
+        ? result
+        : false
+    })
+    .map((result) => Number(result.h))
 
-const zoom = (url) => {
-  GET(url, (html) => {
-    const $ = cheerio.load(html)
-    console.log($('meta[property="og:image"]').attr('content'))
-  })
+  const max = Math.max.apply(null, heights)
+  return heights.indexOf(max)
 }
 
-const search = (image) => {
+// search images.google.ca
+const search = (image, cb) => {
   GET(endpoint + image, (html) => {
     const $ = cheerio.load(html)
-    const next = $('.normal-header').next().find('a').eq(1).attr('href')
-    zoom(`http://www.google.ca${next}`)
+
+    // all hrefs
+    const links = $('a[href]')
+
+    const results = collect($, links)
+    const index = getTallest(results)
+    cb(results[index] ? results[index].imgurl : null)
   })
 }
 
+// scrape tweets
 const scrape = (error, tweets, response) => {
   const images = !error
     ? tweets
@@ -50,7 +68,24 @@ const scrape = (error, tweets, response) => {
       }
     }) : null
 
-    search(images[2].media)
+  var count = 0
+  const loop = (obj) => {
+    search(obj.media, (result) => {
+      all.push({
+        in: obj.media,
+        out: result
+      })
+
+      if (count < images.length - 1) {
+        loop(images[++count])
+      } else {
+        console.log('complete')
+        console.log(all)
+      }
+    })
+  }
+
+  loop(images[count])
 }
 
 client.get('statuses/user_timeline', params, scrape)
