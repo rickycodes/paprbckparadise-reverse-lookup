@@ -6,6 +6,7 @@ const endpoint = 'http://images.google.ca/searchbyimage?image_url='
 const tags = /(#books|#usedbooks)/
 const qs = require('./qs')
 const GET = require('./get')
+const fs = require('fs')
 const all = []
 
 const params = {
@@ -45,6 +46,7 @@ const getTallest = (arr) => {
 // search images.google.ca
 const search = (image, cb) => {
   GET(endpoint + image, (html) => {
+    console.log(html)
     const $ = cheerio.load(html)
 
     // all hrefs
@@ -79,8 +81,8 @@ const scrape = (error, tweets, response) => {
       if (count < images.length - 1) {
         loop(images[++count])
       } else {
-        console.log('complete')
-        console.log(all)
+        const str = all.map((item) => `in: ${item.in} out: ${item.out}`).join('\r\n')
+        fs.writeFile('results.txt', str, (error) => error ? console.log(error) : null)
       }
     })
   }
