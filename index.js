@@ -7,12 +7,18 @@ const tags = /(#books|#usedbooks)/
 const qs = require('./util/qs')
 const GET = require('./util/get')
 const fs = require('fs')
-const all = []
+const delay = 20000
 
 const params = {
   screen_name: 'paprbckparadise',
   exclude_replies: true,
   count: 200 // max
+}
+
+// write out results.json
+const write = (arr) => {
+  const str = JSON.stringify({results: arr})
+  fs.writeFile('results.json', str, (error) => error ? console.log(error) : null)
 }
 
 // collect all hrefs that open lightbox
@@ -28,19 +34,18 @@ const collect = ($, arr) => {
   return results
 }
 
+// filter common social media links (avoid looping back to src image in a repost)
+// TODO: consider sorting by ASC date
+const filter = (arr) => arr.filter((result) =>
+  !/(twimg|imgur|tumblr|blogspot|onsizzle|pinimg)/.test(result.imgurl)
+)
+
 // return index of tallest image
 const getTallest = (arr) => {
-  const heights = arr
-    .filter((result) => {
-      // filter results where Number(result.h) is NaN and ignore twitter/imgur results
-      return !isNaN(Number(result.h)) && !/(twitter|imgur)/.test(result.imgrefurl)
-        ? result
-        : false
-    })
-    .map((result) => Number(result.h))
-
+  const heights = arr.filter((result) => !isNaN(Number(result.h))).map((result) => Number(result.h))
   const max = Math.max.apply(null, heights)
-  return heights.indexOf(max)
+  console.log(arr[heights.indexOf(max)])
+  return arr[heights.indexOf(max)]
 }
 
 // search images.google.ca
@@ -53,13 +58,15 @@ const search = (image, cb) => {
     const links = $('a[href]')
 
     const results = collect($, links)
-    const index = getTallest(results)
-    cb(results[index] ? results[index].imgurl : null)
+    const filtered = filter(results)
+    const tallest = getTallest(filtered)
+    cb(tallest ? tallest.imgurl : null)
   })
 }
 
 // scrape tweets
 const scrape = (error, tweets, response) => {
+  const all = []
   const images = !error
     ? tweets
     .filter((tweet) => (tags.test(tweet.text)) ? tweet : false)
@@ -81,10 +88,9 @@ const scrape = (error, tweets, response) => {
       if (count < images.length - 1) {
         setTimeout(() => {
           loop(images[++count])
-        }, 20000) // throttle consecutive requests
+        }, delay) // throttle consecutive requests
       } else {
-        const str = JSON.stringify({results: all})
-        fs.writeFile('results.json', str, (error) => error ? console.log(error) : null)
+        write(all)
       }
     })
   }
