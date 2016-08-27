@@ -4,8 +4,8 @@ const client = new Twitter(conf.twitter)
 const cheerio = require('cheerio')
 const endpoint = 'http://images.google.ca/searchbyimage?image_url='
 const tags = /(#books|#usedbooks)/
-const qs = require('./qs')
-const GET = require('./get')
+const qs = require('./util/qs')
+const GET = require('./util/get')
 const fs = require('fs')
 const all = []
 
