@@ -79,10 +79,12 @@ const scrape = (error, tweets, response) => {
       })
 
       if (count < images.length - 1) {
-        loop(images[++count])
+        setTimeout(() => {
+          loop(images[++count])
+        }, 20000) // throttle consecutive requests
       } else {
-        const str = all.map((item) => `in: ${item.in} out: ${item.out}`).join('\r\n')
-        fs.writeFile('results.txt', str, (error) => error ? console.log(error) : null)
+        const str = JSON.stringify({results: all})
+        fs.writeFile('results.json', str, (error) => error ? console.log(error) : null)
       }
     })
   }
