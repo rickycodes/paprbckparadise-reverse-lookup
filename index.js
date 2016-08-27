@@ -1,3 +1,5 @@
+console.time('start')
+
 const Twitter = require('twitter')
 const conf = require('./conf')
 const client = new Twitter(conf.twitter)
@@ -80,10 +82,13 @@ const scrape = (error, tweets, response) => {
   var count = 0
   const loop = (obj) => {
     search(obj.media, (result) => {
-      all.push({
+      const out = {
+        id: obj.id,
         in: obj.media,
         out: result
-      })
+      }
+      console.log(out)
+      all.push(out)
 
       if (count < images.length - 1) {
         setTimeout(() => {
@@ -91,6 +96,7 @@ const scrape = (error, tweets, response) => {
         }, delay) // throttle consecutive requests
       } else {
         write(all)
+        console.timeEnd('start')
       }
     })
   }
