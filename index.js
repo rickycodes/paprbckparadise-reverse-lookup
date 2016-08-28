@@ -20,7 +20,7 @@ const params = {
 // write out results.json
 const write = (arr) => {
   const str = JSON.stringify({results: arr})
-  fs.writeFile('results.json', str, (error) => error ? console.log(error) : null)
+  fs.writeFile('results.json', str, (error) => error ? console.log(error) : process.exit())
 }
 
 // collect all hrefs that open lightbox

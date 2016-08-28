@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "readme": "node util/read.js > README.md",
+    "readme": "node util/read.js > results.md && cat notes.md results.md > README.md && rm results.md",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
