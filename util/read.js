@@ -4,11 +4,11 @@
 const results = require('../results').results
 const total = results.length
 
-const failed = results.filter((item) => item.out)
-const output = failed.map((item) => `<img src='${item.in}' /> | <img src='${item.out}' />`).join('\n')
+const succeeded = results.filter((item) => item.result)
+const output = succeeded.map((item) => `<img src='${item.in}' /> | <img src='${decodeURIComponent(item.result.imgurl)}' />`).join('\n')
 
 console.log(
 `In | out\r
 --- | ---\r
 ${output}\r
-Total: ${total}, failed: ${failed.length}`)
+Total: ${total}, failed: ${total - succeeded.length}`)

@@ -39,7 +39,7 @@ const collect = ($, arr) => {
 // filter common social media links (avoid looping back to src image in a repost)
 // TODO: consider sorting by ASC date
 const filter = (arr) => arr.filter((result) =>
-  !/(twimg|imgur|tumblr|blogspot|onsizzle|pinimg)/.test(result.imgurl)
+  !/(paperback|paradise|facebook|ooyuz|twimg|imgur|tumblr|blogspot|onsizzle|pinimg|afterfeed|wittyfeed|junkhost|ift.tt|wp-content|wordpress|playbuzz|buzzfeed|omygsh)/.test(result.imgurl)
 )
 
 // return index of tallest image
@@ -62,7 +62,7 @@ const search = (image, cb) => {
     const results = collect($, links)
     const filtered = filter(results)
     const tallest = getTallest(filtered)
-    cb(tallest ? tallest.imgurl : null)
+    cb(tallest || null)
   })
 }
 
@@ -85,7 +85,7 @@ const scrape = (error, tweets, response) => {
       const out = {
         id: obj.id,
         in: obj.media,
-        out: result
+        result: result
       }
       console.log(out)
       all.push(out)
