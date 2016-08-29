@@ -39,7 +39,7 @@ const collect = ($, arr) => {
 // filter common social media links (avoid looping back to src image in a repost)
 // TODO: consider sorting by ASC date
 const filter = (arr) => arr.filter((result) =>
-  !/(paperback|paradise|facebook|ooyuz|twimg|imgur|tumblr|blogspot|onsizzle|pinimg|afterfeed|wittyfeed|junkhost|ift.tt|wp-content|wordpress|playbuzz|buzzfeed|omygsh)/.test(result.imgurl)
+  !/(paperback|paradise|facebook|ooyuz|twimg|imgur|tumblr|blogspot|onsizzle|pinimg|afterfeed|wittyfeed|junkhost|ift.tt|wp-content|wordpress|playbuzz|buzzfeed|omygsh|sobadsogood)/.test(result.imgurl)
 )
 
 // return index of tallest image
