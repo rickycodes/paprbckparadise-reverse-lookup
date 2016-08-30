@@ -4,11 +4,21 @@
 const results = require('../results').results
 const total = results.length
 
+const js = '```js'
+const jsEnd = '```'
+
 const succeeded = results.filter((item) => item.result)
-const output = succeeded.map((item) => `<img src='${item.in}' /> | <img src='${decodeURIComponent(item.result.imgurl)}' />`).join('\n')
+const output = succeeded.map((item, index) =>
+`
+##### ${++index}). ${item.id}\r
+https://twitter.com/paprbckparadise/status/${item.id}\r
+${js}\r${JSON.stringify(item, null, 2)}\r${jsEnd}\r
+img | result
+--- | ------
+<img src='${item.in}' /> | <img src='${decodeURIComponent(item.result.imgurl)}' />
+`
+).join('\n')
 
 console.log(
-`In | out\r
---- | ---\r
-${output}\r
+`${output}\r
 Total: ${total}, failed: ${total - succeeded.length}`)

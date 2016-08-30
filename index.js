@@ -1,10 +1,11 @@
 console.time('start')
-
+// very handy: https://moz.com/ugc/the-ultimate-guide-to-the-google-search-parameters
 const Twitter = require('twitter')
 const conf = require('./conf')
 const client = new Twitter(conf.twitter)
 const cheerio = require('cheerio')
-const endpoint = 'http://images.google.ca/searchbyimage?image_url='
+const baseUrl = 'http://images.google.com'
+const query = 'book+cover'
 const tags = /(#books|#usedbooks)/
 const qs = require('./util/qs')
 const GET = require('./util/get')
@@ -37,24 +38,24 @@ const collect = ($, arr) => {
 }
 
 // filter common social media links (avoid looping back to src image in a repost)
-// TODO: consider sorting by ASC date
+// TODO: consider sorting by ASC date, or like 2015-01-01
 const filter = (arr) => arr.filter((result) =>
-  !/(paperback|paradise|facebook|ooyuz|twimg|imgur|tumblr|blogspot|onsizzle|pinimg|afterfeed|wittyfeed|junkhost|ift.tt|wp-content|wordpress|playbuzz|buzzfeed|omygsh|sobadsogood)/.test(result.imgurl)
+  !/(squarespace|thechive|awesomejelly|epicthings|paperback|paradise|facebook|ooyuz|twimg|imgur|tumblr|blogspot|onsizzle|pinimg|afterfeed|wittyfeed|junkhost|ift.tt|playbuzz|buzzfeed|omygsh|sobadsogood)/.test(result.imgurl)
 )
 
 // return index of tallest image
 const getTallest = (arr) => {
   const heights = arr.filter((result) => !isNaN(Number(result.h))).map((result) => Number(result.h))
   const max = Math.max.apply(null, heights)
-  console.log(arr[heights.indexOf(max)])
   return arr[heights.indexOf(max)]
 }
 
 // search images.google.ca
 const search = (image, cb) => {
-  GET(endpoint + image, (html) => {
-    console.log(html)
-    const $ = cheerio.load(html)
+  const endpoint = `${baseUrl}/searchbyimage?q=${query}&image_url=${image}`
+  console.log(endpoint)
+  GET(endpoint, (res) => {
+    const $ = cheerio.load(res.body)
 
     // all hrefs
     const links = $('a[href]')

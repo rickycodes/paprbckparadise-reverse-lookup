@@ -5,10 +5,17 @@ const headers = {
   'Content-Type': 'text/html'
 }
 
-const GET = (url, cb) => request({
+const GET = (url, callback) => request({
   url: url, headers: headers
-}, (error, response, body) => !error
-  ? cb(body)
-  : console.log(error))
+}, (error, response, body) => {
+  if (!error && response.statusCode === 200) {
+    callback({
+      uri: response.request.uri,
+      body: body
+    })
+  } else {
+    throw new Error(error)
+  }
+})
 
 module.exports = GET
