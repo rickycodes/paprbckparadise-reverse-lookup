@@ -4,7 +4,8 @@ const Twitter = require('twitter')
 const conf = require('./conf')
 const client = new Twitter(conf.twitter)
 const cheerio = require('cheerio')
-const baseUrl = 'http://images.google.com'
+const baseUrl = 'google.com'
+const before = '2016-01-01' // First tweet is from Mar 2016
 const query = 'book+cover'
 const tags = /(#books|#usedbooks)/
 const qs = require('./util/qs')
@@ -38,10 +39,11 @@ const collect = ($, arr) => {
 }
 
 // filter common social media links (avoid looping back to src image in a repost)
-// TODO: consider sorting by ASC date, or like 2015-01-01
-const filter = (arr) => arr.filter((result) =>
-  !/(squarespace|thechive|awesomejelly|epicthings|paperback|paradise|facebook|ooyuz|twimg|imgur|tumblr|blogspot|onsizzle|pinimg|afterfeed|wittyfeed|junkhost|ift.tt|playbuzz|buzzfeed|omygsh|sobadsogood)/.test(result.imgurl)
-)
+// NOTES: this might be a tad aggressive?
+const filter = (arr) => arr.filter((result) => {
+  const ex = /(youtube|wordpress|wp-content|knowyourmeme|burrowowl|squarespace|thechive|awesomejelly|epicthings|paperback|paradise|facebook|ooyuz|twimg|imgur|tumblr|blogspot|onsizzle|pinimg|afterfeed|wittyfeed|junkhost|ift.tt|playbuzz|buzzfeed|omygsh|sobadsogood)/
+  return !ex.test(result.imgurl) && !ex.test(result.imgrefurl)
+})
 
 // return index of tallest image
 const getTallest = (arr) => {
@@ -52,18 +54,22 @@ const getTallest = (arr) => {
 
 // search images.google.ca
 const search = (image, cb) => {
-  const endpoint = `${baseUrl}/searchbyimage?q=${query}&image_url=${image}`
-  console.log(endpoint)
-  GET(endpoint, (res) => {
-    const $ = cheerio.load(res.body)
+  const first = `http://images.${baseUrl}/searchbyimage?q=${query}&image_url=${image}`
+  GET(first, (res) => {
+    const tbs = qs(res.uri.search).tbs
+    const next = `http://${baseUrl}/search?q=${query}&source=lnt&tbs=${tbs}%2Ccdr%3A1%2Ccd_min%3A%2Ccd_max%3A${before}&tbm=`
 
-    // all hrefs
-    const links = $('a[href]')
-
-    const results = collect($, links)
-    const filtered = filter(results)
-    const tallest = getTallest(filtered)
-    cb(tallest || null)
+    setTimeout(() => {
+      console.log(next)
+      GET(next, (res) => {
+        const $ = cheerio.load(res.body)
+        const links = $('a[href]')
+        const results = collect($, links)
+        const filtered = filter(results)
+        const tallest = getTallest(filtered)
+        cb(tallest || null)
+      })
+    }, 1000) // throttle consecutive requests
   })
 }
 

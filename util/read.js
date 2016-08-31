@@ -13,7 +13,7 @@ const output = succeeded.map((item, index) =>
 ##### ${++index}). ${item.id}\r
 https://twitter.com/paprbckparadise/status/${item.id}\r
 ${js}\r${JSON.stringify(item, null, 2)}\r${jsEnd}\r
-img | result
+IMG | RESULT
 --- | ------
 <img src='${item.in}' /> | <img src='${decodeURIComponent(item.result.imgurl)}' />
 `

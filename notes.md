@@ -47,7 +47,7 @@ If you can route the requests through different IPs it stands to reason Google w
 
 It occurred to me that I could simply delay the intervals between each consecutive request to make the script _look_ human. I started with a delay of 10 seconds, but this would still trigger the CAPTCHA, leaving me to try every 20 seconds which appears to work just fine.
 
-Total script operation takes about 3206780 milliseconds (~53 minutes). This will of course vary depending on bandwidth.
+Total script operation takes about 3650306 milliseconds (~60 minutes). This will of course vary depending on bandwidth.
 
 #### DISCLAIMER
 

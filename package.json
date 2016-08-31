@@ -5,14 +5,25 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
+    "lint": "standard -v",
     "readme": "node util/read.js > results.md && cat notes.md results.md > README.md && rm results.md",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run lint"
   },
-  "author": "",
+  "engines" : {
+    "node" : ">=4"
+  },
+  "author": "@rickycodes",
+  "bugs": {
+    "url": "https://github.com/rickycodes/paprbckparadise-reverse-lookup/issues"
+  },
+  "homepage": "https://github.com/rickycodes/paprbckparadise-reverse-lookup",
   "license": "MIT",
   "dependencies": {
     "cheerio": "^0.22.0",
     "request": "^2.74.0",
     "twitter": "^1.4.0"
+  },
+  "devDependencies": {
+    "standard": "^8.0.0"
   }
 }

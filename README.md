@@ -47,7 +47,7 @@ If you can route the requests through different IPs it stands to reason Google w
 
 It occurred to me that I could simply delay the intervals between each consecutive request to make the script _look_ human. I started with a delay of 10 seconds, but this would still trigger the CAPTCHA, leaving me to try every 20 seconds which appears to work just fine.
 
-Total script operation takes about 3206780 milliseconds (~53 minutes). This will of course vary depending on bandwidth.
+Total script operation takes about 3650306 milliseconds (~60 minutes). This will of course vary depending on bandwidth.
 
 #### DISCLAIMER
 
@@ -61,73 +61,95 @@ RUNNING THIS SOFTWARE/ABUSING GOOGLE'S TOS COULD RESULT IN A PERMANENT BAN FROM 
 
 #### Results
 
-##### 1). 770408907411861504
+##### 1). 770775824530145280
+https://twitter.com/paprbckparadise/status/770775824530145280
+```js{
+  "id": "770775824530145280",
+  "in": "http://pbs.twimg.com/media/CrJWnXLVYAAdKOX.png",
+  "result": {
+    "imgurl": "http://static.thefrisky.com/uploads/2011/11/21/enid-rollins-jpg.jpeg",
+    "imgrefurl": "http://www.thefrisky.com/photos/casting-the-sweet-valley-high-movie/svh_movie",
+    "h": "250",
+    "w": "401",
+    "tbnid": "eqPUrMD11Xa6jM",
+    "tbnh": "177",
+    "tbnw": "284",
+    "usg": "__8XHWmw764pjItKWFsFr4RBOUv_8",
+    "docid": "lNKLqlve1C6RiM"
+  }
+}```
+IMG | RESULT
+--- | ------
+<img src='http://pbs.twimg.com/media/CrJWnXLVYAAdKOX.png' /> | <img src='http://static.thefrisky.com/uploads/2011/11/21/enid-rollins-jpg.jpeg' />
+
+
+##### 2). 770408907411861504
 https://twitter.com/paprbckparadise/status/770408907411861504
 ```js{
   "id": "770408907411861504",
   "in": "http://pbs.twimg.com/media/CrEJU-vVIAAGorr.png",
   "result": {
-    "imgurl": "https://www.blackgate.com/wp-content/uploads/2014/12/A-Dream-of-Kinship.jpg",
-    "imgrefurl": "https://www.blackgate.com/2014/12/14/vintage-treasures-the-white-bird-of-kinship-trilogy-by-richard-cowper",
-    "h": "1512",
-    "w": "948",
-    "tbnid": "yQ06fkaPMtyGIM",
-    "tbnh": "284",
-    "tbnw": "178",
-    "usg": "__DtFMgItu19eFzf33oN7m2FLO-lI",
-    "docid": "wLChgXw2uhimHM"
+    "imgurl": "http://d2arxad8u2l0g7.cloudfront.net/books/1227408354m/2262451.jpg",
+    "imgrefurl": "http://www.goodreads.com/book/show/5634367-kuldesak",
+    "h": "160",
+    "w": "95",
+    "tbnid": "_j99BR0W0eZOyM",
+    "tbnh": "128",
+    "tbnw": "76",
+    "usg": "___3bh8J2lJKLWaqD_h-zC34RKr8Y",
+    "docid": "aQ2-7yesnTlsdM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
-<img src='http://pbs.twimg.com/media/CrEJU-vVIAAGorr.png' /> | <img src='https://www.blackgate.com/wp-content/uploads/2014/12/A-Dream-of-Kinship.jpg' />
+<img src='http://pbs.twimg.com/media/CrEJU-vVIAAGorr.png' /> | <img src='http://d2arxad8u2l0g7.cloudfront.net/books/1227408354m/2262451.jpg' />
 
 
-##### 2). 769323422820118528
+##### 3). 769323422820118528
 https://twitter.com/paprbckparadise/status/769323422820118528
 ```js{
   "id": "769323422820118528",
   "in": "http://pbs.twimg.com/media/Cq0vPF9VIAA4orD.png",
   "result": {
-    "imgurl": "https://schlockvalue.files.wordpress.com/2014/08/cold-war-in-a-country-garden.png",
-    "imgrefurl": "https://schlock-value.com/2014/08/17/cold-war-in-a-country-garden",
-    "h": "2099",
-    "w": "1254",
-    "tbnid": "Rp4OBGNr4PjKCM",
-    "tbnh": "291",
-    "tbnw": "173",
-    "usg": "__GHJtNISd-YTlZPRGLPdrhYeoenQ",
-    "docid": "Md9TbfTpDQGaWM"
+    "imgurl": "http://d2arxad8u2l0g7.cloudfront.net/books/1275741805l/1891396.jpg",
+    "imgrefurl": "http://www.goodreads.com/book/show/1891396.Cold_War_in_a_Country_Garden",
+    "h": "475",
+    "w": "280",
+    "tbnid": "iXMOk2Ge0Cw3UM",
+    "tbnh": "293",
+    "tbnw": "172",
+    "usg": "__Scl-bgvcyBX4PLbyCYo9_CajWWQ",
+    "docid": "kMJmJw6xF1nuDM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
-<img src='http://pbs.twimg.com/media/Cq0vPF9VIAA4orD.png' /> | <img src='https://schlockvalue.files.wordpress.com/2014/08/cold-war-in-a-country-garden.png' />
+<img src='http://pbs.twimg.com/media/Cq0vPF9VIAA4orD.png' /> | <img src='http://d2arxad8u2l0g7.cloudfront.net/books/1275741805l/1891396.jpg' />
 
 
-##### 3). 768603978137415680
+##### 4). 768603978137415680
 https://twitter.com/paprbckparadise/status/768603978137415680
 ```js{
   "id": "768603978137415680",
   "in": "http://pbs.twimg.com/media/Cqqg_9SUEAA1Y52.png",
   "result": {
-    "imgurl": "https://devonclaytor.files.wordpress.com/2013/08/faust.jpg",
-    "imgrefurl": "https://devonclaytor.com/2013/09/03/q-a-with-science-fiction-and-fantasy-illustrator-david-b-mattingly",
-    "h": "654",
-    "w": "418",
-    "tbnid": "acP9_eBxHI1pwM",
-    "tbnh": "281",
-    "tbnw": "179",
-    "usg": "__j0XjLV2NP72GfmQ4rWkornxVxA8",
-    "docid": "bNN7tqpBfSfBAM"
+    "imgurl": "http://d.gr-assets.com/books/1299729862m/1902527.jpg",
+    "imgrefurl": "http://www.goodreads.com/book/show/1911165.A_Death_of_Honor",
+    "h": "153",
+    "w": "98",
+    "tbnid": "BRhMXxZlUXAPUM",
+    "tbnh": "122",
+    "tbnw": "78",
+    "usg": "__XI6bVnBHQ4wLmovC87QAyQOSQSg",
+    "docid": "B_kX3SAaZ3VWSM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
-<img src='http://pbs.twimg.com/media/Cqqg_9SUEAA1Y52.png' /> | <img src='https://devonclaytor.files.wordpress.com/2013/08/faust.jpg' />
+<img src='http://pbs.twimg.com/media/Cqqg_9SUEAA1Y52.png' /> | <img src='http://d.gr-assets.com/books/1299729862m/1902527.jpg' />
 
 
-##### 4). 767876626449260554
+##### 5). 767876626449260554
 https://twitter.com/paprbckparadise/status/767876626449260554
 ```js{
   "id": "767876626449260554",
@@ -144,34 +166,34 @@ https://twitter.com/paprbckparadise/status/767876626449260554
     "docid": "kI5hSWU8zENZuM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
 <img src='http://pbs.twimg.com/media/CqgLZEqUIAAHNn5.png' /> | <img src='http://cache.coverbrowser.com/image/ace-books/1474-1.jpg' />
 
 
-##### 5). 766427726009905152
+##### 6). 766427726009905152
 https://twitter.com/paprbckparadise/status/766427726009905152
 ```js{
   "id": "766427726009905152",
   "in": "http://pbs.twimg.com/media/CqLlwURUAAAvIh3.png",
   "result": {
-    "imgurl": "http://i3.kym-cdn.com/photos/images/newsfeed/001/162/651/29a.jpg",
-    "imgrefurl": "http://knowyourmeme.com/photos/1162651-childrens-book-cover-parodies",
-    "h": "650",
-    "w": "405",
-    "tbnid": "GdPBt-txRPR24M",
-    "tbnh": "285",
-    "tbnw": "177",
-    "usg": "__V5RcnP1gUnYaO3F3mI6t5mQJELM",
-    "docid": "nBYBQfR8_LWUnM"
+    "imgurl": "http://www.jeancraigheadgeorge.com/images/frightful_cov.jpg",
+    "imgrefurl": "http://www.jeancraigheadgeorge.com/archive1.html",
+    "h": "207",
+    "w": "150",
+    "tbnid": "9yvgtJWiPhC9LM",
+    "tbnh": "165",
+    "tbnw": "120",
+    "usg": "__rA_8681YHlnif94uOAUHrPMgQpM",
+    "docid": "Rhc9x0EKNI8PVM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
-<img src='http://pbs.twimg.com/media/CqLlwURUAAAvIh3.png' /> | <img src='http://i3.kym-cdn.com/photos/images/newsfeed/001/162/651/29a.jpg' />
+<img src='http://pbs.twimg.com/media/CqLlwURUAAAvIh3.png' /> | <img src='http://www.jeancraigheadgeorge.com/images/frightful_cov.jpg' />
 
 
-##### 6). 765347383475576832
+##### 7). 765347383475576832
 https://twitter.com/paprbckparadise/status/765347383475576832
 ```js{
   "id": "765347383475576832",
@@ -188,12 +210,12 @@ https://twitter.com/paprbckparadise/status/765347383475576832
     "docid": "MXN09TNi9KWDQM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
 <img src='http://pbs.twimg.com/media/Cp8O_1WVIAMihYo.png' /> | <img src='http://www.sharon-green.net/images/Jalav2.jpg' />
 
 
-##### 7). 764250300991442944
+##### 8). 764250300991442944
 https://twitter.com/paprbckparadise/status/764250300991442944
 ```js{
   "id": "764250300991442944",
@@ -210,78 +232,34 @@ https://twitter.com/paprbckparadise/status/764250300991442944
     "docid": "4LWvJEgvls6QcM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
 <img src='http://pbs.twimg.com/media/CpspMy2VYAAC7-J.png' /> | <img src='https://images-na.ssl-images-amazon.com/images/I/41DlDWpEdkL._AC_UL320_SR190,320_.jpg' />
 
 
-##### 8). 763888274255392768
-https://twitter.com/paprbckparadise/status/763888274255392768
-```js{
-  "id": "763888274255392768",
-  "in": "http://pbs.twimg.com/media/CpngU7oUIAA8O9B.png",
-  "result": {
-    "imgurl": "https://cheapscifi.files.wordpress.com/2011/01/the-secrets-of-synchronicity.jpg",
-    "imgrefurl": "https://cheapscifi.wordpress.com",
-    "h": "500",
-    "w": "303",
-    "tbnid": "mbkbuu9UsEPcFM",
-    "tbnh": "289",
-    "tbnw": "175",
-    "usg": "__yRZP7JNM2-GoyoU_FU1FsefZQv4",
-    "docid": "DvcBBC2OZEZHOM"
-  }
-}```
-img | result
---- | ------
-<img src='http://pbs.twimg.com/media/CpngU7oUIAA8O9B.png' /> | <img src='https://cheapscifi.files.wordpress.com/2011/01/the-secrets-of-synchronicity.jpg' />
-
-
-##### 9). 763164890106257409
-https://twitter.com/paprbckparadise/status/763164890106257409
-```js{
-  "id": "763164890106257409",
-  "in": "http://pbs.twimg.com/media/CpdOJcrVYAAntPu.png",
-  "result": {
-    "imgurl": "https://sciencefictionruminations.files.wordpress.com/2012/12/thprmdsfrm1971.jpeg%3Fw%3D388%26h%3D640",
-    "imgrefurl": "https://sciencefictionruminations.wordpress.com/2012/12/17/adventures-in-science-fiction-cover-art-pyramids-spaceships-future-earthscapes-alien-temples",
-    "h": "640",
-    "w": "388",
-    "tbnid": "zSBMS6Bc5gfGMM",
-    "tbnh": "288",
-    "tbnw": "175",
-    "usg": "__qXn4sFBQLb72XPwvmx8FdEb5hO8",
-    "docid": "5UxhCYUae4V72M"
-  }
-}```
-img | result
---- | ------
-<img src='http://pbs.twimg.com/media/CpdOJcrVYAAntPu.png' /> | <img src='https://sciencefictionruminations.files.wordpress.com/2012/12/thprmdsfrm1971.jpeg?w=388&h=640' />
-
-
-##### 10). 762806076752277504
+##### 9). 762806076752277504
 https://twitter.com/paprbckparadise/status/762806076752277504
 ```js{
   "id": "762806076752277504",
   "in": "http://pbs.twimg.com/media/CpYH3pqVMAAc0OZ.jpg",
   "result": {
     "imgurl": "http://www.sondheimguide.com/bishop/heaven.jpg",
-    "imgrefurl": "http://www.sondheimguide.com/bishop/bisnovt.htm",
+    "imgrefurl": "http://blog.thephoenix.com/BLOGS/laserorgy/archive/2009/11/14/in-memoriam-star-wars-artist-don-ivan-punchatz.aspx",
     "h": "599",
     "w": "360",
     "tbnid": "-cpkQRezKyWgHM",
     "tbnh": "290",
     "tbnw": "174",
-    "usg": "__InYidDkPP8-T1MEGc_Y2wksQg_g",
-    "docid": "pD1-ahFu1koccM"
+    "usg": "__hoLHo-jZz2h0OdDofeDKvUtGH8I",
+    "docid": "3MV8az0vdfrpeM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
 <img src='http://pbs.twimg.com/media/CpYH3pqVMAAc0OZ.jpg' /> | <img src='http://www.sondheimguide.com/bishop/heaven.jpg' />
 
 
-##### 11). 761714306320732162
+##### 10). 761714306320732162
 https://twitter.com/paprbckparadise/status/761714306320732162
 ```js{
   "id": "761714306320732162",
@@ -298,12 +276,12 @@ https://twitter.com/paprbckparadise/status/761714306320732162
     "docid": "ExmTMKTHk3S2mM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
 <img src='http://pbs.twimg.com/media/CpIm8VFUkAA2L7i.png' /> | <img src='http://d.gr-assets.com/books/1315005716l/2887070.jpg' />
 
 
-##### 12). 761352248584605696
+##### 11). 761352248584605696
 https://twitter.com/paprbckparadise/status/761352248584605696
 ```js{
   "id": "761352248584605696",
@@ -320,34 +298,71 @@ https://twitter.com/paprbckparadise/status/761352248584605696
     "docid": "bC1ovpRe69F6HM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
 <img src='http://pbs.twimg.com/media/CpDdnBsUIAEmEWv.jpg' /> | <img src='http://www.gwthomas.org/sskull.jpg' />
 
 
-##### 13). 759177754126356480
+##### 12). 760989305808429056
+https://twitter.com/paprbckparadise/status/760989305808429056
+```js{
+  "id": "760989305808429056",
+  "in": "http://pbs.twimg.com/media/Co-TutlVIAA6HR4.jpg",
+  "result": {
+    "imgurl": "https://farm8.staticflickr.com/7093/7103648645_5c21ce2a15_b.jpg",
+    "imgrefurl": "http://picssr.com/photos/philipparice/favorites/page4",
+    "h": "1020",
+    "w": "602",
+    "tbnid": "LfTS04_eNjVHzM",
+    "tbnh": "292",
+    "tbnw": "172",
+    "usg": "__aI5w9amx37TllwoawyDeqZWBll8",
+    "docid": "FopdMLrTPK_MxM"
+  }
+}```
+IMG | RESULT
+--- | ------
+<img src='http://pbs.twimg.com/media/Co-TutlVIAA6HR4.jpg' /> | <img src='https://farm8.staticflickr.com/7093/7103648645_5c21ce2a15_b.jpg' />
+
+
+##### 13). 760625438892830720
+https://twitter.com/paprbckparadise/status/760625438892830720
+```js{
+  "id": "760625438892830720",
+  "in": "http://pbs.twimg.com/media/Co5Ij9bUsAELNC0.png",
+  "result": {
+    "imgurl": "http://i436.photobucket.com/albums/qq85/cornershop15/Books%2520on%2520Screen/Reprieve%2520-%2520The%2520Testament%2520of%2520John%2520Resko%2520and%2520Message%2520from%2520Sirius%2520-%2520Cecil%2520Jenkins.jpg",
+    "imgrefurl": "http://www.britmovie.co.uk/forums/showthread.php"
+  }
+}```
+IMG | RESULT
+--- | ------
+<img src='http://pbs.twimg.com/media/Co5Ij9bUsAELNC0.png' /> | <img src='http://i436.photobucket.com/albums/qq85/cornershop15/Books%20on%20Screen/Reprieve%20-%20The%20Testament%20of%20John%20Resko%20and%20Message%20from%20Sirius%20-%20Cecil%20Jenkins.jpg' />
+
+
+##### 14). 759177754126356480
 https://twitter.com/paprbckparadise/status/759177754126356480
 ```js{
   "id": "759177754126356480",
   "in": "http://pbs.twimg.com/media/Cokj3EpVIAAq8li.jpg",
   "result": {
-    "imgurl": "https://littleredreviewer.files.wordpress.com/2014/02/breaking_through_by_juliedillon-d5dq2j8.jpg",
-    "imgrefurl": "https://littleredreviewer.wordpress.com/2014/02/03/interview-with-julie-dillon",
-    "h": "1050",
-    "w": "761",
-    "tbnid": "ZPB3zjuDBuIvXM",
-    "tbnh": "264",
-    "tbnw": "191",
-    "usg": "__sKDiYie7p9k-MvcKtpA87CBwniw",
-    "docid": "erKWICzt7ewskM"
+    "imgurl": "http://i819.photobucket.com/albums/zz116/bledec/CrashingSuns.jpg",
+    "imgrefurl": "https://www.sffchronicles.com/threads/39529",
+    "h": "483",
+    "w": "312",
+    "tbnid": "g6htXh_oR563gM",
+    "tbnh": "279",
+    "tbnw": "180",
+    "usg": "__MOxzzRKvXruDA2T_VezQGs0R-YU",
+    "docid": "DT-BRnIshVR6AM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
-<img src='http://pbs.twimg.com/media/Cokj3EpVIAAq8li.jpg' /> | <img src='https://littleredreviewer.files.wordpress.com/2014/02/breaking_through_by_juliedillon-d5dq2j8.jpg' />
+<img src='http://pbs.twimg.com/media/Cokj3EpVIAAq8li.jpg' /> | <img src='http://i819.photobucket.com/albums/zz116/bledec/CrashingSuns.jpg' />
 
 
-##### 14). 758815411907342336
+##### 15). 758815411907342336
 https://twitter.com/paprbckparadise/status/758815411907342336
 ```js{
   "id": "758815411907342336",
@@ -364,78 +379,71 @@ https://twitter.com/paprbckparadise/status/758815411907342336
     "docid": "4CDpzqb-j3UhZM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
 <img src='http://pbs.twimg.com/media/CofaK3zUMAA91rl.jpg' /> | <img src='http://cache.coverbrowser.com/image/signet-books/382-1.jpg' />
 
 
-##### 15). 758452312809410560
+##### 16). 758452312809410560
 https://twitter.com/paprbckparadise/status/758452312809410560
 ```js{
   "id": "758452312809410560",
   "in": "http://pbs.twimg.com/media/CoaPh6kUMAIaCDG.jpg",
   "result": {
-    "imgurl": "http://www.fictiondb.com/coversth/th_0373192800.jpg",
+    "imgurl": "http://www.fictiondb.com/coversth/th_0373190360.jpg",
     "imgrefurl": "http://www.fictiondb.com/author/linda-varner~7519.htm",
     "h": "200",
-    "w": "125",
-    "tbnid": "l4rLjOac65pQAM",
+    "w": "124",
+    "tbnid": "3rkSj1Nrhw8ZUM",
     "tbnh": "160",
-    "tbnw": "100",
-    "usg": "__ACZFURD8dXUAN3rF0t-WJD_KcDs",
+    "tbnw": "99",
+    "usg": "__ncfFaQbRsH6U3x71lnqiPsyPvn4",
     "docid": "Pd5tmS67mlzloM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
-<img src='http://pbs.twimg.com/media/CoaPh6kUMAIaCDG.jpg' /> | <img src='http://www.fictiondb.com/coversth/th_0373192800.jpg' />
+<img src='http://pbs.twimg.com/media/CoaPh6kUMAIaCDG.jpg' /> | <img src='http://www.fictiondb.com/coversth/th_0373190360.jpg' />
 
 
-##### 16). 758101287300804608
+##### 17). 758101287300804608
 https://twitter.com/paprbckparadise/status/758101287300804608
 ```js{
   "id": "758101287300804608",
   "in": "http://pbs.twimg.com/media/CoVQFqzUMAEm88d.png",
   "result": {
-    "imgurl": "http://d2arxad8u2l0g7.cloudfront.net/books/1395786305l/1044431.jpg",
-    "imgrefurl": "http://www.goodreads.com/book/show/1044431.Silke",
-    "h": "475",
-    "w": "285",
-    "tbnid": "dFLTJBA5HvaouM",
-    "tbnh": "290",
-    "tbnw": "174",
-    "usg": "__Ltjyd6qnOhkCCUEqmW0wmozq3Wg",
-    "docid": "pd1s4EoHOiC4GM"
+    "imgurl": "http://www.fictiondb.com/coversth/th_156597042X.jpg",
+    "imgrefurl": "http://www.fictiondb.com/author/lacey-dancer~1768.htm",
+    "h": "200",
+    "w": "122",
+    "tbnid": "4uNLWzq4LkO8QM",
+    "tbnh": "160",
+    "tbnw": "97",
+    "usg": "__RcMRnpcOQcDSkNN2EiMOTbCLAE0",
+    "docid": "gaJxWdyLmUK0MM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
-<img src='http://pbs.twimg.com/media/CoVQFqzUMAEm88d.png' /> | <img src='http://d2arxad8u2l0g7.cloudfront.net/books/1395786305l/1044431.jpg' />
+<img src='http://pbs.twimg.com/media/CoVQFqzUMAEm88d.png' /> | <img src='http://www.fictiondb.com/coversth/th_156597042X.jpg' />
 
 
-##### 17). 757694196543201281
+##### 18). 757694196543201281
 https://twitter.com/paprbckparadise/status/757694196543201281
 ```js{
   "id": "757694196543201281",
   "in": "http://pbs.twimg.com/media/CoPebvXUkAEeGD0.jpg",
   "result": {
-    "imgurl": "http://www.fictiondb.com/coversth/th_0373225598.jpg",
-    "imgrefurl": "http://www.fictiondb.com/author/patricia-rosemoor~6394.htm",
-    "h": "200",
-    "w": "119",
-    "tbnid": "PSjMtzS4GPXc0M",
-    "tbnh": "160",
-    "tbnw": "95",
-    "usg": "__S3E_6L2Ro4J9KSECP-_vsBfUBKs",
-    "docid": "4iHvyWpx1fmzYM"
+    "imgurl": "http://www.harlequin.com/media/images/books/1014-9781460350164.gif",
+    "imgrefurl": "http://www.harlequin.com/author.html"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
-<img src='http://pbs.twimg.com/media/CoPebvXUkAEeGD0.jpg' /> | <img src='http://www.fictiondb.com/coversth/th_0373225598.jpg' />
+<img src='http://pbs.twimg.com/media/CoPebvXUkAEeGD0.jpg' /> | <img src='http://www.harlequin.com/media/images/books/1014-9781460350164.gif' />
 
 
-##### 18). 756228929740943362
+##### 19). 756228929740943362
 https://twitter.com/paprbckparadise/status/756228929740943362
 ```js{
   "id": "756228929740943362",
@@ -452,34 +460,34 @@ https://twitter.com/paprbckparadise/status/756228929740943362
     "docid": "pvjlS_A-GaCrLM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
 <img src='http://pbs.twimg.com/media/Cn6p4xrVMAAdSEK.jpg' /> | <img src='http://d2arxad8u2l0g7.cloudfront.net/books/1373650358l/18190497.jpg' />
 
 
-##### 19). 755892639338160129
+##### 20). 755892639338160129
 https://twitter.com/paprbckparadise/status/755892639338160129
 ```js{
   "id": "755892639338160129",
   "in": "http://pbs.twimg.com/media/Cn14IN6VMAQ9Nvc.jpg",
   "result": {
-    "imgurl": "https://img.fantasticfiction.com/images/n17/n88475.jpg",
-    "imgrefurl": "https://www.fantasticfiction.com/l/louis-lamour/callaghen.htm",
-    "h": "475",
-    "w": "288",
-    "tbnid": "ES3ofA7VFwLhhM",
-    "tbnh": "288",
-    "tbnw": "175",
-    "usg": "__B_uv1KVyXAN4CHz2qpLChQxFs-o",
-    "docid": "-ChK4M5R6o6XFM"
+    "imgurl": "http://pictures.abebooks.com/isbn/9780553204667-us-300.jpg",
+    "imgrefurl": "http://www.abebooks.com/book-search/isbn/0553204661",
+    "h": "400",
+    "w": "300",
+    "tbnid": "UaMZwZNiogB4AM",
+    "tbnh": "259",
+    "tbnw": "194",
+    "usg": "__TqrT1Kvv-7EnLNQ1J_ry2OjUwUs",
+    "docid": "mMN1HhDhunZGSM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
-<img src='http://pbs.twimg.com/media/Cn14IN6VMAQ9Nvc.jpg' /> | <img src='https://img.fantasticfiction.com/images/n17/n88475.jpg' />
+<img src='http://pbs.twimg.com/media/Cn14IN6VMAQ9Nvc.jpg' /> | <img src='http://pictures.abebooks.com/isbn/9780553204667-us-300.jpg' />
 
 
-##### 20). 755494650958360576
+##### 21). 755494650958360576
 https://twitter.com/paprbckparadise/status/755494650958360576
 ```js{
   "id": "755494650958360576",
@@ -496,97 +504,75 @@ https://twitter.com/paprbckparadise/status/755494650958360576
     "docid": "FHpssNm3fijeVM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
 <img src='http://pbs.twimg.com/media/CnwOKv3VMAAgwWl.jpg' /> | <img src='http://thumbs.ebaystatic.com/images/m/mzKusz02X0ZZt6GFzs1weRQ/s-l225.jpg' />
 
 
-##### 21). 755148375108878336
+##### 22). 755148375108878336
 https://twitter.com/paprbckparadise/status/755148375108878336
 ```js{
   "id": "755148375108878336",
   "in": "http://pbs.twimg.com/media/CnrTTyAVMAAkpo8.jpg",
   "result": {
-    "imgurl": "https://img.fantasticfiction.com/thumbs/n35/n179178.jpg",
-    "imgrefurl": "https://www.fantasticfiction.com/l/jake-logan",
-    "h": "100",
-    "w": "57",
-    "tbnid": "FaN83zfxe1Uk2M",
-    "tbnh": "94",
-    "tbnw": "54",
-    "usg": "__6gtRXZhXGTAVOSn0N13T4J3SHwg",
-    "docid": "DaWrz_tocQMtAM"
+    "imgurl": "http://img0064.psstatic.com/154189183_amazoncom-blazing-guns-slocum-37-9780872169906-jake-.jpg",
+    "imgrefurl": "https://www.popscreen.com/prod/MTU0NzU5MjMw/Slocum-395-Slocum-and-the-Trail-to-Yellowstone-Jake-Logan-Amazon-",
+    "h": "300",
+    "w": "300",
+    "tbnid": "gbBb0ZctBaRJ6M",
+    "tbnh": "225",
+    "tbnw": "225",
+    "usg": "__8ed7efFSdue4BUgpIwzrsgoVjac",
+    "docid": "g1Mti9a8_WqEDM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
-<img src='http://pbs.twimg.com/media/CnrTTyAVMAAkpo8.jpg' /> | <img src='https://img.fantasticfiction.com/thumbs/n35/n179178.jpg' />
+<img src='http://pbs.twimg.com/media/CnrTTyAVMAAkpo8.jpg' /> | <img src='http://img0064.psstatic.com/154189183_amazoncom-blazing-guns-slocum-37-9780872169906-jake-.jpg' />
 
 
-##### 22). 754057968165920769
+##### 23). 754057968165920769
 https://twitter.com/paprbckparadise/status/754057968165920769
 ```js{
   "id": "754057968165920769",
   "in": "http://pbs.twimg.com/media/CnbzjXIUMAUkUJj.jpg",
   "result": {
-    "imgurl": "http://people.uncw.edu/smithms/Ace%2520singles/s5N-series/47121-8.jpg",
-    "imgrefurl": "http://people.uncw.edu/smithms/Ace_5N4.html",
-    "h": "525",
-    "w": "333",
-    "tbnid": "YTRNnM82bYiPFM",
-    "tbnh": "282",
-    "tbnw": "179",
-    "usg": "__2he4mKcnUhNFr9jqY_vXT4TQ6xQ",
-    "docid": "SOmJg6C_FWh1vM"
+    "imgurl": "http://d.gr-assets.com/books/1174315773l/378787.jpg",
+    "imgrefurl": "http://www.goodreads.com/book/show/378787.The_Last_Knight_of_Albion",
+    "h": "500",
+    "w": "300",
+    "tbnid": "bGWqYsCSFj0RqM",
+    "tbnh": "290",
+    "tbnw": "174",
+    "usg": "__xwLnM-oOrLm1mqPkacvciGpcbzg",
+    "docid": "M8c-LhBn3iTCqM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
-<img src='http://pbs.twimg.com/media/CnbzjXIUMAUkUJj.jpg' /> | <img src='http://people.uncw.edu/smithms/Ace%20singles/s5N-series/47121-8.jpg' />
+<img src='http://pbs.twimg.com/media/CnbzjXIUMAUkUJj.jpg' /> | <img src='http://d.gr-assets.com/books/1174315773l/378787.jpg' />
 
 
-##### 23). 753740941907767296
+##### 24). 753740941907767296
 https://twitter.com/paprbckparadise/status/753740941907767296
 ```js{
   "id": "753740941907767296",
   "in": "http://pbs.twimg.com/media/CnXSWqmUMAE5X3f.jpg",
   "result": {
-    "imgurl": "http://pictures.abebooks.com/JOHNMCCORMICK/636792826.jpg",
-    "imgrefurl": "http://www.abebooks.co.uk/book-search/title/time-beyond-time/author/green-i-g/first-edition",
-    "h": "600",
-    "w": "355",
-    "tbnid": "OY-0R35CJw3VhM",
-    "tbnh": "292",
-    "tbnw": "173",
-    "usg": "__9FPKF-dxKjqJw8mwBKSbSiBzCNs",
-    "docid": "MGrUxfvVPwQhfM"
+    "imgurl": "http://www.sf-boeken.nl/vogt-manmet1000namen.jpg",
+    "imgrefurl": "http://www.sf-boeken.nl/schrij-vanvogt.html",
+    "h": "333",
+    "w": "200",
+    "tbnid": "iWb1sd-qn3w9AM",
+    "tbnh": "266",
+    "tbnw": "160",
+    "usg": "__uoWC9vLkVebQI3zTCZ6-zkOfklw",
+    "docid": "dTa45OqHwsrknM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
-<img src='http://pbs.twimg.com/media/CnXSWqmUMAE5X3f.jpg' /> | <img src='http://pictures.abebooks.com/JOHNMCCORMICK/636792826.jpg' />
-
-
-##### 24). 753348300699381760
-https://twitter.com/paprbckparadise/status/753348300699381760
-```js{
-  "id": "753348300699381760",
-  "in": "http://pbs.twimg.com/media/CnRuFO1UsAEyPw2.jpg",
-  "result": {
-    "imgurl": "http://www.goodshowsir.co.uk/wp-content/uploads/2016/07/Hands_of_Glory.jpg",
-    "imgrefurl": "http://www.goodshowsir.co.uk",
-    "h": "1678",
-    "w": "1120",
-    "tbnid": "QgNDap3ZrsUzdM",
-    "tbnh": "275",
-    "tbnw": "183",
-    "usg": "__f2LZVNhCQQiGRU4QC7tDgKgANmo",
-    "docid": "dL9YWMyhB1TmEM"
-  }
-}```
-img | result
---- | ------
-<img src='http://pbs.twimg.com/media/CnRuFO1UsAEyPw2.jpg' /> | <img src='http://www.goodshowsir.co.uk/wp-content/uploads/2016/07/Hands_of_Glory.jpg' />
+<img src='http://pbs.twimg.com/media/CnXSWqmUMAE5X3f.jpg' /> | <img src='http://www.sf-boeken.nl/vogt-manmet1000namen.jpg' />
 
 
 ##### 25). 752971694491443200
@@ -606,7 +592,7 @@ https://twitter.com/paprbckparadise/status/752971694491443200
     "docid": "4yTArjU4smOl0M"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
 <img src='http://pbs.twimg.com/media/CnMXtEuUEAA2563.jpg' /> | <img src='https://images-na.ssl-images-amazon.com/images/I/51OLKNJf0XL.jpg' />
 
@@ -628,7 +614,7 @@ https://twitter.com/paprbckparadise/status/752585514503462914
     "docid": "G795e-_NHz-TNM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
 <img src='http://pbs.twimg.com/media/CnG4Zk8UsAA49AH.png' /> | <img src='http://thetrashcollector.com/PaperbacksMZ/BookQuestorTapes.jpg' />
 
@@ -639,20 +625,20 @@ https://twitter.com/paprbckparadise/status/750829379115098112
   "id": "750829379115098112",
   "in": "http://pbs.twimg.com/media/Cmt7QT2VUAAyrOe.png",
   "result": {
-    "imgurl": "http://www.goodshowsir.co.uk/wp-content/uploads/2016/07/Firebird.jpg",
-    "imgrefurl": "http://www.goodshowsir.co.uk",
-    "h": "1689",
-    "w": "1131",
-    "tbnid": "iDTO6CxLmFrzzM",
-    "tbnh": "274",
-    "tbnw": "184",
-    "usg": "__Aum9w0jHom9nrQ8vpUYpFLgLmK8",
-    "docid": "dL9YWMyhB1TmEM"
+    "imgurl": "http://ecx.images-amazon.com/images/P/2277214752.01._SY200_SCLZZZZZZZ_.jpg",
+    "imgrefurl": "https://www.librarything.com/topic/146962",
+    "h": "200",
+    "w": "134",
+    "tbnid": "Dxxzi4fLEQLrXM",
+    "tbnh": "160",
+    "tbnw": "107",
+    "usg": "__cvBmswCV1vVXbAGCVek9BF5JYaI",
+    "docid": "-AczgDOpOF3BcM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
-<img src='http://pbs.twimg.com/media/Cmt7QT2VUAAyrOe.png' /> | <img src='http://www.goodshowsir.co.uk/wp-content/uploads/2016/07/Firebird.jpg' />
+<img src='http://pbs.twimg.com/media/Cmt7QT2VUAAyrOe.png' /> | <img src='http://ecx.images-amazon.com/images/P/2277214752.01._SY200_SCLZZZZZZZ_.jpg' />
 
 
 ##### 28). 750090802487894017
@@ -672,7 +658,7 @@ https://twitter.com/paprbckparadise/status/750090802487894017
     "docid": "jr4EuhHeZAz-1M"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
 <img src='http://pbs.twimg.com/media/CmjbgfQUcAAkGzN.jpg' /> | <img src='http://img0003.psstatic.com/133223798_amazoncom-gunsmith-246-the-dead-mans-eyes-gunsmith-jove-.jpg' />
 
@@ -683,20 +669,20 @@ https://twitter.com/paprbckparadise/status/748997182519332865
   "id": "748997182519332865",
   "in": "http://pbs.twimg.com/media/CmT48tAVUAAiPg5.jpg",
   "result": {
-    "imgurl": "https://img.fantasticfiction.com/thumbs/x1/x5420.jpg",
-    "imgrefurl": "https://www.fantasticfiction.com/d/sandy-dengler",
-    "h": "100",
-    "w": "58",
-    "tbnid": "3peyDh7eLVpeHM",
-    "tbnh": "94",
-    "tbnw": "54",
-    "usg": "__5tp-gvQnf5z-KWyPZtaPoaRNGvw",
-    "docid": "LegiB1IykRfNyM"
+    "imgurl": "https://d.gr-assets.com/books/1266798469s/1422323.jpg",
+    "imgrefurl": "https://www.goodreads.com/author/list/196065.Sandy_Dengler",
+    "h": "75",
+    "w": "45",
+    "tbnid": "BL6kvjhlDQCUZM",
+    "tbnh": "75",
+    "tbnw": "45",
+    "usg": "__zV80OHnAHWskhKTuXy6-X5LKz24",
+    "docid": "7c0u2IPrW5UaaM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
-<img src='http://pbs.twimg.com/media/CmT48tAVUAAiPg5.jpg' /> | <img src='https://img.fantasticfiction.com/thumbs/x1/x5420.jpg' />
+<img src='http://pbs.twimg.com/media/CmT48tAVUAAiPg5.jpg' /> | <img src='https://d.gr-assets.com/books/1266798469s/1422323.jpg' />
 
 
 ##### 30). 748605410089656321
@@ -716,7 +702,7 @@ https://twitter.com/paprbckparadise/status/748605410089656321
     "docid": "DuHKIjSQ8PUBpM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
 <img src='http://pbs.twimg.com/media/CmOUM3IUYAAXVpV.jpg' /> | <img src='http://www.sff.net/people/doylemacdonald/statue_big.jpg' />
 
@@ -727,20 +713,20 @@ https://twitter.com/paprbckparadise/status/747931791579721729
   "id": "747931791579721729",
   "in": "http://pbs.twimg.com/media/CmEvntqUgAAXJBs.png",
   "result": {
-    "imgurl": "http://media.boingboing.net/wp-content/uploads/2016/06/sweet-valley-01.jpg",
-    "imgrefurl": "http://boingboing.net/2016/06/14/commission-your-own-sweet-vall.html",
-    "h": "1600",
-    "w": "988",
-    "tbnid": "nqaicsHSkqduoM",
-    "tbnh": "286",
-    "tbnw": "176",
-    "usg": "__1TRCK4vd7IxxKobP-_4CrqFZXPA",
-    "docid": "8cGOVlQdgX-r9M"
+    "imgurl": "http://d2arxad8u2l0g7.cloudfront.net/books/1348359606l/412351.jpg",
+    "imgrefurl": "http://www.goodreads.com/book/show/412351.Forbidden_Love",
+    "h": "475",
+    "w": "294",
+    "tbnid": "pE_qXLu7ijR-nM",
+    "tbnh": "285",
+    "tbnw": "177",
+    "usg": "__DcJhMiPWZjBMPY-1Qq0dBaz78p8",
+    "docid": "Tn_Uku-27AKYWM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
-<img src='http://pbs.twimg.com/media/CmEvntqUgAAXJBs.png' /> | <img src='http://media.boingboing.net/wp-content/uploads/2016/06/sweet-valley-01.jpg' />
+<img src='http://pbs.twimg.com/media/CmEvntqUgAAXJBs.png' /> | <img src='http://d2arxad8u2l0g7.cloudfront.net/books/1348359606l/412351.jpg' />
 
 
 ##### 32). 746437990382075904
@@ -749,20 +735,20 @@ https://twitter.com/paprbckparadise/status/746437990382075904
   "id": "746437990382075904",
   "in": "http://pbs.twimg.com/media/ClvhSEvVEAAjZLq.png",
   "result": {
-    "imgurl": "https://cliqueypizza.files.wordpress.com/2009/01/sweet-valley-high-secrets-with-betty-veronica.jpg",
-    "imgrefurl": "https://cliqueypizza.wordpress.com/about",
-    "h": "1847",
-    "w": "1141",
-    "tbnid": "L6e31eq1qTra_M",
-    "tbnh": "286",
-    "tbnw": "176",
-    "usg": "__WiWkiNpdg4jfHRUWCjrV_1waDyU",
-    "docid": "h-SFdqopsv4bRM"
+    "imgurl": "http://kirstygreenwood.typepad.com/.a/6a010536b33b69970b01a73d891e0f970d-600wi",
+    "imgrefurl": "http://www.novelicious.com/2014/03/10-of-the-most-dramatic-sweet-valley-high-covers-part-two.html",
+    "h": "966",
+    "w": "600",
+    "tbnid": "gDCWBMUmlURHVM",
+    "tbnh": "285",
+    "tbnw": "177",
+    "usg": "__SAJdkZZegvw4-YfTzHyf_yqTdOI",
+    "docid": "bSdXnzYk4onvFM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
-<img src='http://pbs.twimg.com/media/ClvhSEvVEAAjZLq.png' /> | <img src='https://cliqueypizza.files.wordpress.com/2009/01/sweet-valley-high-secrets-with-betty-veronica.jpg' />
+<img src='http://pbs.twimg.com/media/ClvhSEvVEAAjZLq.png' /> | <img src='http://kirstygreenwood.typepad.com/.a/6a010536b33b69970b01a73d891e0f970d-600wi' />
 
 
 ##### 33). 746093289569300480
@@ -771,20 +757,20 @@ https://twitter.com/paprbckparadise/status/746093289569300480
   "id": "746093289569300480",
   "in": "http://pbs.twimg.com/media/ClqmybGVYAAQZn6.jpg",
   "result": {
-    "imgurl": "http://www.exodusbooks.com/images/item-large/28829.jpg",
-    "imgrefurl": "http://www.exodusbooks.com/sugar-creek-gang-34/hutchens/28829",
-    "h": "700",
-    "w": "425",
-    "tbnid": "stuVZqemCLCJqM",
-    "tbnh": "288",
-    "tbnw": "175",
-    "usg": "__CSCU9FeAvM_qd7TqWgLM3EXxlnQ",
-    "docid": "LFT_wvnlxmDtEM"
+    "imgurl": "http://www.exodusbooks.com/images/item-medium/28828.jpg",
+    "imgrefurl": "http://www.exodusbooks.com/sugar-creek-gang/7998",
+    "h": "250",
+    "w": "151",
+    "tbnid": "WRLsiQJ4fcDLIM",
+    "tbnh": "200",
+    "tbnw": "120",
+    "usg": "__RA4QLDvqhzKc0Vy6NbMr8-xqnLw",
+    "docid": "zDmyDZqlrKZJNM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
-<img src='http://pbs.twimg.com/media/ClqmybGVYAAQZn6.jpg' /> | <img src='http://www.exodusbooks.com/images/item-large/28829.jpg' />
+<img src='http://pbs.twimg.com/media/ClqmybGVYAAQZn6.jpg' /> | <img src='http://www.exodusbooks.com/images/item-medium/28828.jpg' />
 
 
 ##### 34). 745767866511745024
@@ -793,20 +779,20 @@ https://twitter.com/paprbckparadise/status/745767866511745024
   "id": "745767866511745024",
   "in": "http://pbs.twimg.com/media/Cll_FyxUkAEilvZ.png",
   "result": {
-    "imgurl": "https://d2arxad8u2l0g7.cloudfront.net/books/1182578659l/1297731.jpg",
-    "imgrefurl": "https://www.goodreads.com/book/show/412347.Cover_Girls",
-    "h": "475",
-    "w": "280",
-    "tbnid": "SP0rGhAE9FCGsM",
-    "tbnh": "293",
-    "tbnw": "172",
-    "usg": "__gBA1ZoNR4B_Y-5SEFNWaKrIOK0A",
-    "docid": "Z7rdxBg1HF-_FM"
+    "imgurl": "http://d2arxad8u2l0g7.cloudfront.net/books/1368121958m/412238.jpg",
+    "imgrefurl": "http://www.goodreads.com/book/show/1200937.First_Place",
+    "h": "160",
+    "w": "98",
+    "tbnid": "T73vSfUqCqJefM",
+    "tbnh": "128",
+    "tbnw": "78",
+    "usg": "__K5rel-RJp_63pdhfDjf6eis0OVU",
+    "docid": "fMEfJMDDY_TB0M"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
-<img src='http://pbs.twimg.com/media/Cll_FyxUkAEilvZ.png' /> | <img src='https://d2arxad8u2l0g7.cloudfront.net/books/1182578659l/1297731.jpg' />
+<img src='http://pbs.twimg.com/media/Cll_FyxUkAEilvZ.png' /> | <img src='http://d2arxad8u2l0g7.cloudfront.net/books/1368121958m/412238.jpg' />
 
 
 ##### 35). 745407512535408640
@@ -815,20 +801,13 @@ https://twitter.com/paprbckparadise/status/745407512535408640
   "id": "745407512535408640",
   "in": "http://pbs.twimg.com/media/Clg3wvRUYAQGR3Z.png",
   "result": {
-    "imgurl": "https://a.dilcdn.com/bl/wp-content/uploads/sites/8/2016/06/svh12-2.jpg",
-    "imgrefurl": "https://www.babble.com/entertainment/sweet-valley-high-best-covers",
-    "h": "957",
-    "w": "600",
-    "tbnid": "TrlWNtYfMZr-CM",
-    "tbnh": "284",
-    "tbnw": "178",
-    "usg": "__9lfa7DZYsOHGlQaxphYfeZh3R-Q",
-    "docid": "aWCEmXDxyG9UZM"
+    "imgurl": "http://books.freebooklibrary.org/books/books/Francine%2520Pascal/When%2520Love%2520Dies%2520(41712)/cover.jpg",
+    "imgrefurl": "http://books.freebooklibrary.org/index.php"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
-<img src='http://pbs.twimg.com/media/Clg3wvRUYAQGR3Z.png' /> | <img src='https://a.dilcdn.com/bl/wp-content/uploads/sites/8/2016/06/svh12-2.jpg' />
+<img src='http://pbs.twimg.com/media/Clg3wvRUYAQGR3Z.png' /> | <img src='http://books.freebooklibrary.org/books/books/Francine%20Pascal/When%20Love%20Dies%20(41712)/cover.jpg' />
 
 
 ##### 36). 744972618948706304
@@ -837,104 +816,119 @@ https://twitter.com/paprbckparadise/status/744972618948706304
   "id": "744972618948706304",
   "in": "http://pbs.twimg.com/media/Clar7AhVAAADnP3.jpg",
   "result": {
-    "imgurl": "https://images-na.ssl-images-amazon.com/images/I/51DUIdHMX9L._AC_UL320_SR194,320_.jpg",
-    "imgrefurl": "https://www.amazon.com/Danger-Vampire-Trail-Hardy-Boys/dp/0448089505",
-    "h": "320",
-    "w": "194",
-    "tbnid": "NZS29PDPtKTGCM",
-    "tbnh": "256",
-    "tbnw": "155",
-    "usg": "__ypZCpqf_Becpi3xvtVtW4NJCKWI",
-    "docid": "QYQ7B9toa-TLDM"
+    "imgurl": "http://www.hardyboysonline.net/thumbs/hb-048.jpg",
+    "imgrefurl": "http://www.hardyboysonline.net/content.php"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
-<img src='http://pbs.twimg.com/media/Clar7AhVAAADnP3.jpg' /> | <img src='https://images-na.ssl-images-amazon.com/images/I/51DUIdHMX9L._AC_UL320_SR194,320_.jpg' />
+<img src='http://pbs.twimg.com/media/Clar7AhVAAADnP3.jpg' /> | <img src='http://www.hardyboysonline.net/thumbs/hb-048.jpg' />
 
 
-##### 37). 743536457617285121
+##### 37). 743886860523470848
+https://twitter.com/paprbckparadise/status/743886860523470848
+```js{
+  "id": "743886860523470848",
+  "in": "http://pbs.twimg.com/media/ClLRKAzUgAABqNi.jpg",
+  "result": {
+    "imgurl": "http://www.hardyboysonline.net/thumbs/hb-069a.jpg",
+    "imgrefurl": "http://www.hardyboysonline.net/content.php"
+  }
+}```
+IMG | RESULT
+--- | ------
+<img src='http://pbs.twimg.com/media/ClLRKAzUgAABqNi.jpg' /> | <img src='http://www.hardyboysonline.net/thumbs/hb-069a.jpg' />
+
+
+##### 38). 743536457617285121
 https://twitter.com/paprbckparadise/status/743536457617285121
 ```js{
   "id": "743536457617285121",
   "in": "http://pbs.twimg.com/media/ClGSd81UoAAjz5y.jpg",
   "result": {
-    "imgurl": "http://taracalaby.com/wp-content/uploads/2015/10/svt4.jpg",
-    "imgrefurl": "http://taracalaby.com/tag/junior-fiction",
-    "h": "222",
-    "w": "150",
-    "tbnid": "YM9RHowELdaRAM",
-    "tbnh": "177",
-    "tbnw": "120",
-    "usg": "__XaMsSlY-uK1JdYyzdOyxFzfnjgw",
-    "docid": "itmAGVElKHlynM"
+    "imgurl": "https://images-na.ssl-images-amazon.com/images/I/41N1CNiDLUL._AC_UL320_SR240,320_.jpg",
+    "imgrefurl": "https://www.amazon.com/TEACHERS-PET-Sweet-Valley-Twins/dp/0553154222",
+    "h": "320",
+    "w": "240",
+    "tbnid": "_6TcmEUlrrDJqM",
+    "tbnh": "256",
+    "tbnw": "192",
+    "usg": "__u9pfiMRVkNyEESBhh0zy4fA96zY",
+    "docid": "A_RGbajhiZll4M"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
-<img src='http://pbs.twimg.com/media/ClGSd81UoAAjz5y.jpg' /> | <img src='http://taracalaby.com/wp-content/uploads/2015/10/svt4.jpg' />
+<img src='http://pbs.twimg.com/media/ClGSd81UoAAjz5y.jpg' /> | <img src='https://images-na.ssl-images-amazon.com/images/I/41N1CNiDLUL._AC_UL320_SR240,320_.jpg' />
 
 
-##### 38). 743160425223593984
+##### 39). 743160425223593984
 https://twitter.com/paprbckparadise/status/743160425223593984
 ```js{
   "id": "743160425223593984",
   "in": "http://pbs.twimg.com/media/ClA8d6bUkAA1WlU.png",
   "result": {
-    "imgurl": "https://images-na.ssl-images-amazon.com/images/I/51a-ehziDrL.jpg",
-    "imgrefurl": "https://www.amazon.com/Silver-Pencil-Newbery-Library-Puffin/dp/0140347925",
-    "h": "500",
-    "w": "323",
-    "tbnid": "XXULjAlWsWTvyM",
-    "tbnh": "279",
-    "tbnw": "180",
-    "usg": "__PtEv5Wajdj63emRno4Kn1z6R2eg",
-    "docid": "-ZKgB9-Z_bF6vM"
+    "imgurl": "http://www.fictiondb.com/covers/0590460102.jpg",
+    "imgrefurl": "http://www.fictiondb.com/author/alice-dalgliesh~the-silver-pencil~283666~b.htm",
+    "h": "457",
+    "w": "312",
+    "tbnid": "1ineEENjPqB0-M",
+    "tbnh": "272",
+    "tbnw": "185",
+    "usg": "__RzbJQbRfqr7PtI-G1-GlJnt2Do4",
+    "docid": "iOwBggRmGy2XJM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
-<img src='http://pbs.twimg.com/media/ClA8d6bUkAA1WlU.png' /> | <img src='https://images-na.ssl-images-amazon.com/images/I/51a-ehziDrL.jpg' />
+<img src='http://pbs.twimg.com/media/ClA8d6bUkAA1WlU.png' /> | <img src='http://www.fictiondb.com/covers/0590460102.jpg' />
 
 
-##### 39). 742829085194231808
+##### 40). 742829085194231808
 https://twitter.com/paprbckparadise/status/742829085194231808
 ```js{
   "id": "742829085194231808",
   "in": "http://pbs.twimg.com/media/Ck8PHbvUYAA-Jjp.jpg",
   "result": {
-    "imgurl": "http://prodimage.images-bn.com/pimages/9781453208144_p0_v3_s118x184.jpg",
-    "imgrefurl": "http://www.barnesandnoble.com/w/poison-chris-wooding/1102165395"
+    "imgurl": "https://images-na.ssl-images-amazon.com/images/I/51s%252BQqqb0rL.jpg",
+    "imgrefurl": "https://www.amazon.com/Boxcar-Children-Bicycle-Mystery-15/dp/0590426826",
+    "h": "500",
+    "w": "350",
+    "tbnid": "CXTifMKMH4g3DM",
+    "tbnh": "268",
+    "tbnw": "188",
+    "usg": "__3wnvUeZLyrHnoB1YNwPMCdO3hAQ",
+    "docid": "-4LVwjQtvGmnBM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
-<img src='http://pbs.twimg.com/media/Ck8PHbvUYAA-Jjp.jpg' /> | <img src='http://prodimage.images-bn.com/pimages/9781453208144_p0_v3_s118x184.jpg' />
+<img src='http://pbs.twimg.com/media/Ck8PHbvUYAA-Jjp.jpg' /> | <img src='https://images-na.ssl-images-amazon.com/images/I/51s%2BQqqb0rL.jpg' />
 
 
-##### 40). 742485039678509056
+##### 41). 742485039678509056
 https://twitter.com/paprbckparadise/status/742485039678509056
 ```js{
   "id": "742485039678509056",
   "in": "http://pbs.twimg.com/media/Ck3WNYWUgAAyl-C.jpg",
   "result": {
-    "imgurl": "http://s.ecrater.com/stores/49641/510f51213bf65_49641f.jpg",
-    "imgrefurl": "http://www.ecrater.com/p/16200831/a-little-golden-book-jack-and-the",
-    "h": "135",
-    "w": "135",
-    "tbnid": "r7OHvWJE_ee2rM",
-    "tbnh": "108",
-    "tbnw": "108",
-    "usg": "__iXXsbPFZ7LVZ1FRyVSZ_yIFDTVI",
-    "docid": "BlqUjMF99fanXM"
+    "imgurl": "http://c.mobofree.com/m/5/546baaaef664d7d2788b456d_1024x768/Attaboy-Sam-Books-Cds-DVDs-For-sale-at-All-Nigeria.jpg",
+    "imgrefurl": "http://www.mobofree.com/nigeria/Hobby-leisure-and-sports/Books-Cds-DVDs/Attaboy-Sam/1061964",
+    "h": "560",
+    "w": "381",
+    "tbnid": "sDSMR07-igz5gM",
+    "tbnh": "272",
+    "tbnw": "185",
+    "usg": "__N3J9kiJlfptlM8Q4zlfYMV0chWc",
+    "docid": "xBmPbrFJHATnOM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
-<img src='http://pbs.twimg.com/media/Ck3WNYWUgAAyl-C.jpg' /> | <img src='http://s.ecrater.com/stores/49641/510f51213bf65_49641f.jpg' />
+<img src='http://pbs.twimg.com/media/Ck3WNYWUgAAyl-C.jpg' /> | <img src='http://c.mobofree.com/m/5/546baaaef664d7d2788b456d_1024x768/Attaboy-Sam-Books-Cds-DVDs-For-sale-at-All-Nigeria.jpg' />
 
 
-##### 41). 741364453849993218
+##### 42). 741364453849993218
 https://twitter.com/paprbckparadise/status/741364453849993218
 ```js{
   "id": "741364453849993218",
@@ -951,12 +945,12 @@ https://twitter.com/paprbckparadise/status/741364453849993218
     "docid": "gYFiWfa64Rb1dM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
 <img src='http://pbs.twimg.com/media/CknbCsaUYAA1hXB.png' /> | <img src='http://ic.pics.livejournal.com/mockingbird_13/12895513/2366/300.jpg' />
 
 
-##### 42). 741035255969153024
+##### 43). 741035255969153024
 https://twitter.com/paprbckparadise/status/741035255969153024
 ```js{
   "id": "741035255969153024",
@@ -973,31 +967,9 @@ https://twitter.com/paprbckparadise/status/741035255969153024
     "docid": "oq5dClcoiAkhhM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
 <img src='http://pbs.twimg.com/media/Ckivo2HVAAAqAb_.jpg' /> | <img src='https://images-na.ssl-images-amazon.com/images/I/51RuZIBOU3L._AC_UL320_SR218,320_.jpg' />
-
-
-##### 43). 740692523593519105
-https://twitter.com/paprbckparadise/status/740692523593519105
-```js{
-  "id": "740692523593519105",
-  "in": "http://pbs.twimg.com/media/Ckd37NzUoAAhl_k.jpg",
-  "result": {
-    "imgurl": "https://images-eu.ssl-images-amazon.com/images/I/41DtsWlJ%252BiL._AC_UL320_SR196,320_.jpg",
-    "imgrefurl": "https://www.amazon.co.uk/Dear-Sister-Sweet-Valley-High/dp/0553276727",
-    "h": "320",
-    "w": "196",
-    "tbnid": "BkolGqzozHlCwM",
-    "tbnh": "256",
-    "tbnw": "156",
-    "usg": "__BVAlY9KPpakqsZHDjDBBdJk1g_Q",
-    "docid": "EJdKj35F3Vj4BM"
-  }
-}```
-img | result
---- | ------
-<img src='http://pbs.twimg.com/media/Ckd37NzUoAAhl_k.jpg' /> | <img src='https://images-eu.ssl-images-amazon.com/images/I/41DtsWlJ%2BiL._AC_UL320_SR196,320_.jpg' />
 
 
 ##### 44). 739955885707907072
@@ -1006,20 +978,20 @@ https://twitter.com/paprbckparadise/status/739955885707907072
   "id": "739955885707907072",
   "in": "http://pbs.twimg.com/media/CkTZ9PRUYAAJB-o.jpg",
   "result": {
-    "imgurl": "http://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1349040064i/96646._UY400_SS400_.jpg",
-    "imgrefurl": "http://www.goodreads.com/book/show/96646.The_Firebird_Rocket",
+    "imgurl": "https://images.contentreserve.com/ImageType-400/1191-1/A61/B49/F1/%257BA61B49F1-B912-459D-B965-249CA47453CB%257DImg400.jpg",
+    "imgrefurl": "https://www.overdrive.com/series/hardy-boys",
     "h": "400",
-    "w": "400",
-    "tbnid": "4x_xbRzx1rnZOM",
-    "tbnh": "225",
-    "tbnw": "225",
-    "usg": "__FTAYN3IB5nleq_mQRaO37P0BEDQ",
-    "docid": "nSY8ed6T6waVyM"
+    "w": "300",
+    "tbnid": "kY5fjvHPrUqThM",
+    "tbnh": "259",
+    "tbnw": "194",
+    "usg": "__MGfXUvrK5x48_3DWQuiGESnycZk",
+    "docid": "xQB1_guXXQfnbM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
-<img src='http://pbs.twimg.com/media/CkTZ9PRUYAAJB-o.jpg' /> | <img src='http://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1349040064i/96646._UY400_SS400_.jpg' />
+<img src='http://pbs.twimg.com/media/CkTZ9PRUYAAJB-o.jpg' /> | <img src='https://images.contentreserve.com/ImageType-400/1191-1/A61/B49/F1/%7BA61B49F1-B912-459D-B965-249CA47453CB%7DImg400.jpg' />
 
 
 ##### 45). 739609275153027072
@@ -1028,20 +1000,20 @@ https://twitter.com/paprbckparadise/status/739609275153027072
   "id": "739609275153027072",
   "in": "http://pbs.twimg.com/media/CkOet0xUUAA1YG3.jpg",
   "result": {
-    "imgurl": "https://images-na.ssl-images-amazon.com/images/I/51M76UzfsAL.jpg",
-    "imgrefurl": "https://www.amazon.com/Collie-Animal-Holiday-Treasury-6-Valentines/dp/0439687608",
-    "h": "500",
-    "w": "349",
-    "tbnid": "6ZeF5rCjyokXWM",
-    "tbnh": "269",
-    "tbnw": "187",
-    "usg": "__YR8-_e9dOy79Mn-MhzOlwnC0iRU",
-    "docid": "__RUGjYwENWMCM"
+    "imgurl": "http://www.fictiondb.com/coversth/th_0439687608.jpg",
+    "imgrefurl": "http://www.fictiondb.com/author/ben-m-baglio~64086.htm",
+    "h": "200",
+    "w": "139",
+    "tbnid": "PbjyUFuZ24dO9M",
+    "tbnh": "160",
+    "tbnw": "111",
+    "usg": "__omn1zR7dY24xJ7Wm4HKuKPicVrc",
+    "docid": "XuONnjrEjx5npM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
-<img src='http://pbs.twimg.com/media/CkOet0xUUAA1YG3.jpg' /> | <img src='https://images-na.ssl-images-amazon.com/images/I/51M76UzfsAL.jpg' />
+<img src='http://pbs.twimg.com/media/CkOet0xUUAA1YG3.jpg' /> | <img src='http://www.fictiondb.com/coversth/th_0439687608.jpg' />
 
 
 ##### 46). 738805406458249216
@@ -1050,20 +1022,20 @@ https://twitter.com/paprbckparadise/status/738805406458249216
   "id": "738805406458249216",
   "in": "http://pbs.twimg.com/media/CkDDmhEUYAIOyPd.jpg",
   "result": {
-    "imgurl": "http://d28hgpri8am2if.cloudfront.net/book_images/cvr9781481401951_9781481401951_hr.jpg",
-    "imgrefurl": "http://www.simonandschuster.ca/books/The-Ghost-of-Craven-Cove/Carolyn-Keene/Nancy-Drew/9781481401951",
-    "h": "933",
-    "w": "624",
-    "tbnid": "5_uAadnzTwjwaM",
-    "tbnh": "275",
-    "tbnw": "184",
-    "usg": "__jpQGJ8dd2xGJs8mGFroy_zjHodM",
-    "docid": "7qYzOisY0SUmoM"
+    "imgurl": "http://www.series-books.com/nancydrew/minstrel/drewl92.jpg",
+    "imgrefurl": "http://www.series-books.com/nancydrew/minstrelb.html",
+    "h": "982",
+    "w": "704",
+    "tbnid": "_XR0hQuDShrJaM",
+    "tbnh": "265",
+    "tbnw": "190",
+    "usg": "__VGZM-gEEx9GpFdfvvi0EvXSDXR8",
+    "docid": "hMjQNkLzdJljlM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
-<img src='http://pbs.twimg.com/media/CkDDmhEUYAIOyPd.jpg' /> | <img src='http://d28hgpri8am2if.cloudfront.net/book_images/cvr9781481401951_9781481401951_hr.jpg' />
+<img src='http://pbs.twimg.com/media/CkDDmhEUYAIOyPd.jpg' /> | <img src='http://www.series-books.com/nancydrew/minstrel/drewl92.jpg' />
 
 
 ##### 47). 738460325381431297
@@ -1072,20 +1044,20 @@ https://twitter.com/paprbckparadise/status/738460325381431297
   "id": "738460325381431297",
   "in": "http://pbs.twimg.com/media/Cj-JwLEVAAE1LuO.jpg",
   "result": {
-    "imgurl": "http://nancydrew.info/Images/ndbad4.jpg",
-    "imgrefurl": "http://nancydrew.info/nd1.htm",
-    "h": "275",
-    "w": "185",
-    "tbnid": "p0mZx-xQPh_twM",
-    "tbnh": "220",
-    "tbnw": "148",
-    "usg": "__OdL6-zJSauVs16FikaUjQOY8p44",
-    "docid": "jmBIOundfghQjM"
+    "imgurl": "http://d.gr-assets.com/books/1332389678s/693394.jpg",
+    "imgrefurl": "http://www.goodreads.com/book/show/803320.The_Missing_Money_Mystery",
+    "h": "73",
+    "w": "50",
+    "tbnid": "I1IIgel14XQi0M",
+    "tbnh": "73",
+    "tbnw": "50",
+    "usg": "__OPX7BKeTas5jqjmv8tzjlC2WyXA",
+    "docid": "BvG02D2w3vpQYM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
-<img src='http://pbs.twimg.com/media/Cj-JwLEVAAE1LuO.jpg' /> | <img src='http://nancydrew.info/Images/ndbad4.jpg' />
+<img src='http://pbs.twimg.com/media/Cj-JwLEVAAE1LuO.jpg' /> | <img src='http://d.gr-assets.com/books/1332389678s/693394.jpg' />
 
 
 ##### 48). 738154814836637697
@@ -1094,20 +1066,20 @@ https://twitter.com/paprbckparadise/status/738154814836637697
   "id": "738154814836637697",
   "in": "http://pbs.twimg.com/media/Cj5z5DmVEAAir8F.jpg",
   "result": {
-    "imgurl": "http://vignette2.wikia.nocookie.net/goosebumps/images/e/ea/The_Curse_of_Camp_Cold_Lake_(Cover).jpg/revision/latest%3Fcb%3D20160704022245",
-    "imgrefurl": "http://goosebumps.wikia.com/wiki/The_Curse_of_Camp_Cold_Lake",
-    "h": "1767",
-    "w": "1198",
-    "tbnid": "JMjq78e4IW4p8M",
-    "tbnh": "273",
-    "tbnw": "185",
-    "usg": "__9ptUwcTII9TmN1HhWx2dt9vpC_4",
-    "docid": "OZxtQlufoPOusM"
+    "imgurl": "https://images-na.ssl-images-amazon.com/images/I/513HxPyeApL._SX326_BO1,204,203,200_.jpg",
+    "imgrefurl": "https://www.amazon.com/Goosebumps-Living-Dummy-Collection-Stine/dp/0760766037",
+    "h": "499",
+    "w": "328",
+    "tbnid": "b1403rM5d0Ke-M",
+    "tbnh": "277",
+    "tbnw": "182",
+    "usg": "__U523gad7T1xFeyGixT5wSshABGk",
+    "docid": "clpeYCfzQllIkM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
-<img src='http://pbs.twimg.com/media/Cj5z5DmVEAAir8F.jpg' /> | <img src='http://vignette2.wikia.nocookie.net/goosebumps/images/e/ea/The_Curse_of_Camp_Cold_Lake_(Cover).jpg/revision/latest?cb=20160704022245' />
+<img src='http://pbs.twimg.com/media/Cj5z5DmVEAAir8F.jpg' /> | <img src='https://images-na.ssl-images-amazon.com/images/I/513HxPyeApL._SX326_BO1,204,203,200_.jpg' />
 
 
 ##### 49). 737771638280724480
@@ -1116,64 +1088,64 @@ https://twitter.com/paprbckparadise/status/737771638280724480
   "id": "737771638280724480",
   "in": "http://pbs.twimg.com/media/Cj0XZTQUgAEOiUK.jpg",
   "result": {
-    "imgurl": "https://images-na.ssl-images-amazon.com/images/I/51B3S9KD07L.jpg",
-    "imgrefurl": "https://www.amazon.com/Dangerous-Diamond-Clue-Book-14/dp/059062377X",
+    "imgurl": "https://images-na.ssl-images-amazon.com/images/I/511AVBWGHTL.jpg",
+    "imgrefurl": "https://www.amazon.com/Revenge-Mummy-Clue-Book-13/dp/0590623761",
     "h": "475",
-    "w": "322",
-    "tbnid": "69Mw4oxPkW7HEM",
-    "tbnh": "273",
+    "w": "323",
+    "tbnid": "Ahos9KvryIBMhM",
+    "tbnh": "272",
     "tbnw": "185",
-    "usg": "__WZfAnnGxq1QBsR5Q6HMLwEu2h_c",
-    "docid": "TcQJI7l8oSJduM"
+    "usg": "__6xU5z7fKmVBq64s65hfn5hgEMK8",
+    "docid": "k7eULrl4q2MUgM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
-<img src='http://pbs.twimg.com/media/Cj0XZTQUgAEOiUK.jpg' /> | <img src='https://images-na.ssl-images-amazon.com/images/I/51B3S9KD07L.jpg' />
+<img src='http://pbs.twimg.com/media/Cj0XZTQUgAEOiUK.jpg' /> | <img src='https://images-na.ssl-images-amazon.com/images/I/511AVBWGHTL.jpg' />
 
 
-##### 50). 737396672993497089
-https://twitter.com/paprbckparadise/status/737396672993497089
-```js{
-  "id": "737396672993497089",
-  "in": "http://pbs.twimg.com/media/CjvCXb1UUAA72p2.jpg",
-  "result": {
-    "imgurl": "https://shechive.files.wordpress.com/2015/12/book-fair-day-was-the-best-day-11.jpg%3Fquality%3D80%26strip%3Dinfo%26w%3D600",
-    "imgrefurl": "http://theberry.com/2015/12/23/book-fair-day-was-the-best-day",
-    "h": "858",
-    "w": "600",
-    "tbnid": "nwzv1_67CYiG6M",
-    "tbnh": "269",
-    "tbnw": "188",
-    "usg": "__j9X8fYM7DJkYGWKKKLaNAdAJfPs",
-    "docid": "iBelXlD2nnLizM"
-  }
-}```
-img | result
---- | ------
-<img src='http://pbs.twimg.com/media/CjvCXb1UUAA72p2.jpg' /> | <img src='https://shechive.files.wordpress.com/2015/12/book-fair-day-was-the-best-day-11.jpg?quality=80&strip=info&w=600' />
-
-
-##### 51). 737024090033131520
+##### 50). 737024090033131520
 https://twitter.com/paprbckparadise/status/737024090033131520
 ```js{
   "id": "737024090033131520",
   "in": "http://pbs.twimg.com/media/CjpvgRMVAAAIT8-.jpg",
   "result": {
-    "imgurl": "https://images-na.ssl-images-amazon.com/images/I/51UT18gB%252B%252BL.jpg",
-    "imgrefurl": "https://www.amazon.com/Missing-Chums-Hardy-Boys-Book/dp/0448089041",
+    "imgurl": "http://images.contentful.com/7h71s48744nc/foGQ1DsOVvHHZBUoNfpUpZ/9575f0c3a7b96d768c592ba3d9f09668/missing-chums-cover-image",
+    "imgrefurl": "http://www.pluggedin.ca/book-reviews/missing-chums",
     "h": "500",
     "w": "312",
     "tbnid": "jhbz_mfZ-YDisM",
     "tbnh": "284",
     "tbnw": "177",
-    "usg": "__I1pLYnNsNjK4kIAIzxUW5MX_D8A",
-    "docid": "58escEFYo62oQM"
+    "usg": "__whSLjPPaVZ0jWaEYcnl-zwhLhRc",
+    "docid": "VwBdflKO7xG24M"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
-<img src='http://pbs.twimg.com/media/CjpvgRMVAAAIT8-.jpg' /> | <img src='https://images-na.ssl-images-amazon.com/images/I/51UT18gB%2B%2BL.jpg' />
+<img src='http://pbs.twimg.com/media/CjpvgRMVAAAIT8-.jpg' /> | <img src='http://images.contentful.com/7h71s48744nc/foGQ1DsOVvHHZBUoNfpUpZ/9575f0c3a7b96d768c592ba3d9f09668/missing-chums-cover-image' />
+
+
+##### 51). 736688529346961408
+https://twitter.com/paprbckparadise/status/736688529346961408
+```js{
+  "id": "736688529346961408",
+  "in": "http://pbs.twimg.com/media/Cjk-UDFUYAIxICI.jpg",
+  "result": {
+    "imgurl": "http://blog-imgs-42.fc2.com/d/o/g/dogehin/bog-g-544.jpg",
+    "imgrefurl": "http://dogehin.blog31.fc2.com",
+    "h": "375",
+    "w": "380",
+    "tbnid": "zn4gAz8wFJjE1M",
+    "tbnh": "223",
+    "tbnw": "226",
+    "usg": "__zdXEiHSbuaAzzENBP4d40jBdns8",
+    "docid": "QcPyK_4wtP34JM"
+  }
+}```
+IMG | RESULT
+--- | ------
+<img src='http://pbs.twimg.com/media/Cjk-UDFUYAIxICI.jpg' /> | <img src='http://blog-imgs-42.fc2.com/d/o/g/dogehin/bog-g-544.jpg' />
 
 
 ##### 52). 736280814107824128
@@ -1182,20 +1154,20 @@ https://twitter.com/paprbckparadise/status/736280814107824128
   "id": "736280814107824128",
   "in": "http://pbs.twimg.com/media/CjfLf7BUUAEDKic.png",
   "result": {
-    "imgurl": "http://g.christianbook.com/dg/product/cbd/w163/71601.jpg",
-    "imgrefurl": "http://www.christianbook.com/the-black-stallion-walter-farley/9780679813439/pd/813438",
-    "h": "245",
-    "w": "163",
-    "tbnid": "c7uZBiMoyYcBEM",
-    "tbnh": "196",
-    "tbnw": "130",
-    "usg": "__w8RwWzIU_9slE_DXL7SHcmwidW0",
-    "docid": "mSMEgjHWnGoxHM"
+    "imgurl": "http://www.scholastic.com/content5/media/products/10/9780689716010_xlg.jpg",
+    "imgrefurl": "http://www.scholastic.com/teachers/book/mustang-0",
+    "h": "252",
+    "w": "230",
+    "tbnid": "XNrDctu5RREAAM",
+    "tbnh": "201",
+    "tbnw": "184",
+    "usg": "__BeMTMlikkmOviuuD52txfaIxVuA",
+    "docid": "9FawcOPQrP4KCM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
-<img src='http://pbs.twimg.com/media/CjfLf7BUUAEDKic.png' /> | <img src='http://g.christianbook.com/dg/product/cbd/w163/71601.jpg' />
+<img src='http://pbs.twimg.com/media/CjfLf7BUUAEDKic.png' /> | <img src='http://www.scholastic.com/content5/media/products/10/9780689716010_xlg.jpg' />
 
 
 ##### 53). 735915344749985792
@@ -1204,20 +1176,20 @@ https://twitter.com/paprbckparadise/status/735915344749985792
   "id": "735915344749985792",
   "in": "http://pbs.twimg.com/media/CjZ_Gz1UoAA6CLg.jpg",
   "result": {
-    "imgurl": "https://images-na.ssl-images-amazon.com/images/I/512A1JR2QDL.jpg",
-    "imgrefurl": "https://www.amazon.com/Karens-Ducklings-Baby-Sitters-Little-Sister/dp/0590448307",
-    "h": "475",
-    "w": "327",
-    "tbnid": "ok1CtupFjS6GkM",
-    "tbnh": "271",
-    "tbnw": "186",
-    "usg": "__lpgM9xd_ULyzcA5uelIbIEog4PU",
-    "docid": "aPgEoZwYvbxM_M"
+    "imgurl": "http://d2arxad8u2l0g7.cloudfront.net/books/1174229769m/371047.jpg",
+    "imgrefurl": "http://www.goodreads.com/book/show/2932646-puppy-in-a-present",
+    "h": "140",
+    "w": "96",
+    "tbnid": "SKySw0sO3hZOdM",
+    "tbnh": "112",
+    "tbnw": "76",
+    "usg": "__av-jdWYKBYlvNXxOS5_lXHbWK8w",
+    "docid": "2bQW3MAIVT9bXM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
-<img src='http://pbs.twimg.com/media/CjZ_Gz1UoAA6CLg.jpg' /> | <img src='https://images-na.ssl-images-amazon.com/images/I/512A1JR2QDL.jpg' />
+<img src='http://pbs.twimg.com/media/CjZ_Gz1UoAA6CLg.jpg' /> | <img src='http://d2arxad8u2l0g7.cloudfront.net/books/1174229769m/371047.jpg' />
 
 
 ##### 54). 735562935884349440
@@ -1237,7 +1209,7 @@ https://twitter.com/paprbckparadise/status/735562935884349440
     "docid": "h3pFG7VFWkEsZM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
 <img src='http://pbs.twimg.com/media/CjU-l6iUYAAq5Z8.jpg' /> | <img src='http://www.oversixty.co.nz/media/8332/hardy-boys-3.jpg' />
 
@@ -1259,7 +1231,7 @@ https://twitter.com/paprbckparadise/status/735221538526400512
     "docid": "si8mI_rrSQ4m6M"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
 <img src='http://pbs.twimg.com/media/CjQIF-fUkAAXNUt.jpg' /> | <img src='http://d2arxad8u2l0g7.cloudfront.net/books/1311811772s/2785169.jpg' />
 
@@ -1270,20 +1242,20 @@ https://twitter.com/paprbckparadise/status/734838823285202944
   "id": "734838823285202944",
   "in": "http://pbs.twimg.com/media/CjKsBBGUkAAluGt.jpg",
   "result": {
-    "imgurl": "https://chelleshockk.files.wordpress.com/2011/07/on-the-edge1.jpg",
-    "imgrefurl": "https://chelleshockk.wordpress.com/2011/07/23/judging-a-book-by-its-cover",
-    "h": "2460",
-    "w": "1500",
-    "tbnid": "kjirvl8k4VaG9M",
-    "tbnh": "288",
-    "tbnw": "175",
-    "usg": "___rzB2heqPAx1i8x1fLgj1ejBzVE",
-    "docid": "xZpV4H59li15KM"
+    "imgurl": "http://thumbs2.ebaystatic.com/d/l225/m/meLeE-AC_VOGzwVb3N0VS0Q.jpg",
+    "imgrefurl": "http://www.ebay.com.au/bhp/sweet-valley-high",
+    "h": "225",
+    "w": "151",
+    "tbnid": "T1H-7zTnkRAVSM",
+    "tbnh": "180",
+    "tbnw": "120",
+    "usg": "__cbye2m_Q5FJ02iODN2ELSLe0968",
+    "docid": "2yM4D_rcpkm-uM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
-<img src='http://pbs.twimg.com/media/CjKsBBGUkAAluGt.jpg' /> | <img src='https://chelleshockk.files.wordpress.com/2011/07/on-the-edge1.jpg' />
+<img src='http://pbs.twimg.com/media/CjKsBBGUkAAluGt.jpg' /> | <img src='http://thumbs2.ebaystatic.com/d/l225/m/meLeE-AC_VOGzwVb3N0VS0Q.jpg' />
 
 
 ##### 57). 734106689952059392
@@ -1292,20 +1264,13 @@ https://twitter.com/paprbckparadise/status/734106689952059392
   "id": "734106689952059392",
   "in": "http://pbs.twimg.com/media/CjASJPOVEAEoVB2.jpg",
   "result": {
-    "imgurl": "https://img.fantasticfiction.com/images/n6/n32203.jpg",
-    "imgrefurl": "https://www.fantasticfiction.com/p/edward-packard/space-vampire.htm",
-    "h": "334",
-    "w": "199",
-    "tbnid": "xyK0OD-utTn4jM",
-    "tbnh": "267",
-    "tbnw": "159",
-    "usg": "__AcqA_oOn3iQ3lj23J7bBlgCTaIM",
-    "docid": "NMIjnwHPONkvSM"
+    "imgurl": "http://www.gamebooks.org/gallery/cyoa071thumb.jpg",
+    "imgrefurl": "http://www.gamebooks.org/cgi-bin/search.cgi"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
-<img src='http://pbs.twimg.com/media/CjASJPOVEAEoVB2.jpg' /> | <img src='https://img.fantasticfiction.com/images/n6/n32203.jpg' />
+<img src='http://pbs.twimg.com/media/CjASJPOVEAEoVB2.jpg' /> | <img src='http://www.gamebooks.org/gallery/cyoa071thumb.jpg' />
 
 
 ##### 58). 733749467590107136
@@ -1314,45 +1279,23 @@ https://twitter.com/paprbckparadise/status/733749467590107136
   "id": "733749467590107136",
   "in": "http://pbs.twimg.com/media/Ci7NQJkUoAUFl-c.jpg",
   "result": {
-    "imgurl": "https://90sflashback.files.wordpress.com/2015/07/app.jpg",
-    "imgrefurl": "https://90sflashback.wordpress.com/2015/07/28/svt-35-amys-pen-pal-p-s-i-hate-you",
-    "h": "2271",
-    "w": "1500",
-    "tbnid": "80TGfZIoLzaJJM",
-    "tbnh": "276",
-    "tbnw": "182",
-    "usg": "__64bC51dnAF597DElBKTB6BXwxGA",
-    "docid": "z4rLGXSUp8HWxM"
+    "imgurl": "http://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1288215509i/290409._UY461_SS461_.jpg",
+    "imgrefurl": "http://www.goodreads.com/book/show/290409.Three_s_a_Crowd",
+    "h": "461",
+    "w": "461",
+    "tbnid": "8JpY0PU2lpzK4M",
+    "tbnh": "225",
+    "tbnw": "225",
+    "usg": "__1hI9jh1e3Jz9GqAboc9_36wReyE",
+    "docid": "8pcuJFiFFE6ReM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
-<img src='http://pbs.twimg.com/media/Ci7NQJkUoAUFl-c.jpg' /> | <img src='https://90sflashback.files.wordpress.com/2015/07/app.jpg' />
+<img src='http://pbs.twimg.com/media/Ci7NQJkUoAUFl-c.jpg' /> | <img src='http://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1288215509i/290409._UY461_SS461_.jpg' />
 
 
-##### 59). 733376307728416768
-https://twitter.com/paprbckparadise/status/733376307728416768
-```js{
-  "id": "733376307728416768",
-  "in": "http://pbs.twimg.com/media/Ci153XvWUAA-hCT.jpg",
-  "result": {
-    "imgurl": "https://followmetocertaindoom.files.wordpress.com/2016/08/sea-you-in-hell.jpg%3Fw%3D225%26h%3D357%26crop%3D1",
-    "imgrefurl": "https://followmetocertaindoom.com/2016/08/22/paperback-paradise",
-    "h": "357",
-    "w": "225",
-    "tbnid": "TVx5ZnrCsJH_aM",
-    "tbnh": "283",
-    "tbnw": "178",
-    "usg": "__vlsDtAWU__JmEd2PtM3_v1Tc9YM",
-    "docid": "FpLT6gbQ9jc0nM"
-  }
-}```
-img | result
---- | ------
-<img src='http://pbs.twimg.com/media/Ci153XvWUAA-hCT.jpg' /> | <img src='https://followmetocertaindoom.files.wordpress.com/2016/08/sea-you-in-hell.jpg?w=225&h=357&crop=1' />
-
-
-##### 60). 733063541595344898
+##### 59). 733063541595344898
 https://twitter.com/paprbckparadise/status/733063541595344898
 ```js{
   "id": "733063541595344898",
@@ -1369,188 +1312,188 @@ https://twitter.com/paprbckparadise/status/733063541595344898
     "docid": "gu38qPfxJUet8M"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
 <img src='http://pbs.twimg.com/media/CixdaArUkAAGl_W.jpg' /> | <img src='http://www.series-books.com/nancydrew/pbs/files42.jpg' />
 
 
-##### 61). 732669361970761728
+##### 60). 732669361970761728
 https://twitter.com/paprbckparadise/status/732669361970761728
 ```js{
   "id": "732669361970761728",
   "in": "http://pbs.twimg.com/media/Cir25wGUgAA4mz3.jpg",
   "result": {
-    "imgurl": "http://www.pmslweb.com/the-blog/wp-content/uploads/2016/06/5-please-stop-petting-me-funny-book-cover.jpg",
-    "imgrefurl": "http://www.pmslweb.com/the-blog/nutcase-monday-a-new-week-compilation-of-funny-pics/5-please-stop-petting-me-funny-book-cover",
-    "h": "677",
-    "w": "450",
-    "tbnid": "AKKE5Iz0yGPB0M",
-    "tbnh": "275",
-    "tbnw": "183",
-    "usg": "__UnK453c81wte_V9lPC1KISiOXF8",
-    "docid": "NvsRihygPZkHSM"
+    "imgurl": "https://images-na.ssl-images-amazon.com/images/I/41KJVDK07XL.jpg",
+    "imgrefurl": "http://www.thriftbooks.com/series/sitting-pretty/69582",
+    "h": "384",
+    "w": "267",
+    "tbnid": "Xf88IaKxqv9okM",
+    "tbnh": "269",
+    "tbnw": "187",
+    "usg": "__imVjFZy-CWQsApHVutzsUFwIBGc",
+    "docid": "Sp0upIv8KATGwM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
-<img src='http://pbs.twimg.com/media/Cir25wGUgAA4mz3.jpg' /> | <img src='http://www.pmslweb.com/the-blog/wp-content/uploads/2016/06/5-please-stop-petting-me-funny-book-cover.jpg' />
+<img src='http://pbs.twimg.com/media/Cir25wGUgAA4mz3.jpg' /> | <img src='https://images-na.ssl-images-amazon.com/images/I/41KJVDK07XL.jpg' />
 
 
-##### 62). 732379201458708480
+##### 61). 732379201458708480
 https://twitter.com/paprbckparadise/status/732379201458708480
 ```js{
   "id": "732379201458708480",
   "in": "http://pbs.twimg.com/media/CinvALtVAAEauFW.jpg",
   "result": {
-    "imgurl": "https://img.fantasticfiction.com/images/n66/n332651.jpg",
-    "imgrefurl": "https://www.fantasticfiction.com/s/devra-newberger-speregen/phone-call-from-flamingo.htm",
-    "h": "472",
-    "w": "316",
-    "tbnid": "EBPKS30MtG0SOM",
-    "tbnh": "274",
+    "imgurl": "http://d.gr-assets.com/books/1186761908l/1679151.jpg",
+    "imgrefurl": "http://www.goodreads.com/book/show/1679151.The_Great_Pet_Project",
+    "h": "475",
+    "w": "321",
+    "tbnid": "Kp0Rre4C9FwgbM",
+    "tbnh": "273",
     "tbnw": "184",
-    "usg": "__3alXbW3nXEi6xiAhYELOhj5zcfA",
-    "docid": "PX7EWxEdYjSLDM"
+    "usg": "__0zouFarPZLH_AE7uxvHsnkyzKKM",
+    "docid": "DUMi7bjOsW8nDM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
-<img src='http://pbs.twimg.com/media/CinvALtVAAEauFW.jpg' /> | <img src='https://img.fantasticfiction.com/images/n66/n332651.jpg' />
+<img src='http://pbs.twimg.com/media/CinvALtVAAEauFW.jpg' /> | <img src='http://d.gr-assets.com/books/1186761908l/1679151.jpg' />
 
 
-##### 63). 731629383333478400
+##### 62). 731629383333478400
 https://twitter.com/paprbckparadise/status/731629383333478400
 ```js{
   "id": "731629383333478400",
   "in": "http://pbs.twimg.com/media/CidFDBlU4AEEkI9.jpg",
   "result": {
-    "imgurl": "https://cliqueypizza.files.wordpress.com/2012/05/thenewbobbseytwinslauraleehope_thumb1.jpg%3Fw%3D251%26h%3D368",
-    "imgrefurl": "https://cliqueypizza.wordpress.com/2012/05/09/new-part-1-a-z-series-guide-forgotten-80s-and-90s-young-adult-series-2",
-    "h": "368",
-    "w": "251",
-    "tbnid": "6AjvuPQHuW1L2M",
-    "tbnh": "272",
-    "tbnw": "185",
-    "usg": "__gBYrad1NDjRG0i4Yz3GXMaNTIjU",
-    "docid": "4wVuBaTH4n_KuM"
+    "imgurl": "http://thebobbseytwins.weebly.com/uploads/1/0/3/1/10317938/8581448_orig.jpg",
+    "imgrefurl": "http://thebobbseytwins.weebly.com",
+    "h": "320",
+    "w": "221",
+    "tbnid": "XKVS9hLvbrRzCM",
+    "tbnh": "256",
+    "tbnw": "176",
+    "usg": "__Uj72obBL4p1-wwST45F2F2db8O8",
+    "docid": "ikjIKLLssLtBNM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
-<img src='http://pbs.twimg.com/media/CidFDBlU4AEEkI9.jpg' /> | <img src='https://cliqueypizza.files.wordpress.com/2012/05/thenewbobbseytwinslauraleehope_thumb1.jpg?w=251&h=368' />
+<img src='http://pbs.twimg.com/media/CidFDBlU4AEEkI9.jpg' /> | <img src='http://thebobbseytwins.weebly.com/uploads/1/0/3/1/10317938/8581448_orig.jpg' />
 
 
-##### 64). 731277454103318528
+##### 63). 731277454103318528
 https://twitter.com/paprbckparadise/status/731277454103318528
 ```js{
   "id": "731277454103318528",
   "in": "http://pbs.twimg.com/media/CiYE-CuVAAEY6bU.png",
   "result": {
-    "imgurl": "https://images-na.ssl-images-amazon.com/images/P/1932425861.jpg",
-    "imgrefurl": "https://www.lexile.com/book/details/9781561643516",
-    "h": "500",
-    "w": "353",
-    "tbnid": "CnFqinjps-Wq9M",
-    "tbnh": "267",
-    "tbnw": "189",
-    "usg": "__dfPyEvCVePCcRHsSYyN8TRmGfm4",
-    "docid": "QA8a5jj9iPPr5M"
+    "imgurl": "http://www.phyllisnaylor.com/otwalskypath350.jpg",
+    "imgrefurl": "http://www.phyllisnaylor.com/MiddleGrade.htm",
+    "h": "521",
+    "w": "350",
+    "tbnid": "VGr0ALRTrYS4vM",
+    "tbnh": "274",
+    "tbnw": "184",
+    "usg": "__bdsvL6lKqPECVnHgv_xmtJLA3sg",
+    "docid": "HBsRDSV4qMuBpM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
-<img src='http://pbs.twimg.com/media/CiYE-CuVAAEY6bU.png' /> | <img src='https://images-na.ssl-images-amazon.com/images/P/1932425861.jpg' />
+<img src='http://pbs.twimg.com/media/CiYE-CuVAAEY6bU.png' /> | <img src='http://www.phyllisnaylor.com/otwalskypath350.jpg' />
 
 
-##### 65). 730936310559428613
+##### 64). 730936310559428613
 https://twitter.com/paprbckparadise/status/730936310559428613
 ```js{
   "id": "730936310559428613",
   "in": "http://pbs.twimg.com/media/CiTOs2mUoAAJI7q.jpg",
   "result": {
-    "imgurl": "https://images-na.ssl-images-amazon.com/images/I/21J0R9zOSWL.jpg",
-    "imgrefurl": "https://www.amazon.com/Treasure-Oatmeal-Box-Ken-Gire/dp/0891093672",
-    "h": "160",
-    "w": "120",
-    "tbnid": "C5QFIlvuRH0QJM",
-    "tbnh": "128",
-    "tbnw": "96",
-    "usg": "__Gew2z1i9YRgN0j6tjctfUHGAxtM",
-    "docid": "8gdChmgaSSGQuM"
+    "imgurl": "http://ecx.images-amazon.com/images/I/61R2wwR1iEL._BO2,204,203,200_PIsitb-sticker-arrow-click,TopRight,35,-76_AA300_SH20_OU01_.jpg",
+    "imgrefurl": "http://lucaspam.deviantart.com/journal/Treasure-in-an-Oatmeal-Box-e-book-downloads-312974033",
+    "h": "300",
+    "w": "300",
+    "tbnid": "gOtFkIL44xellM",
+    "tbnh": "225",
+    "tbnw": "225",
+    "usg": "__598lDRd82pymhayUBlgADvzFhSc",
+    "docid": "nvmfnyfR_jnZjM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
-<img src='http://pbs.twimg.com/media/CiTOs2mUoAAJI7q.jpg' /> | <img src='https://images-na.ssl-images-amazon.com/images/I/21J0R9zOSWL.jpg' />
+<img src='http://pbs.twimg.com/media/CiTOs2mUoAAJI7q.jpg' /> | <img src='http://ecx.images-amazon.com/images/I/61R2wwR1iEL._BO2,204,203,200_PIsitb-sticker-arrow-click,TopRight,35,-76_AA300_SH20_OU01_.jpg' />
 
 
-##### 66). 730483391817121792
+##### 65). 730483391817121792
 https://twitter.com/paprbckparadise/status/730483391817121792
 ```js{
   "id": "730483391817121792",
   "in": "http://pbs.twimg.com/media/CiMyxiSUoAE0ns_.jpg",
   "result": {
-    "imgurl": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Martini_bologna_mozart_1777.jpg",
-    "imgrefurl": "https://en.wikipedia.org/wiki/Ghostwriter",
-    "h": "3460",
-    "w": "3003",
-    "tbnid": "1EykatEezPVszM",
-    "tbnh": "241",
-    "tbnw": "209",
-    "usg": "__4MBoQzIMy6T7n7_x46oWLH8B73A",
-    "docid": "HOj751U_0I9jvM"
+    "imgurl": "http://images.contentful.com/7h71s48744nc/M06671117X5qUcWisfi61r/4f25e81c2ac32bfd5afab39ce01f5a63/tower-treasure-cover-image",
+    "imgrefurl": "http://www.pluggedin.ca/book-reviews/tower-treasure",
+    "h": "500",
+    "w": "320",
+    "tbnid": "5a6MBKb1PsnwlM",
+    "tbnh": "281",
+    "tbnw": "180",
+    "usg": "__7vN2mPGmfcWNchIklzx4EB3MZXo",
+    "docid": "yz3dVXX6w2Kh8M"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
-<img src='http://pbs.twimg.com/media/CiMyxiSUoAE0ns_.jpg' /> | <img src='https://upload.wikimedia.org/wikipedia/commons/a/aa/Martini_bologna_mozart_1777.jpg' />
+<img src='http://pbs.twimg.com/media/CiMyxiSUoAE0ns_.jpg' /> | <img src='http://images.contentful.com/7h71s48744nc/M06671117X5qUcWisfi61r/4f25e81c2ac32bfd5afab39ce01f5a63/tower-treasure-cover-image' />
 
 
-##### 67). 729706980403761152
+##### 66). 729706980403761152
 https://twitter.com/paprbckparadise/status/729706980403761152
 ```js{
   "id": "729706980403761152",
   "in": "http://pbs.twimg.com/media/CiBwoaHWwAAu7A8.jpg",
   "result": {
-    "imgurl": "https://anastasiagarcia.files.wordpress.com/2013/09/vampire-breath.jpg",
-    "imgrefurl": "https://anastasiagarcia.wordpress.com/2013/06/23/goosebumps-book-cover-redesigns-that-will-make-you-scream-and-not-in-the-good-way",
-    "h": "2400",
-    "w": "3363",
-    "tbnid": "fFgJmgrnRjs4HM",
-    "tbnh": "190",
-    "tbnw": "266",
-    "usg": "__IeUxUwMhesr2N0lQmb8N3O8X0KI",
-    "docid": "dBju1Q8Y3p1KSM"
+    "imgurl": "http://dazedimg.dazedgroup.netdna-cdn.com/318/azure/dazed-prod/1140/6/1146762.jpg",
+    "imgrefurl": "http://www.dazeddigital.com/artsandculture/article/27178/1/a-definitive-ranking-of-all-original-62-goosebumps-books",
+    "h": "458",
+    "w": "318",
+    "tbnid": "JIunNMujCWVAeM",
+    "tbnh": "270",
+    "tbnw": "187",
+    "usg": "__dOb44U5YZdel6WV8ZtcqiogQ7Ns",
+    "docid": "OWFh73ymuFCdeM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
-<img src='http://pbs.twimg.com/media/CiBwoaHWwAAu7A8.jpg' /> | <img src='https://anastasiagarcia.files.wordpress.com/2013/09/vampire-breath.jpg' />
+<img src='http://pbs.twimg.com/media/CiBwoaHWwAAu7A8.jpg' /> | <img src='http://dazedimg.dazedgroup.netdna-cdn.com/318/azure/dazed-prod/1140/6/1146762.jpg' />
 
 
-##### 68). 729360937422073856
+##### 67). 729360937422073856
 https://twitter.com/paprbckparadise/status/729360937422073856
 ```js{
   "id": "729360937422073856",
   "in": "http://pbs.twimg.com/media/Ch816FnXIAAZS-E.jpg",
   "result": {
-    "imgurl": "http://pictures.abebooks.com/DMURRILLS/12923635843.jpg",
-    "imgrefurl": "http://www.abebooks.com/book-search/title/clue-diary/author/carolyn-keene/first-edition",
-    "h": "1500",
-    "w": "2340",
-    "tbnid": "y9P1sx9mWPV48M",
-    "tbnh": "180",
-    "tbnw": "281",
-    "usg": "__TRE7jXV5qlSaqZbEATxdFxMVe9A",
-    "docid": "210UjV3-sz4gEM"
+    "imgurl": "http://www.newworldzorro.com/seriesbooks/nancydrew/pc/drewpc7.jpg",
+    "imgrefurl": "http://www.series-books.com/nancydrew/pc1-56.html",
+    "h": "927",
+    "w": "610",
+    "tbnid": "fBYkaYWOy4sXeM",
+    "tbnh": "277",
+    "tbnw": "182",
+    "usg": "__0VKVWa1NO0rBXiKwlqTXEU8F3Qw",
+    "docid": "P9rYWe8AhGaN5M"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
-<img src='http://pbs.twimg.com/media/Ch816FnXIAAZS-E.jpg' /> | <img src='http://pictures.abebooks.com/DMURRILLS/12923635843.jpg' />
+<img src='http://pbs.twimg.com/media/Ch816FnXIAAZS-E.jpg' /> | <img src='http://www.newworldzorro.com/seriesbooks/nancydrew/pc/drewpc7.jpg' />
 
 
-##### 69). 728965392899686400
+##### 68). 728965392899686400
 https://twitter.com/paprbckparadise/status/728965392899686400
 ```js{
   "id": "728965392899686400",
@@ -1567,56 +1510,34 @@ https://twitter.com/paprbckparadise/status/728965392899686400
     "docid": "yLpl5m4HcWmzMM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
 <img src='http://pbs.twimg.com/media/Ch3OKXwW0AEbVdN.jpg' /> | <img src='https://images-na.ssl-images-amazon.com/images/I/51LltWT4QGL.jpg' />
 
 
-##### 70). 728631383225151488
-https://twitter.com/paprbckparadise/status/728631383225151488
-```js{
-  "id": "728631383225151488",
-  "in": "http://pbs.twimg.com/media/ChyeYcjWEAEJdbw.jpg",
-  "result": {
-    "imgurl": "http://ewoodruff.com/wp-content/uploads/awfully_short.jpg",
-    "imgrefurl": "http://ewoodruff.com/books/awfully-short-for-fourth-grade",
-    "h": "300",
-    "w": "197",
-    "tbnid": "ub7DvhxqSd8utM",
-    "tbnh": "240",
-    "tbnw": "157",
-    "usg": "__w072LebV6PT6yw0g8QP6GVcaLtU",
-    "docid": "ICTz68AOPR4v3M"
-  }
-}```
-img | result
---- | ------
-<img src='http://pbs.twimg.com/media/ChyeYcjWEAEJdbw.jpg' /> | <img src='http://ewoodruff.com/wp-content/uploads/awfully_short.jpg' />
-
-
-##### 71). 728313291601252352
+##### 69). 728313291601252352
 https://twitter.com/paprbckparadise/status/728313291601252352
 ```js{
   "id": "728313291601252352",
   "in": "http://pbs.twimg.com/media/Cht9FFOWkAIBzyM.jpg",
   "result": {
-    "imgurl": "https://images-na.ssl-images-amazon.com/images/I/41-Oc4ctrSL.jpg",
-    "imgrefurl": "https://www.amazon.com/Mystery-Hidden-Boxcar-Children-Mysteries/dp/0807554049",
-    "h": "500",
-    "w": "375",
-    "tbnid": "wamo1j_O5Q6yvM",
-    "tbnh": "259",
-    "tbnw": "194",
-    "usg": "__rpdb6ni175D2GiHQxjldarPiYa8",
-    "docid": "W1d6s7KpcEXiCM"
+    "imgurl": "http://prodimage.images-bn.com/pimages/9780807554043_p0_v1_s1200x630.jpg",
+    "imgrefurl": "http://www.barnesandnoble.com/w/mystery-of-the-hidden-beach-gertrude-chandler-warner/1100189807",
+    "h": "600",
+    "w": "407",
+    "tbnid": "rHJfA85kZIFYlM",
+    "tbnh": "273",
+    "tbnw": "185",
+    "usg": "__uegKQj0CS-dJPGLpL147J5zhunY",
+    "docid": "abLAc0xX0Jk0DM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
-<img src='http://pbs.twimg.com/media/Cht9FFOWkAIBzyM.jpg' /> | <img src='https://images-na.ssl-images-amazon.com/images/I/41-Oc4ctrSL.jpg' />
+<img src='http://pbs.twimg.com/media/Cht9FFOWkAIBzyM.jpg' /> | <img src='http://prodimage.images-bn.com/pimages/9780807554043_p0_v1_s1200x630.jpg' />
 
 
-##### 72). 727910483517448195
+##### 70). 727910483517448195
 https://twitter.com/paprbckparadise/status/727910483517448195
 ```js{
   "id": "727910483517448195",
@@ -1633,12 +1554,12 @@ https://twitter.com/paprbckparadise/status/727910483517448195
     "docid": "33iCD7iIxTAhzM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
 <img src='http://pbs.twimg.com/media/ChoOuhtWUAIFqpM.jpg' /> | <img src='http://www.auctionexpress.com/bmz_cache/2/202cbb4534a30340a1925677d0046e36.image.81x100.jpg' />
 
 
-##### 73). 727540314034970625
+##### 71). 727540314034970625
 https://twitter.com/paprbckparadise/status/727540314034970625
 ```js{
   "id": "727540314034970625",
@@ -1655,12 +1576,12 @@ https://twitter.com/paprbckparadise/status/727540314034970625
     "docid": "ZVnTiE_lZBCcJM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
 <img src='http://pbs.twimg.com/media/Chi-D3ZUkAA0yr4.jpg' /> | <img src='https://images-na.ssl-images-amazon.com/images/I/51lz7WZLdvL.jpg' />
 
 
-##### 74). 727237251948679169
+##### 72). 727237251948679169
 https://twitter.com/paprbckparadise/status/727237251948679169
 ```js{
   "id": "727237251948679169",
@@ -1677,34 +1598,34 @@ https://twitter.com/paprbckparadise/status/727237251948679169
     "docid": "2vakUQSaV7kshM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
 <img src='http://pbs.twimg.com/media/CheqbVEVEAAGXJH.jpg' /> | <img src='http://d2arxad8u2l0g7.cloudfront.net/books/1330774994l/290404.jpg' />
 
 
-##### 75). 726898376504025088
+##### 73). 726898376504025088
 https://twitter.com/paprbckparadise/status/726898376504025088
 ```js{
   "id": "726898376504025088",
   "in": "http://pbs.twimg.com/media/ChZ2OLbUgAADLhr.jpg",
   "result": {
-    "imgurl": "http://cloudfront.sportsgrid.com/wp-content/uploads/2016/07/Front01.jpg",
-    "imgrefurl": "http://www.sportsgrid.com/social-media/young-readers-books-with-perverted-titles-its-the-return-of-paperback-paradise",
-    "h": "420",
-    "w": "728",
-    "tbnid": "6XsRMN7MxvbhcM",
-    "tbnh": "170",
-    "tbnw": "296",
-    "usg": "__K5dsh6RKBSG9WtBoUuWycenkng0",
-    "docid": "cfdG9gRQ4nbQJM"
+    "imgurl": "http://www0.alibris-static.com/sweet-valley-twins-chiller-2-the-ghost-in-the-graveyard/isbn/9780553158014.gif",
+    "imgrefurl": "http://www.alibris.com/search/books/subject/Twins-Fiction",
+    "h": "187",
+    "w": "125",
+    "tbnid": "QKIxzo_mBt75VM",
+    "tbnh": "149",
+    "tbnw": "100",
+    "usg": "__OiAc6z7wEmTn8EzXFlhemhJUkug",
+    "docid": "746tiwngQfELFM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
-<img src='http://pbs.twimg.com/media/ChZ2OLbUgAADLhr.jpg' /> | <img src='http://cloudfront.sportsgrid.com/wp-content/uploads/2016/07/Front01.jpg' />
+<img src='http://pbs.twimg.com/media/ChZ2OLbUgAADLhr.jpg' /> | <img src='http://www0.alibris-static.com/sweet-valley-twins-chiller-2-the-ghost-in-the-graveyard/isbn/9780553158014.gif' />
 
 
-##### 76). 726466487918039040
+##### 74). 726466487918039040
 https://twitter.com/paprbckparadise/status/726466487918039040
 ```js{
   "id": "726466487918039040",
@@ -1721,78 +1642,78 @@ https://twitter.com/paprbckparadise/status/726466487918039040
     "docid": "P9rYWe8AhGaN5M"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
 <img src='http://pbs.twimg.com/media/ChTta7ZU4AAi53n.jpg' /> | <img src='http://www.newworldzorro.com/seriesbooks/nancydrew/pc/drewpc2b.jpg' />
 
 
-##### 77). 726098532973703168
+##### 75). 726098532973703168
 https://twitter.com/paprbckparadise/status/726098532973703168
 ```js{
   "id": "726098532973703168",
   "in": "http://pbs.twimg.com/media/ChOexIiUoAAZRd0.jpg",
   "result": {
-    "imgurl": "http://seriesbookart.weebly.com/uploads/2/4/0/8/24088442/2484291_orig.jpg",
-    "imgrefurl": "http://seriesbookart.weebly.com/the-nancy-drew-files-1-75.html",
-    "h": "600",
-    "w": "372",
-    "tbnid": "dBEMBENu1ffvjM",
-    "tbnh": "285",
-    "tbnw": "177",
-    "usg": "__VimKoGrtQbGgGDioJKpbDRNhST8",
-    "docid": "xRvh-VOZqDneQM"
+    "imgurl": "http://www.series-books.com/nancydrew/pbs/files28.jpg",
+    "imgrefurl": "http://www.series-books.com/nancydrew/files.html",
+    "h": "667",
+    "w": "404",
+    "tbnid": "C0CDZOVLm2H3DM",
+    "tbnh": "289",
+    "tbnw": "175",
+    "usg": "__r0WRGnNGYxtP1vN1wZBuJq8Lwt8",
+    "docid": "gu38qPfxJUet8M"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
-<img src='http://pbs.twimg.com/media/ChOexIiUoAAZRd0.jpg' /> | <img src='http://seriesbookart.weebly.com/uploads/2/4/0/8/24088442/2484291_orig.jpg' />
+<img src='http://pbs.twimg.com/media/ChOexIiUoAAZRd0.jpg' /> | <img src='http://www.series-books.com/nancydrew/pbs/files28.jpg' />
 
 
-##### 78). 725733343342415872
+##### 76). 725733343342415872
 https://twitter.com/paprbckparadise/status/725733343342415872
 ```js{
   "id": "725733343342415872",
   "in": "http://pbs.twimg.com/media/ChJSoQnUUAA1RJo.jpg",
   "result": {
-    "imgurl": "http://pictures.abebooks.com/isbn/9781616510879-us.jpg",
+    "imgurl": "http://pictures.abebooks.com/isbn/9781403776952-us-300.jpg",
     "imgrefurl": "http://www.abebooks.com/book-search/title/moby-dick/author/herman-melville/used",
-    "h": "500",
-    "w": "315",
-    "tbnid": "LaPNCj7mOP3nsM",
-    "tbnh": "283",
-    "tbnw": "178",
-    "usg": "__oX8jfIYn_9nCAMTPwr-Z1GRAz2I",
+    "h": "401",
+    "w": "300",
+    "tbnid": "67h-82zT4NEYSM",
+    "tbnh": "260",
+    "tbnw": "194",
+    "usg": "__pAEfV55jp2zrMGDgO4iXJDdAU3E",
     "docid": "2bgKl2cavqQLkM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
-<img src='http://pbs.twimg.com/media/ChJSoQnUUAA1RJo.jpg' /> | <img src='http://pictures.abebooks.com/isbn/9781616510879-us.jpg' />
+<img src='http://pbs.twimg.com/media/ChJSoQnUUAA1RJo.jpg' /> | <img src='http://pictures.abebooks.com/isbn/9781403776952-us-300.jpg' />
 
 
-##### 79). 725367520971120640
+##### 77). 725367520971120640
 https://twitter.com/paprbckparadise/status/725367520971120640
 ```js{
   "id": "725367520971120640",
   "in": "http://pbs.twimg.com/media/ChEF6qAU0AEr6gh.jpg",
   "result": {
-    "imgurl": "https://images-na.ssl-images-amazon.com/images/I/811-zJ6JHmL.jpg",
-    "imgrefurl": "https://www.amazon.com/Haunted-Fort-Hardy-Boys-Book/dp/0448089440",
-    "h": "1812",
-    "w": "1152",
-    "tbnid": "fW2CdQo_MzjHHM",
-    "tbnh": "282",
-    "tbnw": "179",
-    "usg": "__WAhOORePQklxr3-2c2XxotyqKLk",
-    "docid": "NuJGUJUi-uYedM"
+    "imgurl": "http://seriesbookart.weebly.com/uploads/2/4/0/8/24088442/7592118_orig.jpg",
+    "imgrefurl": "http://seriesbookart.weebly.com/the-hardy-boys-1-58.html",
+    "h": "599",
+    "w": "402",
+    "tbnid": "Mf9k_BAKxOCA6M",
+    "tbnh": "274",
+    "tbnw": "184",
+    "usg": "__6C4aDpHp_Jfv4kXX6y-H_OlFqSA",
+    "docid": "AeBq9Sap7yajmM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
-<img src='http://pbs.twimg.com/media/ChEF6qAU0AEr6gh.jpg' /> | <img src='https://images-na.ssl-images-amazon.com/images/I/811-zJ6JHmL.jpg' />
+<img src='http://pbs.twimg.com/media/ChEF6qAU0AEr6gh.jpg' /> | <img src='http://seriesbookart.weebly.com/uploads/2/4/0/8/24088442/7592118_orig.jpg' />
 
 
-##### 80). 725070441166045189
+##### 78). 725070441166045189
 https://twitter.com/paprbckparadise/status/725070441166045189
 ```js{
   "id": "725070441166045189",
@@ -1809,27 +1730,34 @@ https://twitter.com/paprbckparadise/status/725070441166045189
     "docid": "vqt4ZqSWr27MNM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
 <img src='http://pbs.twimg.com/media/Cg_3uUXUcAARaHM.png' /> | <img src='http://www.oddee.com/_media/imgs/articles2/a97274_b6.jpg' />
 
 
-##### 81). 724342509137104896
+##### 79). 724342509137104896
 https://twitter.com/paprbckparadise/status/724342509137104896
 ```js{
   "id": "724342509137104896",
   "in": "http://pbs.twimg.com/media/Cg1hrHkUYAAYvht.jpg",
   "result": {
-    "imgurl": "http://www.hardyboysonline.net/thumbs/hb-047.jpg",
-    "imgrefurl": "http://www.hardyboysonline.net/content.php"
+    "imgurl": "https://img.fantasticfiction.com/bigthumbs/n7/n35972.jpg",
+    "imgrefurl": "https://www.fantasticfiction.com/s/andrew-e-svenson/danger-on-vampire-trail.htm",
+    "h": "124",
+    "w": "80",
+    "tbnid": "VmXpUcRuo-vZsM",
+    "tbnh": "99",
+    "tbnw": "64",
+    "usg": "__60IS9OwtrXlfIX8VMgkB22UbCmo",
+    "docid": "S9tVcHRExvStGM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
-<img src='http://pbs.twimg.com/media/Cg1hrHkUYAAYvht.jpg' /> | <img src='http://www.hardyboysonline.net/thumbs/hb-047.jpg' />
+<img src='http://pbs.twimg.com/media/Cg1hrHkUYAAYvht.jpg' /> | <img src='https://img.fantasticfiction.com/bigthumbs/n7/n35972.jpg' />
 
 
-##### 82). 723647872307064833
+##### 80). 723647872307064833
 https://twitter.com/paprbckparadise/status/723647872307064833
 ```js{
   "id": "723647872307064833",
@@ -1846,56 +1774,34 @@ https://twitter.com/paprbckparadise/status/723647872307064833
     "docid": "WXQ6ALYznwpLTM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
 <img src='http://pbs.twimg.com/media/Cgrp57LU8AEE13D.jpg' /> | <img src='https://images-na.ssl-images-amazon.com/images/I/51QfnK1zARL.jpg' />
 
 
-##### 83). 723195263758688257
+##### 81). 723195263758688257
 https://twitter.com/paprbckparadise/status/723195263758688257
 ```js{
   "id": "723195263758688257",
   "in": "http://pbs.twimg.com/media/CglOQpNU4AAaijc.jpg",
   "result": {
-    "imgurl": "https://beanstack.s3.amazonaws.com/book_images/8433/large/297249.jpg%3F1452101788",
-    "imgrefurl": "https://montgomerycountymd.beanstack.com/books/8942",
-    "h": "650",
-    "w": "442",
-    "tbnid": "9RshONxY-KDx2M",
+    "imgurl": "https://lovelace-media.imgix.net/uploads/573/9b748af0-c7b7-0132-9a5a-0e01949ad350.jpg%3Fw%3D700%26fit%3Dmax%26auto%3Dformat%26q%3D70",
+    "imgrefurl": "http://www.bustle.com/articles/77215-21-books-from-childhood-you-forgot-that-you-loved",
+    "h": "475",
+    "w": "323",
+    "tbnid": "eIg4pizssR3c3M",
     "tbnh": "272",
     "tbnw": "185",
-    "usg": "__XIi0YE_mItL2aRs4J80Kybx6fPA",
-    "docid": "6zZDlQCdcaDYnM"
+    "usg": "__QHW_b0BsrzQ0jkjrDeiRFXG73PA",
+    "docid": "IJ1wXgc7VicA3M"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
-<img src='http://pbs.twimg.com/media/CglOQpNU4AAaijc.jpg' /> | <img src='https://beanstack.s3.amazonaws.com/book_images/8433/large/297249.jpg?1452101788' />
+<img src='http://pbs.twimg.com/media/CglOQpNU4AAaijc.jpg' /> | <img src='https://lovelace-media.imgix.net/uploads/573/9b748af0-c7b7-0132-9a5a-0e01949ad350.jpg?w=700&fit=max&auto=format&q=70' />
 
 
-##### 84). 722870970130653185
-https://twitter.com/paprbckparadise/status/722870970130653185
-```js{
-  "id": "722870970130653185",
-  "in": "http://pbs.twimg.com/media/CggnURlUMAAQjbo.jpg",
-  "result": {
-    "imgurl": "https://cliqueypizza.files.wordpress.com/2009/03/fifth-grade-stars-80s-teen-young-adult-book-series.jpg",
-    "imgrefurl": "https://cliqueypizza.wordpress.com/page/54",
-    "h": "615",
-    "w": "419",
-    "tbnid": "eGyxiDt4G5roBM",
-    "tbnh": "272",
-    "tbnw": "185",
-    "usg": "__4VvHVMkvQBuzshtb3WW2e_tNGqI",
-    "docid": "KOkqMNOGAALQXM"
-  }
-}```
-img | result
---- | ------
-<img src='http://pbs.twimg.com/media/CggnURlUMAAQjbo.jpg' /> | <img src='https://cliqueypizza.files.wordpress.com/2009/03/fifth-grade-stars-80s-teen-young-adult-book-series.jpg' />
-
-
-##### 85). 722833098694479873
+##### 82). 722833098694479873
 https://twitter.com/paprbckparadise/status/722833098694479873
 ```js{
   "id": "722833098694479873",
@@ -1912,34 +1818,34 @@ https://twitter.com/paprbckparadise/status/722833098694479873
     "docid": "OzL8_RIGcamlYM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
 <img src='http://pbs.twimg.com/media/CggE33ZUYAAuMLw.jpg' /> | <img src='https://images-na.ssl-images-amazon.com/images/I/41Sir1QkH-L.jpg' />
 
 
-##### 86). 721423358580002816
+##### 83). 721423358580002816
 https://twitter.com/paprbckparadise/status/721423358580002816
 ```js{
   "id": "721423358580002816",
   "in": "http://pbs.twimg.com/media/CgMCuMeUAAA4g8N.jpg",
   "result": {
-    "imgurl": "https://huskiesinwonderland.files.wordpress.com/2013/02/the-boxcar-children.jpg",
-    "imgrefurl": "http://millionbookmill.blogspot.com/2015_10_01_archive.html",
+    "imgurl": "http://www.quirkbooks.com/sites/default/files/editor_uploads/original/boxcar.jpg",
+    "imgrefurl": "http://www.quirkbooks.com/post/book-lovers-day-titles-made-us-fall-love",
     "h": "400",
     "w": "278",
-    "tbnid": "VW-gXP88UKdbqM",
+    "tbnid": "FDZSt81pQuDICM",
     "tbnh": "269",
     "tbnw": "187",
-    "usg": "__na-gMSrpDC6MlNNxvjkgHTncPjI",
-    "docid": "EPBzIneOEjIHbM"
+    "usg": "__GiWt0ofqMPqtuNUmSw196jKo9M4",
+    "docid": "xUd8XtoNvQXfEM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
-<img src='http://pbs.twimg.com/media/CgMCuMeUAAA4g8N.jpg' /> | <img src='https://huskiesinwonderland.files.wordpress.com/2013/02/the-boxcar-children.jpg' />
+<img src='http://pbs.twimg.com/media/CgMCuMeUAAA4g8N.jpg' /> | <img src='http://www.quirkbooks.com/sites/default/files/editor_uploads/original/boxcar.jpg' />
 
 
-##### 87). 721057679574065158
+##### 84). 721057679574065158
 https://twitter.com/paprbckparadise/status/721057679574065158
 ```js{
   "id": "721057679574065158",
@@ -1956,203 +1862,240 @@ https://twitter.com/paprbckparadise/status/721057679574065158
     "docid": "oQxsXY_kUtMRZM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
 <img src='http://pbs.twimg.com/media/CgG2I3-UUAA8uR6.jpg' /> | <img src='https://images-na.ssl-images-amazon.com/images/I/6109%2BCCZm6L.jpg' />
 
 
-##### 88). 720638464102764544
+##### 85). 720638464102764544
 https://twitter.com/paprbckparadise/status/720638464102764544
 ```js{
   "id": "720638464102764544",
   "in": "http://pbs.twimg.com/media/CgA43UoUAAAWhOq.jpg",
   "result": {
-    "imgurl": "http://d.gr-assets.com/books/1202225756m/1961505.jpg",
-    "imgrefurl": "http://www.goodreads.com/book/show/1961505.The_Case_of_the_Runaway_Money",
-    "h": "144",
-    "w": "98",
-    "tbnid": "Y-L_6QpVwRxWQM",
-    "tbnh": "115",
-    "tbnw": "78",
-    "usg": "__Hmd_Kuu3CGpwWTQO7fUgkASQqPw",
-    "docid": "_B21bY8YZx6gdM"
+    "imgurl": "https://d.gr-assets.com/books/1202225756s/1961505.jpg",
+    "imgrefurl": "https://www.goodreads.com/series/46033-the-blythe-girls",
+    "h": "74",
+    "w": "50",
+    "tbnid": "UxwWajTWwkWy5M",
+    "tbnh": "74",
+    "tbnw": "50",
+    "usg": "__Z7-8PjiHiJ1DhnCOcL7ujwipwSg",
+    "docid": "JG-MmNJYZjgdlM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
-<img src='http://pbs.twimg.com/media/CgA43UoUAAAWhOq.jpg' /> | <img src='http://d.gr-assets.com/books/1202225756m/1961505.jpg' />
+<img src='http://pbs.twimg.com/media/CgA43UoUAAAWhOq.jpg' /> | <img src='https://d.gr-assets.com/books/1202225756s/1961505.jpg' />
 
 
-##### 89). 719937833100685312
+##### 86). 719937833100685312
 https://twitter.com/paprbckparadise/status/719937833100685312
 ```js{
   "id": "719937833100685312",
   "in": "http://pbs.twimg.com/media/Cf27pNcUEAAejZg.jpg",
   "result": {
-    "imgurl": "https://i.ebayimg.com/00/s/MTAyNFg3MzQ%3D/z/JcoAAOxy7vJTeC8M/%24_75.JPG",
-    "imgrefurl": "http://www.gumtree.com.au/s-ad/mundaring/children-s-books/paul-jennings-books-x7-unreal-unseen-uncanny-undone/1119267299",
-    "h": "325",
-    "w": "233",
-    "tbnid": "hApWhV7COES1CM",
-    "tbnh": "260",
-    "tbnw": "186",
-    "usg": "__L2Z9QjUITY2J9vG6CmxCBcegdFM",
-    "docid": "Y6e9qaPHnHTgvM"
+    "imgurl": "http://img0075.psstatic.com/152640896_amazoncom-path-of-the-pale-horse-9780590464215-paul-.jpg",
+    "imgrefurl": "https://www.popscreen.com/prod/MTE4MjQzNDc0/Semillas-seedfolks-Spanish-Edition-Paul-Fleischman-9780606271820-",
+    "h": "300",
+    "w": "300",
+    "tbnid": "KZVivrqDv4FPKM",
+    "tbnh": "225",
+    "tbnw": "225",
+    "usg": "__5-Sw5FHMBUq8W7XyG5TFR6XhGpM",
+    "docid": "NWSOwlxU_d0bLM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
-<img src='http://pbs.twimg.com/media/Cf27pNcUEAAejZg.jpg' /> | <img src='https://i.ebayimg.com/00/s/MTAyNFg3MzQ=/z/JcoAAOxy7vJTeC8M/$_75.JPG' />
+<img src='http://pbs.twimg.com/media/Cf27pNcUEAAejZg.jpg' /> | <img src='http://img0075.psstatic.com/152640896_amazoncom-path-of-the-pale-horse-9780590464215-paul-.jpg' />
 
 
-##### 90). 719577764253138945
+##### 87). 719577764253138945
 https://twitter.com/paprbckparadise/status/719577764253138945
 ```js{
   "id": "719577764253138945",
   "in": "http://pbs.twimg.com/media/Cfx0KcpUsAEbObC.jpg",
   "result": {
     "imgurl": "http://images.contentful.com/7h71s48744nc/KjYIEoErWW4AVPB4G59LLQ/47bd814095a5db3b4abb6f03517f9f30/heart-full-of-hope-cover-image",
-    "imgrefurl": "http://www.pluggedin.com/book-reviews/heart-full-of-hope",
+    "imgrefurl": "http://www.pluggedin.ca/book-reviews/heart-full-of-hope",
     "h": "480",
     "w": "336",
     "tbnid": "o1lEXhV_CCn7UM",
     "tbnh": "268",
     "tbnw": "188",
-    "usg": "__NS82vZf1-jHH0-tLBC-xeSBomP8",
+    "usg": "__kvb-CZPXyckwKqASKCMNV-ur7dc",
     "docid": "uJusxm6w9f6OEM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
 <img src='http://pbs.twimg.com/media/Cfx0KcpUsAEbObC.jpg' /> | <img src='http://images.contentful.com/7h71s48744nc/KjYIEoErWW4AVPB4G59LLQ/47bd814095a5db3b4abb6f03517f9f30/heart-full-of-hope-cover-image' />
 
 
-##### 91). 719223403626909697
+##### 88). 719223403626909697
 https://twitter.com/paprbckparadise/status/719223403626909697
 ```js{
   "id": "719223403626909697",
   "in": "http://pbs.twimg.com/media/Cfsx39uUYAA6_u9.jpg",
   "result": {
-    "imgurl": "http://d2arxad8u2l0g7.cloudfront.net/books/1465103095m/645911.jpg",
-    "imgrefurl": "http://www.goodreads.com/book/show/1346421.Mysteriously_Yours",
-    "h": "143",
-    "w": "98",
-    "tbnid": "yXuxtvNZpIEuFM",
-    "tbnh": "114",
-    "tbnw": "78",
-    "usg": "__jSmEjd3o2gL_kL2nOxFtg5PGOhs",
-    "docid": "BHEv7SKVZiJuKM"
+    "imgurl": "http://carlasbigbookshed.com.au/images/Friends%2520Til%2520The%2520Ocean%2520Waves%2520Friends%25204Ever.JPG",
+    "imgrefurl": "http://carlasbigbookshed.com.au/index.php"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
-<img src='http://pbs.twimg.com/media/Cfsx39uUYAA6_u9.jpg' /> | <img src='http://d2arxad8u2l0g7.cloudfront.net/books/1465103095m/645911.jpg' />
+<img src='http://pbs.twimg.com/media/Cfsx39uUYAA6_u9.jpg' /> | <img src='http://carlasbigbookshed.com.au/images/Friends%20Til%20The%20Ocean%20Waves%20Friends%204Ever.JPG' />
 
 
-##### 92). 718500670995701760
+##### 89). 718888693893767168
+https://twitter.com/paprbckparadise/status/718888693893767168
+```js{
+  "id": "718888693893767168",
+  "in": "http://pbs.twimg.com/media/CfoBdSRUkAAI-LX.jpg",
+  "result": {
+    "imgurl": "https://images-na.ssl-images-amazon.com/images/I/21RDG2F97GL._AC_UL320_SR220,320_.jpg",
+    "imgrefurl": "https://www.amazon.com/Surprise-Sweet-Valley-Kids/dp/0553157582",
+    "h": "320",
+    "w": "220",
+    "tbnid": "cjtMQdeYD5nneM",
+    "tbnh": "256",
+    "tbnw": "176",
+    "usg": "__leZ6GfwrQ8ACnvuWK8yOvFnodn8",
+    "docid": "bhi4SfC0m8i8LM"
+  }
+}```
+IMG | RESULT
+--- | ------
+<img src='http://pbs.twimg.com/media/CfoBdSRUkAAI-LX.jpg' /> | <img src='https://images-na.ssl-images-amazon.com/images/I/21RDG2F97GL._AC_UL320_SR220,320_.jpg' />
+
+
+##### 90). 718500670995701760
 https://twitter.com/paprbckparadise/status/718500670995701760
 ```js{
   "id": "718500670995701760",
   "in": "http://pbs.twimg.com/media/CfigjZAUYAADv1v.jpg",
   "result": {
-    "imgurl": "http://5.darkroom.shortlist.com/710/26322c370621bbc77ed1e50b4340c2e3:0fc35b2ada8dbdffed46685bffc0fde5/ferguson1.jpg",
-    "imgrefurl": "http://www.shortlist.com/tag"
+    "imgurl": "http://3.darkroom.shortlist.com/1025/bfbe895f6bd9dbc853a039544e608433:b4f16299601016313cd163fd3caec612/covers.png",
+    "imgrefurl": "http://www.shortlist.com/entertainment/books",
+    "h": "769",
+    "w": "1025",
+    "tbnid": "OP5VugV4hNbt6M",
+    "tbnh": "194",
+    "tbnw": "259",
+    "usg": "__cmB-IjlAaWtsVVhmxhQnWPGYilQ",
+    "docid": "Po2D6x_Z6IRLOM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
-<img src='http://pbs.twimg.com/media/CfigjZAUYAADv1v.jpg' /> | <img src='http://5.darkroom.shortlist.com/710/26322c370621bbc77ed1e50b4340c2e3:0fc35b2ada8dbdffed46685bffc0fde5/ferguson1.jpg' />
+<img src='http://pbs.twimg.com/media/CfigjZAUYAADv1v.jpg' /> | <img src='http://3.darkroom.shortlist.com/1025/bfbe895f6bd9dbc853a039544e608433:b4f16299601016313cd163fd3caec612/covers.png' />
 
 
-##### 93). 718449143597772802
+##### 91). 718449143597772802
 https://twitter.com/paprbckparadise/status/718449143597772802
 ```js{
   "id": "718449143597772802",
   "in": "http://pbs.twimg.com/media/CfhxsGFUkAASBlH.jpg",
   "result": {
-    "imgurl": "https://cliqueypizza.files.wordpress.com/2012/05/thenewbobbseytwinslauraleehope_thumb1.jpg%3Fw%3D251%26h%3D368",
-    "imgrefurl": "https://cliqueypizza.wordpress.com/2012/05/09/new-part-1-a-z-series-guide-forgotten-80s-and-90s-young-adult-series-2",
-    "h": "368",
-    "w": "251",
-    "tbnid": "6AjvuPQHuW1L2M",
-    "tbnh": "272",
-    "tbnw": "185",
-    "usg": "__gBYrad1NDjRG0i4Yz3GXMaNTIjU",
-    "docid": "4wVuBaTH4n_KuM"
+    "imgurl": "http://thebobbseytwins.weebly.com/uploads/1/0/3/1/10317938/8581448_orig.jpg",
+    "imgrefurl": "http://thebobbseytwins.weebly.com",
+    "h": "320",
+    "w": "221",
+    "tbnid": "XKVS9hLvbrRzCM",
+    "tbnh": "256",
+    "tbnw": "176",
+    "usg": "__Uj72obBL4p1-wwST45F2F2db8O8",
+    "docid": "ikjIKLLssLtBNM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
-<img src='http://pbs.twimg.com/media/CfhxsGFUkAASBlH.jpg' /> | <img src='https://cliqueypizza.files.wordpress.com/2012/05/thenewbobbseytwinslauraleehope_thumb1.jpg?w=251&h=368' />
+<img src='http://pbs.twimg.com/media/CfhxsGFUkAASBlH.jpg' /> | <img src='http://thebobbseytwins.weebly.com/uploads/1/0/3/1/10317938/8581448_orig.jpg' />
 
 
-##### 94). 717748045069180928
+##### 92). 718117153065410561
+https://twitter.com/paprbckparadise/status/718117153065410561
+```js{
+  "id": "718117153065410561",
+  "in": "http://pbs.twimg.com/media/CfdDvtkVAAAaUfj.jpg",
+  "result": {
+    "imgurl": "http://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1256604945i/1200937._UY475_SS475_.jpg",
+    "imgrefurl": "http://www.goodreads.com/book/show/1200937.First_Place",
+    "h": "475",
+    "w": "475",
+    "tbnid": "t7fEopTyppVAcM",
+    "tbnh": "225",
+    "tbnw": "225",
+    "usg": "__SunB3fnc4CF5YXTTxAZnZ1ho-aE",
+    "docid": "fMEfJMDDY_TB0M"
+  }
+}```
+IMG | RESULT
+--- | ------
+<img src='http://pbs.twimg.com/media/CfdDvtkVAAAaUfj.jpg' /> | <img src='http://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1256604945i/1200937._UY475_SS475_.jpg' />
+
+
+##### 93). 717748045069180928
 https://twitter.com/paprbckparadise/status/717748045069180928
 ```js{
   "id": "717748045069180928",
   "in": "http://pbs.twimg.com/media/CfX0CyoUYAABkaZ.jpg",
   "result": {
-    "imgurl": "http://0.media.collegehumor.cvcdn.com/36/83/bd8d25281545ab9f0c5ff834a504b9aa.jpg",
-    "imgrefurl": "http://www.collegehumor.com/post/7036577/14-honest-childrens-book-covers-according-to-twitter",
-    "h": "884",
-    "w": "600",
-    "tbnid": "4yWUcgSfOQVLzM",
-    "tbnh": "273",
-    "tbnw": "185",
-    "usg": "__Mc-wGKzFnls_esTcf29Yp42ArAs",
-    "docid": "vJmqO81do_95AM"
+    "imgurl": "https://cdn-images-1.medium.com/max/329/0*_timHavQ-08v0i0z.jpg",
+    "imgrefurl": "https://thehairpin.com/the-sexual-narratives-we-absorb-in-youth-are-formidable-formative-whats-your-all-time-most-f0737409e7c",
+    "h": "475",
+    "w": "329",
+    "tbnid": "Q5dUFavbXvvjoM",
+    "tbnh": "270",
+    "tbnw": "187",
+    "usg": "__fVv2MRYJx0u42AFshCoi4osYPng",
+    "docid": "Rd3kX1B8KkDavM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
-<img src='http://pbs.twimg.com/media/CfX0CyoUYAABkaZ.jpg' /> | <img src='http://0.media.collegehumor.cvcdn.com/36/83/bd8d25281545ab9f0c5ff834a504b9aa.jpg' />
+<img src='http://pbs.twimg.com/media/CfX0CyoUYAABkaZ.jpg' /> | <img src='https://cdn-images-1.medium.com/max/329/0*_timHavQ-08v0i0z.jpg' />
 
 
-##### 95). 717426667791069184
+##### 94). 717426667791069184
 https://twitter.com/paprbckparadise/status/717426667791069184
 ```js{
   "id": "717426667791069184",
   "in": "http://pbs.twimg.com/media/CfTPwLVUMAAyIJ4.jpg",
   "result": {
-    "imgurl": "http://grouchymuffin.com/wp-content/uploads/2014/04/toddspence.jpg",
-    "imgrefurl": "http://grouchymuffin.com/2016/04/07/paperback-to-the-future",
-    "h": "969",
-    "w": "640",
-    "tbnid": "IRj6isXP1OLLvM",
-    "tbnh": "276",
-    "tbnw": "182",
-    "usg": "__Kon957zBBr1fw7aR5a_pt1sm6Oc",
-    "docid": "PURaaU-Ah02u4M"
+    "imgurl": "http://i.dailymail.co.uk/i/pix/2016/04/07/21/32F2B73200000578-0-image-a-38_1460062549002.jpg",
+    "imgrefurl": "http://www.pintattoos.com/1000/90s-doritos-bag-image-galleries-imagekbcom/ORczMtYXAtc291dGhlYXN0LTIuYW1hem9uYXdzLmNvbS93Yy1wcm9kLXBpbS9KUEVHXzEwMDB4MTAwMC9TSU00NDEyNTRfZG9yaXRvc19reV9kb3JpdG9zX2NoZWVzZV9zdXByZW1lXzE3NWdfbl9hLmpwZw",
+    "h": "930",
+    "w": "634",
+    "tbnid": "t44FJhTOQj3lWM",
+    "tbnh": "272",
+    "tbnw": "185",
+    "usg": "__uKBhlGBcAyLFDx7fYrmSmJUzHxg",
+    "docid": "DyVGU2Wm4obPVM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
-<img src='http://pbs.twimg.com/media/CfTPwLVUMAAyIJ4.jpg' /> | <img src='http://grouchymuffin.com/wp-content/uploads/2014/04/toddspence.jpg' />
+<img src='http://pbs.twimg.com/media/CfTPwLVUMAAyIJ4.jpg' /> | <img src='http://i.dailymail.co.uk/i/pix/2016/04/07/21/32F2B73200000578-0-image-a-38_1460062549002.jpg' />
 
 
-##### 96). 717385843065753600
+##### 95). 717385843065753600
 https://twitter.com/paprbckparadise/status/717385843065753600
 ```js{
   "id": "717385843065753600",
   "in": "http://pbs.twimg.com/media/CfSqn3nUMAAFLbg.jpg",
   "result": {
-    "imgurl": "http://www.newworldzorro.com/seriesbooks/nancydrew/pc/drewpc40.jpg",
-    "imgrefurl": "http://www.series-books.com/nancydrew/pc1-56.html",
-    "h": "927",
-    "w": "609",
-    "tbnid": "0_gUkKcN9v2XmM",
-    "tbnh": "277",
-    "tbnw": "182",
-    "usg": "__wEnuA9ImV5JDvvX0h6EAD4yYw40",
-    "docid": "P9rYWe8AhGaN5M"
+    "imgurl": "https://images.contentreserve.com/ImageType-400/1523-1/8B5/392/64/%257B8B539264-7653-4717-B181-25D6808A7AB6%257DImg400.jpg",
+    "imgrefurl": "https://www.overdrive.com/series/nancy-drew-mystery"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
-<img src='http://pbs.twimg.com/media/CfSqn3nUMAAFLbg.jpg' /> | <img src='http://www.newworldzorro.com/seriesbooks/nancydrew/pc/drewpc40.jpg' />
+<img src='http://pbs.twimg.com/media/CfSqn3nUMAAFLbg.jpg' /> | <img src='https://images.contentreserve.com/ImageType-400/1523-1/8B5/392/64/%7B8B539264-7653-4717-B181-25D6808A7AB6%7DImg400.jpg' />
 
 
-##### 97). 717016641947639809
+##### 96). 717016641947639809
 https://twitter.com/paprbckparadise/status/717016641947639809
 ```js{
   "id": "717016641947639809",
@@ -2169,34 +2112,78 @@ https://twitter.com/paprbckparadise/status/717016641947639809
     "docid": "DTZ-4j5PDYZBHM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
 <img src='http://pbs.twimg.com/media/CfNa1dwUIAA2_RT.png' /> | <img src='http://www.series-books.com/nancydrew/pbs/files8.jpg' />
 
 
-##### 98). 716638876920455170
+##### 97). 716638876920455170
 https://twitter.com/paprbckparadise/status/716638876920455170
 ```js{
   "id": "716638876920455170",
   "in": "http://pbs.twimg.com/media/CfIDQszUkAA9Kh0.jpg",
   "result": {
-    "imgurl": "http://d.gr-assets.com/books/1465358075l/5059187.jpg",
-    "imgrefurl": "http://www.goodreads.com/book/show/5059187-what-is-the-teacher-s-toupee-doing-in-the-fish-tank",
-    "h": "469",
-    "w": "318",
-    "tbnid": "YuDfTX_LV7KU1M",
-    "tbnh": "273",
-    "tbnw": "185",
-    "usg": "__vv9yotMfY7gXXBXT5wPWVjdq9yU",
-    "docid": "KGJw9MoEyQtamM"
+    "imgurl": "http://booklife.com/image-factory/http/localhost/amazongetcover/9780553480245.jpg/w204.jpg",
+    "imgrefurl": "http://www.publishersweekly.com/978-0-553-48024-5",
+    "h": "298",
+    "w": "204",
+    "tbnid": "mg66MNqAF6vsFM",
+    "tbnh": "238",
+    "tbnw": "163",
+    "usg": "__rYXq-sjgv3OXQiy4u7TOCP-2QVc",
+    "docid": "6pMUxnvl3PVYRM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
-<img src='http://pbs.twimg.com/media/CfIDQszUkAA9Kh0.jpg' /> | <img src='http://d.gr-assets.com/books/1465358075l/5059187.jpg' />
+<img src='http://pbs.twimg.com/media/CfIDQszUkAA9Kh0.jpg' /> | <img src='http://booklife.com/image-factory/http/localhost/amazongetcover/9780553480245.jpg/w204.jpg' />
 
 
-##### 99). 715947690421587969
+##### 98). 716325388117409792
+https://twitter.com/paprbckparadise/status/716325388117409792
+```js{
+  "id": "716325388117409792",
+  "in": "http://pbs.twimg.com/media/CfDmJQ9UkAI5Qm5.jpg",
+  "result": {
+    "imgurl": "http://d2arxad8u2l0g7.cloudfront.net/books/1256604945l/1200937.jpg",
+    "imgrefurl": "http://www.goodreads.com/book/show/1200937.First_Place",
+    "h": "475",
+    "w": "318",
+    "tbnid": "Mk3NzH5gE9yTPM",
+    "tbnh": "274",
+    "tbnw": "184",
+    "usg": "__L6VcdhvySJKX9gbbKYT9SyBx77I",
+    "docid": "fMEfJMDDY_TB0M"
+  }
+}```
+IMG | RESULT
+--- | ------
+<img src='http://pbs.twimg.com/media/CfDmJQ9UkAI5Qm5.jpg' /> | <img src='http://d2arxad8u2l0g7.cloudfront.net/books/1256604945l/1200937.jpg' />
+
+
+##### 99). 715982100269297664
+https://twitter.com/paprbckparadise/status/715982100269297664
+```js{
+  "id": "715982100269297664",
+  "in": "http://pbs.twimg.com/media/Ce-t7RLVIAAPX7A.jpg",
+  "result": {
+    "imgurl": "https://images-na.ssl-images-amazon.com/images/I/21RDG2F97GL._AC_UL320_SR220,320_.jpg",
+    "imgrefurl": "https://www.amazon.com/Surprise-Sweet-Valley-Kids/dp/0553157582",
+    "h": "320",
+    "w": "220",
+    "tbnid": "cjtMQdeYD5nneM",
+    "tbnh": "256",
+    "tbnw": "176",
+    "usg": "__leZ6GfwrQ8ACnvuWK8yOvFnodn8",
+    "docid": "bhi4SfC0m8i8LM"
+  }
+}```
+IMG | RESULT
+--- | ------
+<img src='http://pbs.twimg.com/media/Ce-t7RLVIAAPX7A.jpg' /> | <img src='https://images-na.ssl-images-amazon.com/images/I/21RDG2F97GL._AC_UL320_SR220,320_.jpg' />
+
+
+##### 100). 715947690421587969
 https://twitter.com/paprbckparadise/status/715947690421587969
 ```js{
   "id": "715947690421587969",
@@ -2213,12 +2200,12 @@ https://twitter.com/paprbckparadise/status/715947690421587969
     "docid": "X62pvWWkUADCtM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
 <img src='http://pbs.twimg.com/media/Ce-OoW3UUAExyP-.jpg' /> | <img src='https://i.harperapps.com/covers/9780380712366/y648.png' />
 
 
-##### 100). 715218786555547648
+##### 101). 715218786555547648
 https://twitter.com/paprbckparadise/status/715218786555547648
 ```js{
   "id": "715218786555547648",
@@ -2235,144 +2222,247 @@ https://twitter.com/paprbckparadise/status/715218786555547648
     "docid": "rRXH-3OWVx5PZM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
 <img src='http://pbs.twimg.com/media/Cez3sidWwAAGSCt.jpg' /> | <img src='https://img1.etsystatic.com/067/1/7110130/il_fullxfull.793950477_rata.jpg' />
 
 
-##### 101). 714844901905567744
+##### 102). 714844901905567744
 https://twitter.com/paprbckparadise/status/714844901905567744
 ```js{
   "id": "714844901905567744",
   "in": "http://pbs.twimg.com/media/Ceujpj3WIAALvNy.jpg",
   "result": {
-    "imgurl": "http://cf.broadsheet.ie/wp-content/uploads/2016/04/Screen-Shot-2016-04-11-at-12.56.31-e1460376424544.jpeg",
-    "imgrefurl": "http://www.broadsheet.ie/tag/book",
-    "h": "801",
-    "w": "800",
-    "tbnid": "qPXCcioqx_yGUM",
-    "tbnh": "225",
-    "tbnw": "224",
-    "usg": "__9FupfF7qwq24qnji5CsHetXkYwI",
-    "docid": "084tqisL2ekNhM"
+    "imgurl": "http://www4.alibris-static.com/snow-leopard/isbn/9780525457978.gif",
+    "imgrefurl": "http://www.alibris.com/search/books/subject/Snow-leopard",
+    "h": "187",
+    "w": "185",
+    "tbnid": "9heGWpgryXcgEM",
+    "tbnh": "149",
+    "tbnw": "148",
+    "usg": "__Qt8rcr9E0t7M8m9h9nLpKFpfPaM",
+    "docid": "kl7ncKUhik5bQM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
-<img src='http://pbs.twimg.com/media/Ceujpj3WIAALvNy.jpg' /> | <img src='http://cf.broadsheet.ie/wp-content/uploads/2016/04/Screen-Shot-2016-04-11-at-12.56.31-e1460376424544.jpeg' />
+<img src='http://pbs.twimg.com/media/Ceujpj3WIAALvNy.jpg' /> | <img src='http://www4.alibris-static.com/snow-leopard/isbn/9780525457978.gif' />
 
 
-##### 102). 714476410765619201
+##### 103). 714476410765619201
 https://twitter.com/paprbckparadise/status/714476410765619201
 ```js{
   "id": "714476410765619201",
   "in": "http://pbs.twimg.com/media/CepUgljXEAItKh3.jpg",
   "result": {
-    "imgurl": "https://brobible.files.wordpress.com/2016/04/book.jpg%3Fquality%3D90%26w%3D638",
-    "imgrefurl": "http://brobible.com/life/article/twitter-account-photoshops-childhood-book-covers",
-    "h": "360",
-    "w": "638",
-    "tbnid": "LcSzDACn97Ro2M",
-    "tbnh": "169",
-    "tbnw": "299",
-    "usg": "__E4A6ri42IOR0mvdZ0ZmmAyUrrw0",
-    "docid": "H6Ah9R1i2QT7MM"
+    "imgurl": "http://www4.alibris-static.com/the-counterfeit-collection/isbn/9780842350495.gif",
+    "imgrefurl": "http://www.alibris.com/search/books/isbn/9780842350495",
+    "h": "187",
+    "w": "125",
+    "tbnid": "o5zyrVJYquSojM",
+    "tbnh": "149",
+    "tbnw": "100",
+    "usg": "__A5LVZfq44dROdH03biwxCvgKY_A",
+    "docid": "UBfew6g-XDV73M"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
-<img src='http://pbs.twimg.com/media/CepUgljXEAItKh3.jpg' /> | <img src='https://brobible.files.wordpress.com/2016/04/book.jpg?quality=90&w=638' />
+<img src='http://pbs.twimg.com/media/CepUgljXEAItKh3.jpg' /> | <img src='http://www4.alibris-static.com/the-counterfeit-collection/isbn/9780842350495.gif' />
 
 
-##### 103). 714161617978531840
+##### 104). 714161617978531840
 https://twitter.com/paprbckparadise/status/714161617978531840
 ```js{
   "id": "714161617978531840",
   "in": "http://pbs.twimg.com/media/Cek2NN7WIAErU_C.jpg",
   "result": {
-    "imgurl": "http://grouchymuffin.com/wp-content/uploads/2014/04/toddspence.jpg",
-    "imgrefurl": "http://grouchymuffin.com/2016/04/07/paperback-to-the-future",
-    "h": "969",
-    "w": "640",
-    "tbnid": "IRj6isXP1OLLvM",
-    "tbnh": "276",
-    "tbnw": "182",
-    "usg": "__Kon957zBBr1fw7aR5a_pt1sm6Oc",
-    "docid": "PURaaU-Ah02u4M"
+    "imgurl": "http://d.gr-assets.com/books/1388459148m/313065.jpg",
+    "imgrefurl": "http://www.goodreads.com/book/show/1610015.The_New_Magdalen",
+    "h": "144",
+    "w": "98",
+    "tbnid": "r4jsvdLiufUpIM",
+    "tbnh": "115",
+    "tbnw": "78",
+    "usg": "__Gee1PIHedUdxw-bvqQSEB2-0XoY",
+    "docid": "RCR7OjJqo1ivLM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
-<img src='http://pbs.twimg.com/media/Cek2NN7WIAErU_C.jpg' /> | <img src='http://grouchymuffin.com/wp-content/uploads/2014/04/toddspence.jpg' />
+<img src='http://pbs.twimg.com/media/Cek2NN7WIAErU_C.jpg' /> | <img src='http://d.gr-assets.com/books/1388459148m/313065.jpg' />
 
 
-##### 104). 713779634676957184
+##### 105). 713779634676957184
 https://twitter.com/paprbckparadise/status/713779634676957184
 ```js{
   "id": "713779634676957184",
   "in": "http://pbs.twimg.com/media/Cefay3TXIAELxWy.jpg",
   "result": {
-    "imgurl": "https://img.fantasticfiction.com/images/n66/n332740.jpg",
-    "imgrefurl": "https://www.fantasticfiction.com/o/laura-oneil/major-league-trouble.htm",
-    "h": "468",
-    "w": "316",
-    "tbnid": "X4F83qRmDrqIgM",
+    "imgurl": "https://images-na.ssl-images-amazon.com/images/I/51QSS5SAK4L.jpg",
+    "imgrefurl": "https://www.amazon.com/Ghost-Closet-Full-House-Michelle/dp/0671535730",
+    "h": "475",
+    "w": "321",
+    "tbnid": "x8PXTWEUiM74VM",
     "tbnh": "273",
     "tbnw": "184",
-    "usg": "__xUELlCFuhsfKvxQub_Hew5mZPSM",
-    "docid": "EWa7VP-B24mPOM"
+    "usg": "__n1KzujHKEsa6WhtXX6Szzbtozio",
+    "docid": "8Udv29XmA0BJOM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
-<img src='http://pbs.twimg.com/media/Cefay3TXIAELxWy.jpg' /> | <img src='https://img.fantasticfiction.com/images/n66/n332740.jpg' />
+<img src='http://pbs.twimg.com/media/Cefay3TXIAELxWy.jpg' /> | <img src='https://images-na.ssl-images-amazon.com/images/I/51QSS5SAK4L.jpg' />
 
 
-##### 105). 712419926963654657
+##### 106). 713449040747204608
+https://twitter.com/paprbckparadise/status/713449040747204608
+```js{
+  "id": "713449040747204608",
+  "in": "http://pbs.twimg.com/media/CeauHu9WQAAcICU.jpg",
+  "result": {
+    "imgurl": "https://images-na.ssl-images-amazon.com/images/I/21RDG2F97GL._AC_UL320_SR220,320_.jpg",
+    "imgrefurl": "https://www.amazon.com/Surprise-Sweet-Valley-Kids/dp/0553157582",
+    "h": "320",
+    "w": "220",
+    "tbnid": "cjtMQdeYD5nneM",
+    "tbnh": "256",
+    "tbnw": "176",
+    "usg": "__leZ6GfwrQ8ACnvuWK8yOvFnodn8",
+    "docid": "bhi4SfC0m8i8LM"
+  }
+}```
+IMG | RESULT
+--- | ------
+<img src='http://pbs.twimg.com/media/CeauHu9WQAAcICU.jpg' /> | <img src='https://images-na.ssl-images-amazon.com/images/I/21RDG2F97GL._AC_UL320_SR220,320_.jpg' />
+
+
+##### 107). 713382070450393088
+https://twitter.com/paprbckparadise/status/713382070450393088
+```js{
+  "id": "713382070450393088",
+  "in": "http://pbs.twimg.com/media/CeZxNnhVIAEJz2-.jpg",
+  "result": {
+    "imgurl": "https://d1466nnw0ex81e.cloudfront.net/n_iv/600/1168947.jpg",
+    "imgrefurl": "https://www.mycomicshop.com/search"
+  }
+}```
+IMG | RESULT
+--- | ------
+<img src='http://pbs.twimg.com/media/CeZxNnhVIAEJz2-.jpg' /> | <img src='https://d1466nnw0ex81e.cloudfront.net/n_iv/600/1168947.jpg' />
+
+
+##### 108). 713040129015689216
+https://twitter.com/paprbckparadise/status/713040129015689216
+```js{
+  "id": "713040129015689216",
+  "in": "http://pbs.twimg.com/media/CeU6N_jUkAA646j.png",
+  "result": {
+    "imgurl": "http://d2arxad8u2l0g7.cloudfront.net/books/1256604945m/1200937.jpg",
+    "imgrefurl": "http://www.goodreads.com/book/show/1200937.First_Place",
+    "h": "147",
+    "w": "98",
+    "tbnid": "XUfNlACFzz5eaM",
+    "tbnh": "117",
+    "tbnw": "78",
+    "usg": "__MKSUr6A4yPdUsWuKIdKulc3FE0s",
+    "docid": "fMEfJMDDY_TB0M"
+  }
+}```
+IMG | RESULT
+--- | ------
+<img src='http://pbs.twimg.com/media/CeU6N_jUkAA646j.png' /> | <img src='http://d2arxad8u2l0g7.cloudfront.net/books/1256604945m/1200937.jpg' />
+
+
+##### 109). 712769838758821889
+https://twitter.com/paprbckparadise/status/712769838758821889
+```js{
+  "id": "712769838758821889",
+  "in": "http://pbs.twimg.com/media/CeREZA9UsAAUBou.jpg",
+  "result": {
+    "imgurl": "http://www.shiversbooks.com/humano-morphs/images/04_large.jpg",
+    "imgrefurl": "http://www.shiversbooks.com/humano-morphs",
+    "h": "800",
+    "w": "560",
+    "tbnid": "TYf_HucaHhNKkM",
+    "tbnh": "268",
+    "tbnw": "188",
+    "usg": "__PeUV53jegNIZ9DXxW-KSnwpLgYw",
+    "docid": "KX8D4Q6ixjLjDM"
+  }
+}```
+IMG | RESULT
+--- | ------
+<img src='http://pbs.twimg.com/media/CeREZA9UsAAUBou.jpg' /> | <img src='http://www.shiversbooks.com/humano-morphs/images/04_large.jpg' />
+
+
+##### 110). 712676589528461312
+https://twitter.com/paprbckparadise/status/712676589528461312
+```js{
+  "id": "712676589528461312",
+  "in": "http://pbs.twimg.com/media/CePvlPSVAAAQlul.jpg",
+  "result": {
+    "imgurl": "http://d2arxad8u2l0g7.cloudfront.net/books/1256604945m/1200937.jpg",
+    "imgrefurl": "http://www.goodreads.com/book/show/1200937.First_Place",
+    "h": "147",
+    "w": "98",
+    "tbnid": "XUfNlACFzz5eaM",
+    "tbnh": "117",
+    "tbnw": "78",
+    "usg": "__MKSUr6A4yPdUsWuKIdKulc3FE0s",
+    "docid": "fMEfJMDDY_TB0M"
+  }
+}```
+IMG | RESULT
+--- | ------
+<img src='http://pbs.twimg.com/media/CePvlPSVAAAQlul.jpg' /> | <img src='http://d2arxad8u2l0g7.cloudfront.net/books/1256604945m/1200937.jpg' />
+
+
+##### 111). 712419926963654657
 https://twitter.com/paprbckparadise/status/712419926963654657
 ```js{
   "id": "712419926963654657",
   "in": "http://pbs.twimg.com/media/CeMGJgzUkAA4wJP.jpg",
   "result": {
-    "imgurl": "http://grouchymuffin.com/wp-content/uploads/2014/04/toddspence.jpg",
-    "imgrefurl": "http://grouchymuffin.com/2016/04/07/paperback-to-the-future",
-    "h": "969",
-    "w": "640",
-    "tbnid": "IRj6isXP1OLLvM",
-    "tbnh": "276",
-    "tbnw": "182",
-    "usg": "__Kon957zBBr1fw7aR5a_pt1sm6Oc",
-    "docid": "PURaaU-Ah02u4M"
+    "imgurl": "https://images-na.ssl-images-amazon.com/images/I/5150Nmusm8L.jpg",
+    "imgrefurl": "https://www.amazon.com/Course-Tiger-Christopher-Sports-Bookshelf/dp/0316134457",
+    "h": "500",
+    "w": "334",
+    "tbnid": "muuJHodLXy_KkM",
+    "tbnh": "275",
+    "tbnw": "183",
+    "usg": "__UqdNEPDWQ8gVA8wtSewmExQ4-Tw",
+    "docid": "oghbfN1NKd8M5M"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
-<img src='http://pbs.twimg.com/media/CeMGJgzUkAA4wJP.jpg' /> | <img src='http://grouchymuffin.com/wp-content/uploads/2014/04/toddspence.jpg' />
+<img src='http://pbs.twimg.com/media/CeMGJgzUkAA4wJP.jpg' /> | <img src='https://images-na.ssl-images-amazon.com/images/I/5150Nmusm8L.jpg' />
 
 
-##### 106). 712310942181122048
+##### 112). 712310942181122048
 https://twitter.com/paprbckparadise/status/712310942181122048
 ```js{
   "id": "712310942181122048",
   "in": "http://pbs.twimg.com/media/CeKjBwMVIAARWUY.png",
   "result": {
-    "imgurl": "http://nancydrew.info/Images/nd58a.jpg",
-    "imgrefurl": "http://nancydrew.info/nddigests.htm",
-    "h": "325",
-    "w": "225",
-    "tbnid": "WvpAUJti6xFr2M",
-    "tbnh": "260",
-    "tbnw": "180",
-    "usg": "__WvQgS8HGJh0DNy9hzY1DkNnem5I",
-    "docid": "u-auMHeH_EqfGM"
+    "imgurl": "http://www.series-books.com/nancydrew/minstrel/drewl58.jpg",
+    "imgrefurl": "http://www.series-books.com/nancydrew/minstrelb.html",
+    "h": "947",
+    "w": "692",
+    "tbnid": "VGaMD2rXd2LE3M",
+    "tbnh": "263",
+    "tbnw": "192",
+    "usg": "__ncxQavVeFnhXlZVIXlkW9d8DVvc",
+    "docid": "hMjQNkLzdJljlM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
-<img src='http://pbs.twimg.com/media/CeKjBwMVIAARWUY.png' /> | <img src='http://nancydrew.info/Images/nd58a.jpg' />
+<img src='http://pbs.twimg.com/media/CeKjBwMVIAARWUY.png' /> | <img src='http://www.series-books.com/nancydrew/minstrel/drewl58.jpg' />
 
 
-##### 107). 712027796604723200
+##### 113). 712027796604723200
 https://twitter.com/paprbckparadise/status/712027796604723200
 ```js{
   "id": "712027796604723200",
@@ -2389,56 +2479,78 @@ https://twitter.com/paprbckparadise/status/712027796604723200
     "docid": "v04Da-otvijpIM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
 <img src='http://pbs.twimg.com/media/CeGhghLUsAA6BNt.jpg' /> | <img src='https://img0.etsystatic.com/064/1/7110130/il_fullxfull.794196902_eau6.jpg' />
 
 
-##### 108). 711939361089060866
+##### 114). 711939361089060866
 https://twitter.com/paprbckparadise/status/711939361089060866
 ```js{
   "id": "711939361089060866",
   "in": "http://pbs.twimg.com/media/CeFRE5JUUAAlWpZ.jpg",
   "result": {
-    "imgurl": "https://i.harperapps.com/covers/9780380707645/x500.png",
+    "imgurl": "https://i.harperapps.com/covers/9780380724697/x500.png",
     "imgrefurl": "https://www.harpercollins.com/9780380724697/time-for-andrew",
-    "h": "812",
+    "h": "741",
     "w": "500",
-    "tbnid": "K1Gxgg_9F7eDmM",
-    "tbnh": "286",
-    "tbnw": "176",
-    "usg": "__HAdrsQUYJYGOS02H7uKCzupNxR4",
+    "tbnid": "i3dzmULV3gVlPM",
+    "tbnh": "273",
+    "tbnw": "184",
+    "usg": "__4lajVJG_STsx-kNSpaiXNh4axKY",
     "docid": "p1E5a2J5vdlAmM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
-<img src='http://pbs.twimg.com/media/CeFRE5JUUAAlWpZ.jpg' /> | <img src='https://i.harperapps.com/covers/9780380707645/x500.png' />
+<img src='http://pbs.twimg.com/media/CeFRE5JUUAAlWpZ.jpg' /> | <img src='https://i.harperapps.com/covers/9780380724697/x500.png' />
 
 
-##### 109). 711241128251555840
+##### 115). 711590017928286208
+https://twitter.com/paprbckparadise/status/711590017928286208
+```js{
+  "id": "711590017928286208",
+  "in": "http://pbs.twimg.com/media/CeATWcaUEAAjKzW.jpg",
+  "result": {
+    "imgurl": "http://www.theshepherdsdog.com/JocksIsland.jpg",
+    "imgrefurl": "http://www.theshepherdsdog.com/books.html",
+    "h": "192",
+    "w": "134",
+    "tbnid": "-dQQp6Tjtaf5NM",
+    "tbnh": "153",
+    "tbnw": "107",
+    "usg": "__v2HfYPvrBwVlbgRoHG1iLanc2E8",
+    "docid": "tU89O7G8nDqk8M"
+  }
+}```
+IMG | RESULT
+--- | ------
+<img src='http://pbs.twimg.com/media/CeATWcaUEAAjKzW.jpg' /> | <img src='http://www.theshepherdsdog.com/JocksIsland.jpg' />
+
+
+##### 116). 711241128251555840
 https://twitter.com/paprbckparadise/status/711241128251555840
 ```js{
   "id": "711241128251555840",
   "in": "http://pbs.twimg.com/media/Cd7WCY8UIAACSYj.jpg",
   "result": {
-    "imgurl": "http://www.pmslweb.com/the-blog/wp-content/uploads/2016/04/13-grandpa-voted-for-Trump-funny-book-cover.png",
-    "imgrefurl": "http://www.pmslweb.com/the-blog/monday-comedy-club-the-internet-at-its-best-and-worst/13-grandpa-voted-for-trump-funny-book-cover",
-    "h": "688",
-    "w": "450",
-    "tbnid": "4TqcMCvItdXiFM",
-    "tbnh": "278",
-    "tbnw": "181",
-    "usg": "__TTblWjWRVWJEGt1HEMABiVS7gKQ",
-    "docid": "MtjGkPe-1gPU9M"
+    "imgurl": "http://www.fictiondb.com/coversth/th_0440492769.jpg",
+    "imgrefurl": "http://www.fictiondb.com/author/robert-kimmel-smith~the-war-with-grandpa~283124~b.htm",
+    "h": "200",
+    "w": "135",
+    "tbnid": "Z_eS4tWUH8k-SM",
+    "tbnh": "160",
+    "tbnw": "108",
+    "usg": "__Z3xclK74ii-ito2LmWF5-R6-BKI",
+    "docid": "Cd2QVA368URkNM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
-<img src='http://pbs.twimg.com/media/Cd7WCY8UIAACSYj.jpg' /> | <img src='http://www.pmslweb.com/the-blog/wp-content/uploads/2016/04/13-grandpa-voted-for-Trump-funny-book-cover.png' />
+<img src='http://pbs.twimg.com/media/Cd7WCY8UIAACSYj.jpg' /> | <img src='http://www.fictiondb.com/coversth/th_0440492769.jpg' />
 
 
-##### 110). 710916326378700800
+##### 117). 710916326378700800
 https://twitter.com/paprbckparadise/status/710916326378700800
 ```js{
   "id": "710916326378700800",
@@ -2455,12 +2567,12 @@ https://twitter.com/paprbckparadise/status/710916326378700800
     "docid": "v04Da-otvijpIM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
 <img src='http://pbs.twimg.com/media/Cd2uoayUAAAleD6.jpg' /> | <img src='https://img0.etsystatic.com/064/1/7110130/il_570xN.794196902_eau6.jpg' />
 
 
-##### 111). 710504687061979136
+##### 118). 710504687061979136
 https://twitter.com/paprbckparadise/status/710504687061979136
 ```js{
   "id": "710504687061979136",
@@ -2477,12 +2589,12 @@ https://twitter.com/paprbckparadise/status/710504687061979136
     "docid": "hroE4Co_5B1NeM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
 <img src='http://pbs.twimg.com/media/Cdw4P3lUAAEkv6j.jpg' /> | <img src='http://thumbs2.ebaystatic.com/d/l225/m/mnDRwui8UyaqT2TOPT5n6pA.jpg' />
 
 
-##### 112). 710203403029389313
+##### 119). 710203403029389313
 https://twitter.com/paprbckparadise/status/710203403029389313
 ```js{
   "id": "710203403029389313",
@@ -2499,12 +2611,12 @@ https://twitter.com/paprbckparadise/status/710203403029389313
     "docid": "fK000av-Q3yh_M"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
 <img src='http://pbs.twimg.com/media/CdsmO08UUAA6taE.jpg' /> | <img src='http://kirstygreenwood.typepad.com/.a/6a010536b33b69970b01a511491b51970c-600wi' />
 
 
-##### 113). 709911763374845952
+##### 120). 709911763374845952
 https://twitter.com/paprbckparadise/status/709911763374845952
 ```js{
   "id": "709911763374845952",
@@ -2521,56 +2633,34 @@ https://twitter.com/paprbckparadise/status/709911763374845952
     "docid": "yuuGtlRN1IPNkM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
 <img src='http://pbs.twimg.com/media/Cdoc_LKVAAA044E.png' /> | <img src='https://images-na.ssl-images-amazon.com/images/I/51yzKajmr6L.jpg' />
 
 
-##### 114). 709836379581128704
-https://twitter.com/paprbckparadise/status/709836379581128704
-```js{
-  "id": "709836379581128704",
-  "in": "http://pbs.twimg.com/media/CdnYbQjUkAEQWnQ.jpg",
-  "result": {
-    "imgurl": "https://90sflashback.files.wordpress.com/2015/11/ttgc.jpg",
-    "imgrefurl": "https://90sflashback.wordpress.com/sitemap.xml",
-    "h": "475",
-    "w": "314",
-    "tbnid": "6s6YLQng72WVZM",
-    "tbnh": "276",
-    "tbnw": "182",
-    "usg": "__51FuRfprNTCb6j2dfnRNGEiitpQ",
-    "docid": "5H7uGdbEpKh5CM"
-  }
-}```
-img | result
---- | ------
-<img src='http://pbs.twimg.com/media/CdnYbQjUkAEQWnQ.jpg' /> | <img src='https://90sflashback.files.wordpress.com/2015/11/ttgc.jpg' />
-
-
-##### 115). 709460919164674049
+##### 121). 709460919164674049
 https://twitter.com/paprbckparadise/status/709460919164674049
 ```js{
   "id": "709460919164674049",
   "in": "http://pbs.twimg.com/media/CdiC8lWVAAEaspk.png",
   "result": {
-    "imgurl": "http://www.bhpanthers.org/cms/lib7/NY26000220/Centricity/Domain/5/68.jpg",
-    "imgrefurl": "http://www.bhpanthers.org/Page/1741",
-    "h": "453",
-    "w": "300",
-    "tbnid": "aSi3_eYMWPVhLM",
-    "tbnh": "276",
-    "tbnw": "183",
-    "usg": "__OcApfE3XPZ2mtNz7DTM6Y0CB9yw",
-    "docid": "P74RWgVAQ3pp3M"
+    "imgurl": "https://covers.openlibrary.org/b/id/6983018-M.jpg",
+    "imgrefurl": "https://openlibrary.org/books/OL17575434M/On_my_honor",
+    "h": "274",
+    "w": "180",
+    "tbnid": "G5EtmHyCUxAYmM",
+    "tbnh": "219",
+    "tbnw": "144",
+    "usg": "__gi4ewGTGIrovEVyELh4CwFv_hdU",
+    "docid": "zzZx2xyLsQcSYM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
-<img src='http://pbs.twimg.com/media/CdiC8lWVAAEaspk.png' /> | <img src='http://www.bhpanthers.org/cms/lib7/NY26000220/Centricity/Domain/5/68.jpg' />
+<img src='http://pbs.twimg.com/media/CdiC8lWVAAEaspk.png' /> | <img src='https://covers.openlibrary.org/b/id/6983018-M.jpg' />
 
 
-##### 116). 709407230404112385
+##### 122). 709407230404112385
 https://twitter.com/paprbckparadise/status/709407230404112385
 ```js{
   "id": "709407230404112385",
@@ -2587,74 +2677,96 @@ https://twitter.com/paprbckparadise/status/709407230404112385
     "docid": "fK000av-Q3yh_M"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
 <img src='http://pbs.twimg.com/media/CdhSHfKUUAQ49kJ.jpg' /> | <img src='http://kirstygreenwood.typepad.com/.a/6a010536b33b69970b01a511491b51970c-600wi' />
 
 
-##### 117). 708700694845345793
+##### 123). 709076016178667520
+https://twitter.com/paprbckparadise/status/709076016178667520
+```js{
+  "id": "709076016178667520",
+  "in": "http://pbs.twimg.com/media/Cdck4SGUkAIKyJb.png",
+  "result": {
+    "imgurl": "https://scontent.cdninstagram.com/t51.2885-15/sh0.08/e35/12912755_978896642159423_1400608906_n.jpg%3Fig_cache_key%3DMTIyMzM3MjcwMDA4NzI2NzM3OQ%253D%253D.2",
+    "imgrefurl": "http://instacelebs.net/philippines/yeng-constantino-yengconstantino-nagfitting-first-fitting-na-ng-gown-ko-for-the-wedding-at-may-bonus-inspirational-kwentuhan-pa-with-sir-albertandrada-super-blessed-sa-very-timely-conversation-nam",
+    "h": "750",
+    "w": "750",
+    "tbnid": "UUOrim0VjQ4b0M",
+    "tbnh": "225",
+    "tbnw": "225",
+    "usg": "__ayKPtdHPjv4d_qZYDrJiFYIukyM",
+    "docid": "gBGhcmcMy2KMDM"
+  }
+}```
+IMG | RESULT
+--- | ------
+<img src='http://pbs.twimg.com/media/Cdck4SGUkAIKyJb.png' /> | <img src='https://scontent.cdninstagram.com/t51.2885-15/sh0.08/e35/12912755_978896642159423_1400608906_n.jpg?ig_cache_key=MTIyMzM3MjcwMDA4NzI2NzM3OQ%3D%3D.2' />
+
+
+##### 124). 708700694845345793
 https://twitter.com/paprbckparadise/status/708700694845345793
 ```js{
   "id": "708700694845345793",
   "in": "http://pbs.twimg.com/media/CdXPhtIUEAArlrx.jpg",
   "result": {
-    "imgurl": "http://www.therooster.com/sites/default/files/userfiles/images/CdXPhtIUEAArlrx.jpg",
-    "imgrefurl": "http://www.therooster.com/blog/some-literary-genius-photoshopping-our-favorite-childhood-books-masterpieces",
-    "h": "500",
-    "w": "345",
-    "tbnid": "lZjZeSqWJKxD2M",
+    "imgurl": "http://images.scribblelive.com/2014/10/20/de758fbc-d99e-4a4e-971c-45bfb82d2ce1.jpg",
+    "imgrefurl": "http://www.cbc.ca/books/2014/10/happy-birthday-gordon-korman.html",
+    "h": "459",
+    "w": "318",
+    "tbnid": "LyHpdQZ1JV3kfM",
     "tbnh": "270",
-    "tbnw": "186",
-    "usg": "__V202pwOdFKGSPVx7BY01Q_owyoA",
-    "docid": "kZ6ap5i5ARCTkM"
+    "tbnw": "187",
+    "usg": "__lOv-Uonn8_k-mWl5PJ-morIvVvo",
+    "docid": "ba_BKaz0oZOg4M"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
-<img src='http://pbs.twimg.com/media/CdXPhtIUEAArlrx.jpg' /> | <img src='http://www.therooster.com/sites/default/files/userfiles/images/CdXPhtIUEAArlrx.jpg' />
+<img src='http://pbs.twimg.com/media/CdXPhtIUEAArlrx.jpg' /> | <img src='http://images.scribblelive.com/2014/10/20/de758fbc-d99e-4a4e-971c-45bfb82d2ce1.jpg' />
 
 
-##### 118). 708473713558032384
+##### 125). 708473713558032384
 https://twitter.com/paprbckparadise/status/708473713558032384
 ```js{
   "id": "708473713558032384",
   "in": "http://pbs.twimg.com/media/CdUBFp6UkAAp0Nr.jpg",
   "result": {
-    "imgurl": "https://251d2191a60056d6ba74-1671eccf3a0275494885881efb0852a4.ssl.cf1.rackcdn.com/7800012_classic-comes-to-life-the-jungle-book_dfe79402_m.jpg%3Fbg%3D313D38",
-    "imgrefurl": "http://www.notey.com/blogs/classic-books",
-    "h": "349",
-    "w": "620",
-    "tbnid": "AbiH4wVPX-nd_M",
-    "tbnh": "168",
-    "tbnw": "299",
-    "usg": "__kk3q4AjmBhGI9J30gwfo9ZxsKHs",
-    "docid": "Rg3oUekRo3_lMM"
+    "imgurl": "http://gabrielricci.com/images/shocker-alien_gr.jpg",
+    "imgrefurl": "http://gabrielricci.com/port_trade2.html",
+    "h": "394",
+    "w": "240",
+    "tbnid": "PrSy6sbDntfVSM",
+    "tbnh": "288",
+    "tbnw": "175",
+    "usg": "__Bk3X640mDIagTPSO4hniNXJb6dY",
+    "docid": "iD5nbzHFvYpiHM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
-<img src='http://pbs.twimg.com/media/CdUBFp6UkAAp0Nr.jpg' /> | <img src='https://251d2191a60056d6ba74-1671eccf3a0275494885881efb0852a4.ssl.cf1.rackcdn.com/7800012_classic-comes-to-life-the-jungle-book_dfe79402_m.jpg?bg=313D38' />
+<img src='http://pbs.twimg.com/media/CdUBFp6UkAAp0Nr.jpg' /> | <img src='http://gabrielricci.com/images/shocker-alien_gr.jpg' />
 
 
-##### 119). 708381447032217601
+##### 126). 708381447032217601
 https://twitter.com/paprbckparadise/status/708381447032217601
 ```js{
   "id": "708381447032217601",
   "in": "http://pbs.twimg.com/media/CdStLA7UIAEwvSQ.jpg",
   "result": {
-    "imgurl": "http://6.darkroom.shortlist.com/315/bfbe895f6bd9dbc853a039544e608433:c4964ef0fe8406f818d6a1874f345922/covers.png",
-    "imgrefurl": "http://www.shortlist.com/entertainment/books/40-coolest-sci-fi-book-covers",
-    "h": "236",
-    "w": "315",
-    "tbnid": "bhNKHnGuDG5YzM",
-    "tbnh": "188",
-    "tbnw": "252",
-    "usg": "__W45JK_6_B8vROSaFtpURrhfDlyI",
-    "docid": "q9PCXTn3bP49hM"
+    "imgurl": "http://i6.photobucket.com/albums/y217/swallowrazorblades/svt13-2.jpg",
+    "imgrefurl": "http://1bruce1.livejournal.com/171022.html",
+    "h": "457",
+    "w": "309",
+    "tbnid": "QSyI1K7eGO1-yM",
+    "tbnh": "273",
+    "tbnw": "185",
+    "usg": "__fFXfwLf6NWIYaj4WzX3h7RfbCJM",
+    "docid": "wkiNzreD1gkvDM"
   }
 }```
-img | result
+IMG | RESULT
 --- | ------
-<img src='http://pbs.twimg.com/media/CdStLA7UIAEwvSQ.jpg' /> | <img src='http://6.darkroom.shortlist.com/315/bfbe895f6bd9dbc853a039544e608433:c4964ef0fe8406f818d6a1874f345922/covers.png' />
+<img src='http://pbs.twimg.com/media/CdStLA7UIAEwvSQ.jpg' /> | <img src='http://i6.photobucket.com/albums/y217/swallowrazorblades/svt13-2.jpg' />
 
-Total: 147, failed: 28
+Total: 148, failed: 22
