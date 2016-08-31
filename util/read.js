@@ -13,12 +13,13 @@ const output = succeeded.map((item, index) =>
 ##### ${++index}). ${item.id}\r
 https://twitter.com/paprbckparadise/status/${item.id}\r
 ${js}\r${JSON.stringify(item, null, 2)}\r${jsEnd}\r
-IMG | RESULT
---- | ------
-<img src='${item.in}' /> | <img src='${decodeURIComponent(item.result.imgurl)}' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='${item.in}' /> | <img width='300' src='${decodeURIComponent(item.result.imgurl)}' />
 `
 ).join('\n')
 
 console.log(
-`${output}\r
-Total: ${total}, failed: ${total - succeeded.length}`)
+`\r#### Results\r
+${output}\r
+Total: ${total}, failed: ${total - succeeded.length} (not displayed)`)

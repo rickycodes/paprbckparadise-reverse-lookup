@@ -25,7 +25,7 @@ const write = (arr) => {
   fs.writeFile('results.json', str, (error) => error ? console.log(error) : process.exit())
 }
 
-// collect all hrefs that open lightbox
+// collect all query variables from hrefs that open a lightbox
 const collect = ($, arr) => {
   const ex = /imgres\?imgurl/
   const results = []
@@ -40,10 +40,10 @@ const collect = ($, arr) => {
 
 // filter common social media links (avoid looping back to src image in a repost)
 // NOTES: this might be a tad aggressive?
-const filter = (arr) => arr.filter((result) => {
+const blacklist = (result) => {
   const ex = /(youtube|wordpress|wp-content|knowyourmeme|burrowowl|squarespace|thechive|awesomejelly|epicthings|paperback|paradise|facebook|ooyuz|twimg|imgur|tumblr|blogspot|onsizzle|pinimg|afterfeed|wittyfeed|junkhost|ift.tt|playbuzz|buzzfeed|omygsh|sobadsogood)/
   return !ex.test(result.imgurl) && !ex.test(result.imgrefurl)
-})
+}
 
 // return index of tallest image
 const getTallest = (arr) => {
@@ -63,10 +63,7 @@ const search = (image, cb) => {
       console.log(next)
       GET(next, (res) => {
         const $ = cheerio.load(res.body)
-        const links = $('a[href]')
-        const results = collect($, links)
-        const filtered = filter(results)
-        const tallest = getTallest(filtered)
+        const tallest = getTallest(collect($, $('a[href]')).filter(blacklist))
         cb(tallest || null)
       })
     }, 1000) // throttle consecutive requests

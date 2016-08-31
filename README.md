@@ -1,6 +1,6 @@
 ### Reverse image lookup of [@paprbckparadise](https://twitter.com/paprbckparadise) tweets
 
-[![experimental](http://badges.github.io/stability-badges/dist/experimental.svg)](http://github.com/badges/stability-badges)  
+[![experimental](http://badges.github.io/stability-badges/dist/experimental.svg)](http://github.com/badges/stability-badges) [![build status](https://api.travis-ci.org/rickycodes/paprbckparadise-reverse-lookup.svg?branch=master)](https://travis-ci.org/rickycodes/paprbckparadise-reverse-lookup/)  
 here today—broken tomorrow
 
 #### Install
@@ -23,7 +23,9 @@ Getting tweet data is relatively easy using the [twitter](http://npm.im/twitter)
 
 #### Google doesn't like robots
 
-While Google does have a convenient endpoint just _begging_ to be fed sweet image data (`/searchbyimage?image_url=`), if you hit it enough times you'll get this lovely message:
+I mean, there's some [obvious](https://support.google.com/webmasters/answer/182072?hl=en) [exceptions]((http://www.theverge.com/2013/12/14/5209622/google-has-bought-robotics-company-boston-dynamics))... But they don't like bots abusing their systems.
+
+So, while Google does have a convenient endpoint just _begging_ to be fed sweet image data (`/searchbyimage?image_url=`), if you hit it enough times you'll get this lovely message:
 
 <img alt='CAPTCHA' src='http://i.imgur.com/gsIm2eI.png' style='border: 1px solid #e3e3e3;' />
 
@@ -33,7 +35,7 @@ The important bit to note here is:
 
 > Don’t misuse our Services. For example, don’t interfere with our Services or try to access them using a method other than the interface and the instructions that we provide.
 
-So, basically this whole thing is a [righteous hack](https://www.youtube.com/watch?v=vbZB21sxdqk) since _technically_ we're abusing Google's TOS. :metal:
+Basically this whole thing is a [righteous hack](https://www.youtube.com/watch?v=vbZB21sxdqk) since _technically_ we're abusing Google's TOS. :metal:
 
 #### Getting around Google's captcha
 
@@ -49,6 +51,15 @@ It occurred to me that I could simply delay the intervals between each consecuti
 
 Total script operation takes about 3650306 milliseconds (~60 minutes). This will of course vary depending on bandwidth.
 
+#### Prior Art
+
+Below are some links that were useful on this fantastic voyage of discovery:
+
+- http://googlehacking.com.pl/publikacje/google-hacks.pdf
+- https://moz.com/ugc/the-ultimate-guide-to-the-google-search-parameters
+- https://stenevang.wordpress.com/2013/02/22/google-advanced-power-search-url-request-parameters/
+- http://stackoverflow.com/questions/13972240/node-jsdom-scrape-googles-reverse-image-search
+
 #### DISCLAIMER
 
 THIS SOFTWARE IS PROVIDED AS A PROOF-OF-CONCEPT EXPLORATION OF GOOGLE SEARCH.
@@ -57,9 +68,8 @@ RUNNING THIS SOFTWARE/ABUSING GOOGLE'S TOS COULD RESULT IN A PERMANENT BAN FROM 
 #### TODO
 
 - [ ] Write more about the _how_ (for now, just look at the sauce)
-- [ ] Write a breakdown of success rate (for now, just check the results!)
-
-#### Results
+- [ ] Write a breakdown of success rate (for now, just check the results)
+#### Results
 
 ##### 1). 770775824530145280
 https://twitter.com/paprbckparadise/status/770775824530145280
@@ -78,9 +88,9 @@ https://twitter.com/paprbckparadise/status/770775824530145280
     "docid": "lNKLqlve1C6RiM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/CrJWnXLVYAAdKOX.png' /> | <img src='http://static.thefrisky.com/uploads/2011/11/21/enid-rollins-jpg.jpeg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/CrJWnXLVYAAdKOX.png' /> | <img width='300' src='http://static.thefrisky.com/uploads/2011/11/21/enid-rollins-jpg.jpeg' />
 
 
 ##### 2). 770408907411861504
@@ -100,9 +110,9 @@ https://twitter.com/paprbckparadise/status/770408907411861504
     "docid": "aQ2-7yesnTlsdM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/CrEJU-vVIAAGorr.png' /> | <img src='http://d2arxad8u2l0g7.cloudfront.net/books/1227408354m/2262451.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/CrEJU-vVIAAGorr.png' /> | <img width='300' src='http://d2arxad8u2l0g7.cloudfront.net/books/1227408354m/2262451.jpg' />
 
 
 ##### 3). 769323422820118528
@@ -122,9 +132,9 @@ https://twitter.com/paprbckparadise/status/769323422820118528
     "docid": "kMJmJw6xF1nuDM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/Cq0vPF9VIAA4orD.png' /> | <img src='http://d2arxad8u2l0g7.cloudfront.net/books/1275741805l/1891396.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/Cq0vPF9VIAA4orD.png' /> | <img width='300' src='http://d2arxad8u2l0g7.cloudfront.net/books/1275741805l/1891396.jpg' />
 
 
 ##### 4). 768603978137415680
@@ -144,9 +154,9 @@ https://twitter.com/paprbckparadise/status/768603978137415680
     "docid": "B_kX3SAaZ3VWSM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/Cqqg_9SUEAA1Y52.png' /> | <img src='http://d.gr-assets.com/books/1299729862m/1902527.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/Cqqg_9SUEAA1Y52.png' /> | <img width='300' src='http://d.gr-assets.com/books/1299729862m/1902527.jpg' />
 
 
 ##### 5). 767876626449260554
@@ -166,9 +176,9 @@ https://twitter.com/paprbckparadise/status/767876626449260554
     "docid": "kI5hSWU8zENZuM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/CqgLZEqUIAAHNn5.png' /> | <img src='http://cache.coverbrowser.com/image/ace-books/1474-1.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/CqgLZEqUIAAHNn5.png' /> | <img width='300' src='http://cache.coverbrowser.com/image/ace-books/1474-1.jpg' />
 
 
 ##### 6). 766427726009905152
@@ -188,9 +198,9 @@ https://twitter.com/paprbckparadise/status/766427726009905152
     "docid": "Rhc9x0EKNI8PVM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/CqLlwURUAAAvIh3.png' /> | <img src='http://www.jeancraigheadgeorge.com/images/frightful_cov.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/CqLlwURUAAAvIh3.png' /> | <img width='300' src='http://www.jeancraigheadgeorge.com/images/frightful_cov.jpg' />
 
 
 ##### 7). 765347383475576832
@@ -210,9 +220,9 @@ https://twitter.com/paprbckparadise/status/765347383475576832
     "docid": "MXN09TNi9KWDQM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/Cp8O_1WVIAMihYo.png' /> | <img src='http://www.sharon-green.net/images/Jalav2.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/Cp8O_1WVIAMihYo.png' /> | <img width='300' src='http://www.sharon-green.net/images/Jalav2.jpg' />
 
 
 ##### 8). 764250300991442944
@@ -232,9 +242,9 @@ https://twitter.com/paprbckparadise/status/764250300991442944
     "docid": "4LWvJEgvls6QcM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/CpspMy2VYAAC7-J.png' /> | <img src='https://images-na.ssl-images-amazon.com/images/I/41DlDWpEdkL._AC_UL320_SR190,320_.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/CpspMy2VYAAC7-J.png' /> | <img width='300' src='https://images-na.ssl-images-amazon.com/images/I/41DlDWpEdkL._AC_UL320_SR190,320_.jpg' />
 
 
 ##### 9). 762806076752277504
@@ -254,9 +264,9 @@ https://twitter.com/paprbckparadise/status/762806076752277504
     "docid": "3MV8az0vdfrpeM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/CpYH3pqVMAAc0OZ.jpg' /> | <img src='http://www.sondheimguide.com/bishop/heaven.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/CpYH3pqVMAAc0OZ.jpg' /> | <img width='300' src='http://www.sondheimguide.com/bishop/heaven.jpg' />
 
 
 ##### 10). 761714306320732162
@@ -276,9 +286,9 @@ https://twitter.com/paprbckparadise/status/761714306320732162
     "docid": "ExmTMKTHk3S2mM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/CpIm8VFUkAA2L7i.png' /> | <img src='http://d.gr-assets.com/books/1315005716l/2887070.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/CpIm8VFUkAA2L7i.png' /> | <img width='300' src='http://d.gr-assets.com/books/1315005716l/2887070.jpg' />
 
 
 ##### 11). 761352248584605696
@@ -298,9 +308,9 @@ https://twitter.com/paprbckparadise/status/761352248584605696
     "docid": "bC1ovpRe69F6HM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/CpDdnBsUIAEmEWv.jpg' /> | <img src='http://www.gwthomas.org/sskull.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/CpDdnBsUIAEmEWv.jpg' /> | <img width='300' src='http://www.gwthomas.org/sskull.jpg' />
 
 
 ##### 12). 760989305808429056
@@ -320,9 +330,9 @@ https://twitter.com/paprbckparadise/status/760989305808429056
     "docid": "FopdMLrTPK_MxM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/Co-TutlVIAA6HR4.jpg' /> | <img src='https://farm8.staticflickr.com/7093/7103648645_5c21ce2a15_b.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/Co-TutlVIAA6HR4.jpg' /> | <img width='300' src='https://farm8.staticflickr.com/7093/7103648645_5c21ce2a15_b.jpg' />
 
 
 ##### 13). 760625438892830720
@@ -335,9 +345,9 @@ https://twitter.com/paprbckparadise/status/760625438892830720
     "imgrefurl": "http://www.britmovie.co.uk/forums/showthread.php"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/Co5Ij9bUsAELNC0.png' /> | <img src='http://i436.photobucket.com/albums/qq85/cornershop15/Books%20on%20Screen/Reprieve%20-%20The%20Testament%20of%20John%20Resko%20and%20Message%20from%20Sirius%20-%20Cecil%20Jenkins.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/Co5Ij9bUsAELNC0.png' /> | <img width='300' src='http://i436.photobucket.com/albums/qq85/cornershop15/Books%20on%20Screen/Reprieve%20-%20The%20Testament%20of%20John%20Resko%20and%20Message%20from%20Sirius%20-%20Cecil%20Jenkins.jpg' />
 
 
 ##### 14). 759177754126356480
@@ -357,9 +367,9 @@ https://twitter.com/paprbckparadise/status/759177754126356480
     "docid": "DT-BRnIshVR6AM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/Cokj3EpVIAAq8li.jpg' /> | <img src='http://i819.photobucket.com/albums/zz116/bledec/CrashingSuns.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/Cokj3EpVIAAq8li.jpg' /> | <img width='300' src='http://i819.photobucket.com/albums/zz116/bledec/CrashingSuns.jpg' />
 
 
 ##### 15). 758815411907342336
@@ -379,9 +389,9 @@ https://twitter.com/paprbckparadise/status/758815411907342336
     "docid": "4CDpzqb-j3UhZM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/CofaK3zUMAA91rl.jpg' /> | <img src='http://cache.coverbrowser.com/image/signet-books/382-1.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/CofaK3zUMAA91rl.jpg' /> | <img width='300' src='http://cache.coverbrowser.com/image/signet-books/382-1.jpg' />
 
 
 ##### 16). 758452312809410560
@@ -401,9 +411,9 @@ https://twitter.com/paprbckparadise/status/758452312809410560
     "docid": "Pd5tmS67mlzloM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/CoaPh6kUMAIaCDG.jpg' /> | <img src='http://www.fictiondb.com/coversth/th_0373190360.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/CoaPh6kUMAIaCDG.jpg' /> | <img width='300' src='http://www.fictiondb.com/coversth/th_0373190360.jpg' />
 
 
 ##### 17). 758101287300804608
@@ -423,9 +433,9 @@ https://twitter.com/paprbckparadise/status/758101287300804608
     "docid": "gaJxWdyLmUK0MM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/CoVQFqzUMAEm88d.png' /> | <img src='http://www.fictiondb.com/coversth/th_156597042X.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/CoVQFqzUMAEm88d.png' /> | <img width='300' src='http://www.fictiondb.com/coversth/th_156597042X.jpg' />
 
 
 ##### 18). 757694196543201281
@@ -438,9 +448,9 @@ https://twitter.com/paprbckparadise/status/757694196543201281
     "imgrefurl": "http://www.harlequin.com/author.html"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/CoPebvXUkAEeGD0.jpg' /> | <img src='http://www.harlequin.com/media/images/books/1014-9781460350164.gif' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/CoPebvXUkAEeGD0.jpg' /> | <img width='300' src='http://www.harlequin.com/media/images/books/1014-9781460350164.gif' />
 
 
 ##### 19). 756228929740943362
@@ -460,9 +470,9 @@ https://twitter.com/paprbckparadise/status/756228929740943362
     "docid": "pvjlS_A-GaCrLM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/Cn6p4xrVMAAdSEK.jpg' /> | <img src='http://d2arxad8u2l0g7.cloudfront.net/books/1373650358l/18190497.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/Cn6p4xrVMAAdSEK.jpg' /> | <img width='300' src='http://d2arxad8u2l0g7.cloudfront.net/books/1373650358l/18190497.jpg' />
 
 
 ##### 20). 755892639338160129
@@ -482,9 +492,9 @@ https://twitter.com/paprbckparadise/status/755892639338160129
     "docid": "mMN1HhDhunZGSM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/Cn14IN6VMAQ9Nvc.jpg' /> | <img src='http://pictures.abebooks.com/isbn/9780553204667-us-300.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/Cn14IN6VMAQ9Nvc.jpg' /> | <img width='300' src='http://pictures.abebooks.com/isbn/9780553204667-us-300.jpg' />
 
 
 ##### 21). 755494650958360576
@@ -504,9 +514,9 @@ https://twitter.com/paprbckparadise/status/755494650958360576
     "docid": "FHpssNm3fijeVM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/CnwOKv3VMAAgwWl.jpg' /> | <img src='http://thumbs.ebaystatic.com/images/m/mzKusz02X0ZZt6GFzs1weRQ/s-l225.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/CnwOKv3VMAAgwWl.jpg' /> | <img width='300' src='http://thumbs.ebaystatic.com/images/m/mzKusz02X0ZZt6GFzs1weRQ/s-l225.jpg' />
 
 
 ##### 22). 755148375108878336
@@ -526,9 +536,9 @@ https://twitter.com/paprbckparadise/status/755148375108878336
     "docid": "g1Mti9a8_WqEDM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/CnrTTyAVMAAkpo8.jpg' /> | <img src='http://img0064.psstatic.com/154189183_amazoncom-blazing-guns-slocum-37-9780872169906-jake-.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/CnrTTyAVMAAkpo8.jpg' /> | <img width='300' src='http://img0064.psstatic.com/154189183_amazoncom-blazing-guns-slocum-37-9780872169906-jake-.jpg' />
 
 
 ##### 23). 754057968165920769
@@ -548,9 +558,9 @@ https://twitter.com/paprbckparadise/status/754057968165920769
     "docid": "M8c-LhBn3iTCqM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/CnbzjXIUMAUkUJj.jpg' /> | <img src='http://d.gr-assets.com/books/1174315773l/378787.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/CnbzjXIUMAUkUJj.jpg' /> | <img width='300' src='http://d.gr-assets.com/books/1174315773l/378787.jpg' />
 
 
 ##### 24). 753740941907767296
@@ -570,9 +580,9 @@ https://twitter.com/paprbckparadise/status/753740941907767296
     "docid": "dTa45OqHwsrknM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/CnXSWqmUMAE5X3f.jpg' /> | <img src='http://www.sf-boeken.nl/vogt-manmet1000namen.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/CnXSWqmUMAE5X3f.jpg' /> | <img width='300' src='http://www.sf-boeken.nl/vogt-manmet1000namen.jpg' />
 
 
 ##### 25). 752971694491443200
@@ -592,9 +602,9 @@ https://twitter.com/paprbckparadise/status/752971694491443200
     "docid": "4yTArjU4smOl0M"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/CnMXtEuUEAA2563.jpg' /> | <img src='https://images-na.ssl-images-amazon.com/images/I/51OLKNJf0XL.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/CnMXtEuUEAA2563.jpg' /> | <img width='300' src='https://images-na.ssl-images-amazon.com/images/I/51OLKNJf0XL.jpg' />
 
 
 ##### 26). 752585514503462914
@@ -614,9 +624,9 @@ https://twitter.com/paprbckparadise/status/752585514503462914
     "docid": "G795e-_NHz-TNM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/CnG4Zk8UsAA49AH.png' /> | <img src='http://thetrashcollector.com/PaperbacksMZ/BookQuestorTapes.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/CnG4Zk8UsAA49AH.png' /> | <img width='300' src='http://thetrashcollector.com/PaperbacksMZ/BookQuestorTapes.jpg' />
 
 
 ##### 27). 750829379115098112
@@ -636,9 +646,9 @@ https://twitter.com/paprbckparadise/status/750829379115098112
     "docid": "-AczgDOpOF3BcM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/Cmt7QT2VUAAyrOe.png' /> | <img src='http://ecx.images-amazon.com/images/P/2277214752.01._SY200_SCLZZZZZZZ_.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/Cmt7QT2VUAAyrOe.png' /> | <img width='300' src='http://ecx.images-amazon.com/images/P/2277214752.01._SY200_SCLZZZZZZZ_.jpg' />
 
 
 ##### 28). 750090802487894017
@@ -658,9 +668,9 @@ https://twitter.com/paprbckparadise/status/750090802487894017
     "docid": "jr4EuhHeZAz-1M"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/CmjbgfQUcAAkGzN.jpg' /> | <img src='http://img0003.psstatic.com/133223798_amazoncom-gunsmith-246-the-dead-mans-eyes-gunsmith-jove-.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/CmjbgfQUcAAkGzN.jpg' /> | <img width='300' src='http://img0003.psstatic.com/133223798_amazoncom-gunsmith-246-the-dead-mans-eyes-gunsmith-jove-.jpg' />
 
 
 ##### 29). 748997182519332865
@@ -680,9 +690,9 @@ https://twitter.com/paprbckparadise/status/748997182519332865
     "docid": "7c0u2IPrW5UaaM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/CmT48tAVUAAiPg5.jpg' /> | <img src='https://d.gr-assets.com/books/1266798469s/1422323.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/CmT48tAVUAAiPg5.jpg' /> | <img width='300' src='https://d.gr-assets.com/books/1266798469s/1422323.jpg' />
 
 
 ##### 30). 748605410089656321
@@ -702,9 +712,9 @@ https://twitter.com/paprbckparadise/status/748605410089656321
     "docid": "DuHKIjSQ8PUBpM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/CmOUM3IUYAAXVpV.jpg' /> | <img src='http://www.sff.net/people/doylemacdonald/statue_big.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/CmOUM3IUYAAXVpV.jpg' /> | <img width='300' src='http://www.sff.net/people/doylemacdonald/statue_big.jpg' />
 
 
 ##### 31). 747931791579721729
@@ -724,9 +734,9 @@ https://twitter.com/paprbckparadise/status/747931791579721729
     "docid": "Tn_Uku-27AKYWM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/CmEvntqUgAAXJBs.png' /> | <img src='http://d2arxad8u2l0g7.cloudfront.net/books/1348359606l/412351.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/CmEvntqUgAAXJBs.png' /> | <img width='300' src='http://d2arxad8u2l0g7.cloudfront.net/books/1348359606l/412351.jpg' />
 
 
 ##### 32). 746437990382075904
@@ -746,9 +756,9 @@ https://twitter.com/paprbckparadise/status/746437990382075904
     "docid": "bSdXnzYk4onvFM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/ClvhSEvVEAAjZLq.png' /> | <img src='http://kirstygreenwood.typepad.com/.a/6a010536b33b69970b01a73d891e0f970d-600wi' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/ClvhSEvVEAAjZLq.png' /> | <img width='300' src='http://kirstygreenwood.typepad.com/.a/6a010536b33b69970b01a73d891e0f970d-600wi' />
 
 
 ##### 33). 746093289569300480
@@ -768,9 +778,9 @@ https://twitter.com/paprbckparadise/status/746093289569300480
     "docid": "zDmyDZqlrKZJNM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/ClqmybGVYAAQZn6.jpg' /> | <img src='http://www.exodusbooks.com/images/item-medium/28828.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/ClqmybGVYAAQZn6.jpg' /> | <img width='300' src='http://www.exodusbooks.com/images/item-medium/28828.jpg' />
 
 
 ##### 34). 745767866511745024
@@ -790,9 +800,9 @@ https://twitter.com/paprbckparadise/status/745767866511745024
     "docid": "fMEfJMDDY_TB0M"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/Cll_FyxUkAEilvZ.png' /> | <img src='http://d2arxad8u2l0g7.cloudfront.net/books/1368121958m/412238.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/Cll_FyxUkAEilvZ.png' /> | <img width='300' src='http://d2arxad8u2l0g7.cloudfront.net/books/1368121958m/412238.jpg' />
 
 
 ##### 35). 745407512535408640
@@ -805,9 +815,9 @@ https://twitter.com/paprbckparadise/status/745407512535408640
     "imgrefurl": "http://books.freebooklibrary.org/index.php"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/Clg3wvRUYAQGR3Z.png' /> | <img src='http://books.freebooklibrary.org/books/books/Francine%20Pascal/When%20Love%20Dies%20(41712)/cover.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/Clg3wvRUYAQGR3Z.png' /> | <img width='300' src='http://books.freebooklibrary.org/books/books/Francine%20Pascal/When%20Love%20Dies%20(41712)/cover.jpg' />
 
 
 ##### 36). 744972618948706304
@@ -820,9 +830,9 @@ https://twitter.com/paprbckparadise/status/744972618948706304
     "imgrefurl": "http://www.hardyboysonline.net/content.php"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/Clar7AhVAAADnP3.jpg' /> | <img src='http://www.hardyboysonline.net/thumbs/hb-048.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/Clar7AhVAAADnP3.jpg' /> | <img width='300' src='http://www.hardyboysonline.net/thumbs/hb-048.jpg' />
 
 
 ##### 37). 743886860523470848
@@ -835,9 +845,9 @@ https://twitter.com/paprbckparadise/status/743886860523470848
     "imgrefurl": "http://www.hardyboysonline.net/content.php"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/ClLRKAzUgAABqNi.jpg' /> | <img src='http://www.hardyboysonline.net/thumbs/hb-069a.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/ClLRKAzUgAABqNi.jpg' /> | <img width='300' src='http://www.hardyboysonline.net/thumbs/hb-069a.jpg' />
 
 
 ##### 38). 743536457617285121
@@ -857,9 +867,9 @@ https://twitter.com/paprbckparadise/status/743536457617285121
     "docid": "A_RGbajhiZll4M"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/ClGSd81UoAAjz5y.jpg' /> | <img src='https://images-na.ssl-images-amazon.com/images/I/41N1CNiDLUL._AC_UL320_SR240,320_.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/ClGSd81UoAAjz5y.jpg' /> | <img width='300' src='https://images-na.ssl-images-amazon.com/images/I/41N1CNiDLUL._AC_UL320_SR240,320_.jpg' />
 
 
 ##### 39). 743160425223593984
@@ -879,9 +889,9 @@ https://twitter.com/paprbckparadise/status/743160425223593984
     "docid": "iOwBggRmGy2XJM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/ClA8d6bUkAA1WlU.png' /> | <img src='http://www.fictiondb.com/covers/0590460102.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/ClA8d6bUkAA1WlU.png' /> | <img width='300' src='http://www.fictiondb.com/covers/0590460102.jpg' />
 
 
 ##### 40). 742829085194231808
@@ -901,9 +911,9 @@ https://twitter.com/paprbckparadise/status/742829085194231808
     "docid": "-4LVwjQtvGmnBM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/Ck8PHbvUYAA-Jjp.jpg' /> | <img src='https://images-na.ssl-images-amazon.com/images/I/51s%2BQqqb0rL.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/Ck8PHbvUYAA-Jjp.jpg' /> | <img width='300' src='https://images-na.ssl-images-amazon.com/images/I/51s%2BQqqb0rL.jpg' />
 
 
 ##### 41). 742485039678509056
@@ -923,9 +933,9 @@ https://twitter.com/paprbckparadise/status/742485039678509056
     "docid": "xBmPbrFJHATnOM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/Ck3WNYWUgAAyl-C.jpg' /> | <img src='http://c.mobofree.com/m/5/546baaaef664d7d2788b456d_1024x768/Attaboy-Sam-Books-Cds-DVDs-For-sale-at-All-Nigeria.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/Ck3WNYWUgAAyl-C.jpg' /> | <img width='300' src='http://c.mobofree.com/m/5/546baaaef664d7d2788b456d_1024x768/Attaboy-Sam-Books-Cds-DVDs-For-sale-at-All-Nigeria.jpg' />
 
 
 ##### 42). 741364453849993218
@@ -945,9 +955,9 @@ https://twitter.com/paprbckparadise/status/741364453849993218
     "docid": "gYFiWfa64Rb1dM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/CknbCsaUYAA1hXB.png' /> | <img src='http://ic.pics.livejournal.com/mockingbird_13/12895513/2366/300.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/CknbCsaUYAA1hXB.png' /> | <img width='300' src='http://ic.pics.livejournal.com/mockingbird_13/12895513/2366/300.jpg' />
 
 
 ##### 43). 741035255969153024
@@ -967,9 +977,9 @@ https://twitter.com/paprbckparadise/status/741035255969153024
     "docid": "oq5dClcoiAkhhM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/Ckivo2HVAAAqAb_.jpg' /> | <img src='https://images-na.ssl-images-amazon.com/images/I/51RuZIBOU3L._AC_UL320_SR218,320_.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/Ckivo2HVAAAqAb_.jpg' /> | <img width='300' src='https://images-na.ssl-images-amazon.com/images/I/51RuZIBOU3L._AC_UL320_SR218,320_.jpg' />
 
 
 ##### 44). 739955885707907072
@@ -989,9 +999,9 @@ https://twitter.com/paprbckparadise/status/739955885707907072
     "docid": "xQB1_guXXQfnbM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/CkTZ9PRUYAAJB-o.jpg' /> | <img src='https://images.contentreserve.com/ImageType-400/1191-1/A61/B49/F1/%7BA61B49F1-B912-459D-B965-249CA47453CB%7DImg400.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/CkTZ9PRUYAAJB-o.jpg' /> | <img width='300' src='https://images.contentreserve.com/ImageType-400/1191-1/A61/B49/F1/%7BA61B49F1-B912-459D-B965-249CA47453CB%7DImg400.jpg' />
 
 
 ##### 45). 739609275153027072
@@ -1011,9 +1021,9 @@ https://twitter.com/paprbckparadise/status/739609275153027072
     "docid": "XuONnjrEjx5npM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/CkOet0xUUAA1YG3.jpg' /> | <img src='http://www.fictiondb.com/coversth/th_0439687608.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/CkOet0xUUAA1YG3.jpg' /> | <img width='300' src='http://www.fictiondb.com/coversth/th_0439687608.jpg' />
 
 
 ##### 46). 738805406458249216
@@ -1033,9 +1043,9 @@ https://twitter.com/paprbckparadise/status/738805406458249216
     "docid": "hMjQNkLzdJljlM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/CkDDmhEUYAIOyPd.jpg' /> | <img src='http://www.series-books.com/nancydrew/minstrel/drewl92.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/CkDDmhEUYAIOyPd.jpg' /> | <img width='300' src='http://www.series-books.com/nancydrew/minstrel/drewl92.jpg' />
 
 
 ##### 47). 738460325381431297
@@ -1055,9 +1065,9 @@ https://twitter.com/paprbckparadise/status/738460325381431297
     "docid": "BvG02D2w3vpQYM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/Cj-JwLEVAAE1LuO.jpg' /> | <img src='http://d.gr-assets.com/books/1332389678s/693394.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/Cj-JwLEVAAE1LuO.jpg' /> | <img width='300' src='http://d.gr-assets.com/books/1332389678s/693394.jpg' />
 
 
 ##### 48). 738154814836637697
@@ -1077,9 +1087,9 @@ https://twitter.com/paprbckparadise/status/738154814836637697
     "docid": "clpeYCfzQllIkM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/Cj5z5DmVEAAir8F.jpg' /> | <img src='https://images-na.ssl-images-amazon.com/images/I/513HxPyeApL._SX326_BO1,204,203,200_.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/Cj5z5DmVEAAir8F.jpg' /> | <img width='300' src='https://images-na.ssl-images-amazon.com/images/I/513HxPyeApL._SX326_BO1,204,203,200_.jpg' />
 
 
 ##### 49). 737771638280724480
@@ -1099,9 +1109,9 @@ https://twitter.com/paprbckparadise/status/737771638280724480
     "docid": "k7eULrl4q2MUgM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/Cj0XZTQUgAEOiUK.jpg' /> | <img src='https://images-na.ssl-images-amazon.com/images/I/511AVBWGHTL.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/Cj0XZTQUgAEOiUK.jpg' /> | <img width='300' src='https://images-na.ssl-images-amazon.com/images/I/511AVBWGHTL.jpg' />
 
 
 ##### 50). 737024090033131520
@@ -1121,9 +1131,9 @@ https://twitter.com/paprbckparadise/status/737024090033131520
     "docid": "VwBdflKO7xG24M"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/CjpvgRMVAAAIT8-.jpg' /> | <img src='http://images.contentful.com/7h71s48744nc/foGQ1DsOVvHHZBUoNfpUpZ/9575f0c3a7b96d768c592ba3d9f09668/missing-chums-cover-image' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/CjpvgRMVAAAIT8-.jpg' /> | <img width='300' src='http://images.contentful.com/7h71s48744nc/foGQ1DsOVvHHZBUoNfpUpZ/9575f0c3a7b96d768c592ba3d9f09668/missing-chums-cover-image' />
 
 
 ##### 51). 736688529346961408
@@ -1143,9 +1153,9 @@ https://twitter.com/paprbckparadise/status/736688529346961408
     "docid": "QcPyK_4wtP34JM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/Cjk-UDFUYAIxICI.jpg' /> | <img src='http://blog-imgs-42.fc2.com/d/o/g/dogehin/bog-g-544.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/Cjk-UDFUYAIxICI.jpg' /> | <img width='300' src='http://blog-imgs-42.fc2.com/d/o/g/dogehin/bog-g-544.jpg' />
 
 
 ##### 52). 736280814107824128
@@ -1165,9 +1175,9 @@ https://twitter.com/paprbckparadise/status/736280814107824128
     "docid": "9FawcOPQrP4KCM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/CjfLf7BUUAEDKic.png' /> | <img src='http://www.scholastic.com/content5/media/products/10/9780689716010_xlg.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/CjfLf7BUUAEDKic.png' /> | <img width='300' src='http://www.scholastic.com/content5/media/products/10/9780689716010_xlg.jpg' />
 
 
 ##### 53). 735915344749985792
@@ -1187,9 +1197,9 @@ https://twitter.com/paprbckparadise/status/735915344749985792
     "docid": "2bQW3MAIVT9bXM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/CjZ_Gz1UoAA6CLg.jpg' /> | <img src='http://d2arxad8u2l0g7.cloudfront.net/books/1174229769m/371047.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/CjZ_Gz1UoAA6CLg.jpg' /> | <img width='300' src='http://d2arxad8u2l0g7.cloudfront.net/books/1174229769m/371047.jpg' />
 
 
 ##### 54). 735562935884349440
@@ -1209,9 +1219,9 @@ https://twitter.com/paprbckparadise/status/735562935884349440
     "docid": "h3pFG7VFWkEsZM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/CjU-l6iUYAAq5Z8.jpg' /> | <img src='http://www.oversixty.co.nz/media/8332/hardy-boys-3.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/CjU-l6iUYAAq5Z8.jpg' /> | <img width='300' src='http://www.oversixty.co.nz/media/8332/hardy-boys-3.jpg' />
 
 
 ##### 55). 735221538526400512
@@ -1231,9 +1241,9 @@ https://twitter.com/paprbckparadise/status/735221538526400512
     "docid": "si8mI_rrSQ4m6M"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/CjQIF-fUkAAXNUt.jpg' /> | <img src='http://d2arxad8u2l0g7.cloudfront.net/books/1311811772s/2785169.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/CjQIF-fUkAAXNUt.jpg' /> | <img width='300' src='http://d2arxad8u2l0g7.cloudfront.net/books/1311811772s/2785169.jpg' />
 
 
 ##### 56). 734838823285202944
@@ -1253,9 +1263,9 @@ https://twitter.com/paprbckparadise/status/734838823285202944
     "docid": "2yM4D_rcpkm-uM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/CjKsBBGUkAAluGt.jpg' /> | <img src='http://thumbs2.ebaystatic.com/d/l225/m/meLeE-AC_VOGzwVb3N0VS0Q.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/CjKsBBGUkAAluGt.jpg' /> | <img width='300' src='http://thumbs2.ebaystatic.com/d/l225/m/meLeE-AC_VOGzwVb3N0VS0Q.jpg' />
 
 
 ##### 57). 734106689952059392
@@ -1268,9 +1278,9 @@ https://twitter.com/paprbckparadise/status/734106689952059392
     "imgrefurl": "http://www.gamebooks.org/cgi-bin/search.cgi"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/CjASJPOVEAEoVB2.jpg' /> | <img src='http://www.gamebooks.org/gallery/cyoa071thumb.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/CjASJPOVEAEoVB2.jpg' /> | <img width='300' src='http://www.gamebooks.org/gallery/cyoa071thumb.jpg' />
 
 
 ##### 58). 733749467590107136
@@ -1290,9 +1300,9 @@ https://twitter.com/paprbckparadise/status/733749467590107136
     "docid": "8pcuJFiFFE6ReM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/Ci7NQJkUoAUFl-c.jpg' /> | <img src='http://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1288215509i/290409._UY461_SS461_.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/Ci7NQJkUoAUFl-c.jpg' /> | <img width='300' src='http://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1288215509i/290409._UY461_SS461_.jpg' />
 
 
 ##### 59). 733063541595344898
@@ -1312,9 +1322,9 @@ https://twitter.com/paprbckparadise/status/733063541595344898
     "docid": "gu38qPfxJUet8M"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/CixdaArUkAAGl_W.jpg' /> | <img src='http://www.series-books.com/nancydrew/pbs/files42.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/CixdaArUkAAGl_W.jpg' /> | <img width='300' src='http://www.series-books.com/nancydrew/pbs/files42.jpg' />
 
 
 ##### 60). 732669361970761728
@@ -1334,9 +1344,9 @@ https://twitter.com/paprbckparadise/status/732669361970761728
     "docid": "Sp0upIv8KATGwM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/Cir25wGUgAA4mz3.jpg' /> | <img src='https://images-na.ssl-images-amazon.com/images/I/41KJVDK07XL.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/Cir25wGUgAA4mz3.jpg' /> | <img width='300' src='https://images-na.ssl-images-amazon.com/images/I/41KJVDK07XL.jpg' />
 
 
 ##### 61). 732379201458708480
@@ -1356,9 +1366,9 @@ https://twitter.com/paprbckparadise/status/732379201458708480
     "docid": "DUMi7bjOsW8nDM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/CinvALtVAAEauFW.jpg' /> | <img src='http://d.gr-assets.com/books/1186761908l/1679151.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/CinvALtVAAEauFW.jpg' /> | <img width='300' src='http://d.gr-assets.com/books/1186761908l/1679151.jpg' />
 
 
 ##### 62). 731629383333478400
@@ -1378,9 +1388,9 @@ https://twitter.com/paprbckparadise/status/731629383333478400
     "docid": "ikjIKLLssLtBNM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/CidFDBlU4AEEkI9.jpg' /> | <img src='http://thebobbseytwins.weebly.com/uploads/1/0/3/1/10317938/8581448_orig.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/CidFDBlU4AEEkI9.jpg' /> | <img width='300' src='http://thebobbseytwins.weebly.com/uploads/1/0/3/1/10317938/8581448_orig.jpg' />
 
 
 ##### 63). 731277454103318528
@@ -1400,9 +1410,9 @@ https://twitter.com/paprbckparadise/status/731277454103318528
     "docid": "HBsRDSV4qMuBpM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/CiYE-CuVAAEY6bU.png' /> | <img src='http://www.phyllisnaylor.com/otwalskypath350.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/CiYE-CuVAAEY6bU.png' /> | <img width='300' src='http://www.phyllisnaylor.com/otwalskypath350.jpg' />
 
 
 ##### 64). 730936310559428613
@@ -1422,9 +1432,9 @@ https://twitter.com/paprbckparadise/status/730936310559428613
     "docid": "nvmfnyfR_jnZjM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/CiTOs2mUoAAJI7q.jpg' /> | <img src='http://ecx.images-amazon.com/images/I/61R2wwR1iEL._BO2,204,203,200_PIsitb-sticker-arrow-click,TopRight,35,-76_AA300_SH20_OU01_.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/CiTOs2mUoAAJI7q.jpg' /> | <img width='300' src='http://ecx.images-amazon.com/images/I/61R2wwR1iEL._BO2,204,203,200_PIsitb-sticker-arrow-click,TopRight,35,-76_AA300_SH20_OU01_.jpg' />
 
 
 ##### 65). 730483391817121792
@@ -1444,9 +1454,9 @@ https://twitter.com/paprbckparadise/status/730483391817121792
     "docid": "yz3dVXX6w2Kh8M"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/CiMyxiSUoAE0ns_.jpg' /> | <img src='http://images.contentful.com/7h71s48744nc/M06671117X5qUcWisfi61r/4f25e81c2ac32bfd5afab39ce01f5a63/tower-treasure-cover-image' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/CiMyxiSUoAE0ns_.jpg' /> | <img width='300' src='http://images.contentful.com/7h71s48744nc/M06671117X5qUcWisfi61r/4f25e81c2ac32bfd5afab39ce01f5a63/tower-treasure-cover-image' />
 
 
 ##### 66). 729706980403761152
@@ -1466,9 +1476,9 @@ https://twitter.com/paprbckparadise/status/729706980403761152
     "docid": "OWFh73ymuFCdeM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/CiBwoaHWwAAu7A8.jpg' /> | <img src='http://dazedimg.dazedgroup.netdna-cdn.com/318/azure/dazed-prod/1140/6/1146762.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/CiBwoaHWwAAu7A8.jpg' /> | <img width='300' src='http://dazedimg.dazedgroup.netdna-cdn.com/318/azure/dazed-prod/1140/6/1146762.jpg' />
 
 
 ##### 67). 729360937422073856
@@ -1488,9 +1498,9 @@ https://twitter.com/paprbckparadise/status/729360937422073856
     "docid": "P9rYWe8AhGaN5M"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/Ch816FnXIAAZS-E.jpg' /> | <img src='http://www.newworldzorro.com/seriesbooks/nancydrew/pc/drewpc7.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/Ch816FnXIAAZS-E.jpg' /> | <img width='300' src='http://www.newworldzorro.com/seriesbooks/nancydrew/pc/drewpc7.jpg' />
 
 
 ##### 68). 728965392899686400
@@ -1510,9 +1520,9 @@ https://twitter.com/paprbckparadise/status/728965392899686400
     "docid": "yLpl5m4HcWmzMM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/Ch3OKXwW0AEbVdN.jpg' /> | <img src='https://images-na.ssl-images-amazon.com/images/I/51LltWT4QGL.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/Ch3OKXwW0AEbVdN.jpg' /> | <img width='300' src='https://images-na.ssl-images-amazon.com/images/I/51LltWT4QGL.jpg' />
 
 
 ##### 69). 728313291601252352
@@ -1532,9 +1542,9 @@ https://twitter.com/paprbckparadise/status/728313291601252352
     "docid": "abLAc0xX0Jk0DM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/Cht9FFOWkAIBzyM.jpg' /> | <img src='http://prodimage.images-bn.com/pimages/9780807554043_p0_v1_s1200x630.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/Cht9FFOWkAIBzyM.jpg' /> | <img width='300' src='http://prodimage.images-bn.com/pimages/9780807554043_p0_v1_s1200x630.jpg' />
 
 
 ##### 70). 727910483517448195
@@ -1554,9 +1564,9 @@ https://twitter.com/paprbckparadise/status/727910483517448195
     "docid": "33iCD7iIxTAhzM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/ChoOuhtWUAIFqpM.jpg' /> | <img src='http://www.auctionexpress.com/bmz_cache/2/202cbb4534a30340a1925677d0046e36.image.81x100.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/ChoOuhtWUAIFqpM.jpg' /> | <img width='300' src='http://www.auctionexpress.com/bmz_cache/2/202cbb4534a30340a1925677d0046e36.image.81x100.jpg' />
 
 
 ##### 71). 727540314034970625
@@ -1576,9 +1586,9 @@ https://twitter.com/paprbckparadise/status/727540314034970625
     "docid": "ZVnTiE_lZBCcJM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/Chi-D3ZUkAA0yr4.jpg' /> | <img src='https://images-na.ssl-images-amazon.com/images/I/51lz7WZLdvL.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/Chi-D3ZUkAA0yr4.jpg' /> | <img width='300' src='https://images-na.ssl-images-amazon.com/images/I/51lz7WZLdvL.jpg' />
 
 
 ##### 72). 727237251948679169
@@ -1598,9 +1608,9 @@ https://twitter.com/paprbckparadise/status/727237251948679169
     "docid": "2vakUQSaV7kshM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/CheqbVEVEAAGXJH.jpg' /> | <img src='http://d2arxad8u2l0g7.cloudfront.net/books/1330774994l/290404.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/CheqbVEVEAAGXJH.jpg' /> | <img width='300' src='http://d2arxad8u2l0g7.cloudfront.net/books/1330774994l/290404.jpg' />
 
 
 ##### 73). 726898376504025088
@@ -1620,9 +1630,9 @@ https://twitter.com/paprbckparadise/status/726898376504025088
     "docid": "746tiwngQfELFM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/ChZ2OLbUgAADLhr.jpg' /> | <img src='http://www0.alibris-static.com/sweet-valley-twins-chiller-2-the-ghost-in-the-graveyard/isbn/9780553158014.gif' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/ChZ2OLbUgAADLhr.jpg' /> | <img width='300' src='http://www0.alibris-static.com/sweet-valley-twins-chiller-2-the-ghost-in-the-graveyard/isbn/9780553158014.gif' />
 
 
 ##### 74). 726466487918039040
@@ -1642,9 +1652,9 @@ https://twitter.com/paprbckparadise/status/726466487918039040
     "docid": "P9rYWe8AhGaN5M"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/ChTta7ZU4AAi53n.jpg' /> | <img src='http://www.newworldzorro.com/seriesbooks/nancydrew/pc/drewpc2b.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/ChTta7ZU4AAi53n.jpg' /> | <img width='300' src='http://www.newworldzorro.com/seriesbooks/nancydrew/pc/drewpc2b.jpg' />
 
 
 ##### 75). 726098532973703168
@@ -1664,9 +1674,9 @@ https://twitter.com/paprbckparadise/status/726098532973703168
     "docid": "gu38qPfxJUet8M"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/ChOexIiUoAAZRd0.jpg' /> | <img src='http://www.series-books.com/nancydrew/pbs/files28.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/ChOexIiUoAAZRd0.jpg' /> | <img width='300' src='http://www.series-books.com/nancydrew/pbs/files28.jpg' />
 
 
 ##### 76). 725733343342415872
@@ -1686,9 +1696,9 @@ https://twitter.com/paprbckparadise/status/725733343342415872
     "docid": "2bgKl2cavqQLkM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/ChJSoQnUUAA1RJo.jpg' /> | <img src='http://pictures.abebooks.com/isbn/9781403776952-us-300.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/ChJSoQnUUAA1RJo.jpg' /> | <img width='300' src='http://pictures.abebooks.com/isbn/9781403776952-us-300.jpg' />
 
 
 ##### 77). 725367520971120640
@@ -1708,9 +1718,9 @@ https://twitter.com/paprbckparadise/status/725367520971120640
     "docid": "AeBq9Sap7yajmM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/ChEF6qAU0AEr6gh.jpg' /> | <img src='http://seriesbookart.weebly.com/uploads/2/4/0/8/24088442/7592118_orig.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/ChEF6qAU0AEr6gh.jpg' /> | <img width='300' src='http://seriesbookart.weebly.com/uploads/2/4/0/8/24088442/7592118_orig.jpg' />
 
 
 ##### 78). 725070441166045189
@@ -1730,9 +1740,9 @@ https://twitter.com/paprbckparadise/status/725070441166045189
     "docid": "vqt4ZqSWr27MNM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/Cg_3uUXUcAARaHM.png' /> | <img src='http://www.oddee.com/_media/imgs/articles2/a97274_b6.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/Cg_3uUXUcAARaHM.png' /> | <img width='300' src='http://www.oddee.com/_media/imgs/articles2/a97274_b6.jpg' />
 
 
 ##### 79). 724342509137104896
@@ -1752,9 +1762,9 @@ https://twitter.com/paprbckparadise/status/724342509137104896
     "docid": "S9tVcHRExvStGM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/Cg1hrHkUYAAYvht.jpg' /> | <img src='https://img.fantasticfiction.com/bigthumbs/n7/n35972.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/Cg1hrHkUYAAYvht.jpg' /> | <img width='300' src='https://img.fantasticfiction.com/bigthumbs/n7/n35972.jpg' />
 
 
 ##### 80). 723647872307064833
@@ -1774,9 +1784,9 @@ https://twitter.com/paprbckparadise/status/723647872307064833
     "docid": "WXQ6ALYznwpLTM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/Cgrp57LU8AEE13D.jpg' /> | <img src='https://images-na.ssl-images-amazon.com/images/I/51QfnK1zARL.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/Cgrp57LU8AEE13D.jpg' /> | <img width='300' src='https://images-na.ssl-images-amazon.com/images/I/51QfnK1zARL.jpg' />
 
 
 ##### 81). 723195263758688257
@@ -1796,9 +1806,9 @@ https://twitter.com/paprbckparadise/status/723195263758688257
     "docid": "IJ1wXgc7VicA3M"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/CglOQpNU4AAaijc.jpg' /> | <img src='https://lovelace-media.imgix.net/uploads/573/9b748af0-c7b7-0132-9a5a-0e01949ad350.jpg?w=700&fit=max&auto=format&q=70' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/CglOQpNU4AAaijc.jpg' /> | <img width='300' src='https://lovelace-media.imgix.net/uploads/573/9b748af0-c7b7-0132-9a5a-0e01949ad350.jpg?w=700&fit=max&auto=format&q=70' />
 
 
 ##### 82). 722833098694479873
@@ -1818,9 +1828,9 @@ https://twitter.com/paprbckparadise/status/722833098694479873
     "docid": "OzL8_RIGcamlYM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/CggE33ZUYAAuMLw.jpg' /> | <img src='https://images-na.ssl-images-amazon.com/images/I/41Sir1QkH-L.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/CggE33ZUYAAuMLw.jpg' /> | <img width='300' src='https://images-na.ssl-images-amazon.com/images/I/41Sir1QkH-L.jpg' />
 
 
 ##### 83). 721423358580002816
@@ -1840,9 +1850,9 @@ https://twitter.com/paprbckparadise/status/721423358580002816
     "docid": "xUd8XtoNvQXfEM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/CgMCuMeUAAA4g8N.jpg' /> | <img src='http://www.quirkbooks.com/sites/default/files/editor_uploads/original/boxcar.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/CgMCuMeUAAA4g8N.jpg' /> | <img width='300' src='http://www.quirkbooks.com/sites/default/files/editor_uploads/original/boxcar.jpg' />
 
 
 ##### 84). 721057679574065158
@@ -1862,9 +1872,9 @@ https://twitter.com/paprbckparadise/status/721057679574065158
     "docid": "oQxsXY_kUtMRZM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/CgG2I3-UUAA8uR6.jpg' /> | <img src='https://images-na.ssl-images-amazon.com/images/I/6109%2BCCZm6L.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/CgG2I3-UUAA8uR6.jpg' /> | <img width='300' src='https://images-na.ssl-images-amazon.com/images/I/6109%2BCCZm6L.jpg' />
 
 
 ##### 85). 720638464102764544
@@ -1884,9 +1894,9 @@ https://twitter.com/paprbckparadise/status/720638464102764544
     "docid": "JG-MmNJYZjgdlM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/CgA43UoUAAAWhOq.jpg' /> | <img src='https://d.gr-assets.com/books/1202225756s/1961505.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/CgA43UoUAAAWhOq.jpg' /> | <img width='300' src='https://d.gr-assets.com/books/1202225756s/1961505.jpg' />
 
 
 ##### 86). 719937833100685312
@@ -1906,9 +1916,9 @@ https://twitter.com/paprbckparadise/status/719937833100685312
     "docid": "NWSOwlxU_d0bLM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/Cf27pNcUEAAejZg.jpg' /> | <img src='http://img0075.psstatic.com/152640896_amazoncom-path-of-the-pale-horse-9780590464215-paul-.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/Cf27pNcUEAAejZg.jpg' /> | <img width='300' src='http://img0075.psstatic.com/152640896_amazoncom-path-of-the-pale-horse-9780590464215-paul-.jpg' />
 
 
 ##### 87). 719577764253138945
@@ -1928,9 +1938,9 @@ https://twitter.com/paprbckparadise/status/719577764253138945
     "docid": "uJusxm6w9f6OEM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/Cfx0KcpUsAEbObC.jpg' /> | <img src='http://images.contentful.com/7h71s48744nc/KjYIEoErWW4AVPB4G59LLQ/47bd814095a5db3b4abb6f03517f9f30/heart-full-of-hope-cover-image' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/Cfx0KcpUsAEbObC.jpg' /> | <img width='300' src='http://images.contentful.com/7h71s48744nc/KjYIEoErWW4AVPB4G59LLQ/47bd814095a5db3b4abb6f03517f9f30/heart-full-of-hope-cover-image' />
 
 
 ##### 88). 719223403626909697
@@ -1943,9 +1953,9 @@ https://twitter.com/paprbckparadise/status/719223403626909697
     "imgrefurl": "http://carlasbigbookshed.com.au/index.php"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/Cfsx39uUYAA6_u9.jpg' /> | <img src='http://carlasbigbookshed.com.au/images/Friends%20Til%20The%20Ocean%20Waves%20Friends%204Ever.JPG' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/Cfsx39uUYAA6_u9.jpg' /> | <img width='300' src='http://carlasbigbookshed.com.au/images/Friends%20Til%20The%20Ocean%20Waves%20Friends%204Ever.JPG' />
 
 
 ##### 89). 718888693893767168
@@ -1965,9 +1975,9 @@ https://twitter.com/paprbckparadise/status/718888693893767168
     "docid": "bhi4SfC0m8i8LM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/CfoBdSRUkAAI-LX.jpg' /> | <img src='https://images-na.ssl-images-amazon.com/images/I/21RDG2F97GL._AC_UL320_SR220,320_.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/CfoBdSRUkAAI-LX.jpg' /> | <img width='300' src='https://images-na.ssl-images-amazon.com/images/I/21RDG2F97GL._AC_UL320_SR220,320_.jpg' />
 
 
 ##### 90). 718500670995701760
@@ -1987,9 +1997,9 @@ https://twitter.com/paprbckparadise/status/718500670995701760
     "docid": "Po2D6x_Z6IRLOM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/CfigjZAUYAADv1v.jpg' /> | <img src='http://3.darkroom.shortlist.com/1025/bfbe895f6bd9dbc853a039544e608433:b4f16299601016313cd163fd3caec612/covers.png' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/CfigjZAUYAADv1v.jpg' /> | <img width='300' src='http://3.darkroom.shortlist.com/1025/bfbe895f6bd9dbc853a039544e608433:b4f16299601016313cd163fd3caec612/covers.png' />
 
 
 ##### 91). 718449143597772802
@@ -2009,9 +2019,9 @@ https://twitter.com/paprbckparadise/status/718449143597772802
     "docid": "ikjIKLLssLtBNM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/CfhxsGFUkAASBlH.jpg' /> | <img src='http://thebobbseytwins.weebly.com/uploads/1/0/3/1/10317938/8581448_orig.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/CfhxsGFUkAASBlH.jpg' /> | <img width='300' src='http://thebobbseytwins.weebly.com/uploads/1/0/3/1/10317938/8581448_orig.jpg' />
 
 
 ##### 92). 718117153065410561
@@ -2031,9 +2041,9 @@ https://twitter.com/paprbckparadise/status/718117153065410561
     "docid": "fMEfJMDDY_TB0M"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/CfdDvtkVAAAaUfj.jpg' /> | <img src='http://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1256604945i/1200937._UY475_SS475_.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/CfdDvtkVAAAaUfj.jpg' /> | <img width='300' src='http://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1256604945i/1200937._UY475_SS475_.jpg' />
 
 
 ##### 93). 717748045069180928
@@ -2053,9 +2063,9 @@ https://twitter.com/paprbckparadise/status/717748045069180928
     "docid": "Rd3kX1B8KkDavM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/CfX0CyoUYAABkaZ.jpg' /> | <img src='https://cdn-images-1.medium.com/max/329/0*_timHavQ-08v0i0z.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/CfX0CyoUYAABkaZ.jpg' /> | <img width='300' src='https://cdn-images-1.medium.com/max/329/0*_timHavQ-08v0i0z.jpg' />
 
 
 ##### 94). 717426667791069184
@@ -2075,9 +2085,9 @@ https://twitter.com/paprbckparadise/status/717426667791069184
     "docid": "DyVGU2Wm4obPVM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/CfTPwLVUMAAyIJ4.jpg' /> | <img src='http://i.dailymail.co.uk/i/pix/2016/04/07/21/32F2B73200000578-0-image-a-38_1460062549002.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/CfTPwLVUMAAyIJ4.jpg' /> | <img width='300' src='http://i.dailymail.co.uk/i/pix/2016/04/07/21/32F2B73200000578-0-image-a-38_1460062549002.jpg' />
 
 
 ##### 95). 717385843065753600
@@ -2090,9 +2100,9 @@ https://twitter.com/paprbckparadise/status/717385843065753600
     "imgrefurl": "https://www.overdrive.com/series/nancy-drew-mystery"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/CfSqn3nUMAAFLbg.jpg' /> | <img src='https://images.contentreserve.com/ImageType-400/1523-1/8B5/392/64/%7B8B539264-7653-4717-B181-25D6808A7AB6%7DImg400.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/CfSqn3nUMAAFLbg.jpg' /> | <img width='300' src='https://images.contentreserve.com/ImageType-400/1523-1/8B5/392/64/%7B8B539264-7653-4717-B181-25D6808A7AB6%7DImg400.jpg' />
 
 
 ##### 96). 717016641947639809
@@ -2112,9 +2122,9 @@ https://twitter.com/paprbckparadise/status/717016641947639809
     "docid": "DTZ-4j5PDYZBHM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/CfNa1dwUIAA2_RT.png' /> | <img src='http://www.series-books.com/nancydrew/pbs/files8.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/CfNa1dwUIAA2_RT.png' /> | <img width='300' src='http://www.series-books.com/nancydrew/pbs/files8.jpg' />
 
 
 ##### 97). 716638876920455170
@@ -2134,9 +2144,9 @@ https://twitter.com/paprbckparadise/status/716638876920455170
     "docid": "6pMUxnvl3PVYRM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/CfIDQszUkAA9Kh0.jpg' /> | <img src='http://booklife.com/image-factory/http/localhost/amazongetcover/9780553480245.jpg/w204.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/CfIDQszUkAA9Kh0.jpg' /> | <img width='300' src='http://booklife.com/image-factory/http/localhost/amazongetcover/9780553480245.jpg/w204.jpg' />
 
 
 ##### 98). 716325388117409792
@@ -2156,9 +2166,9 @@ https://twitter.com/paprbckparadise/status/716325388117409792
     "docid": "fMEfJMDDY_TB0M"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/CfDmJQ9UkAI5Qm5.jpg' /> | <img src='http://d2arxad8u2l0g7.cloudfront.net/books/1256604945l/1200937.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/CfDmJQ9UkAI5Qm5.jpg' /> | <img width='300' src='http://d2arxad8u2l0g7.cloudfront.net/books/1256604945l/1200937.jpg' />
 
 
 ##### 99). 715982100269297664
@@ -2178,9 +2188,9 @@ https://twitter.com/paprbckparadise/status/715982100269297664
     "docid": "bhi4SfC0m8i8LM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/Ce-t7RLVIAAPX7A.jpg' /> | <img src='https://images-na.ssl-images-amazon.com/images/I/21RDG2F97GL._AC_UL320_SR220,320_.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/Ce-t7RLVIAAPX7A.jpg' /> | <img width='300' src='https://images-na.ssl-images-amazon.com/images/I/21RDG2F97GL._AC_UL320_SR220,320_.jpg' />
 
 
 ##### 100). 715947690421587969
@@ -2200,9 +2210,9 @@ https://twitter.com/paprbckparadise/status/715947690421587969
     "docid": "X62pvWWkUADCtM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/Ce-OoW3UUAExyP-.jpg' /> | <img src='https://i.harperapps.com/covers/9780380712366/y648.png' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/Ce-OoW3UUAExyP-.jpg' /> | <img width='300' src='https://i.harperapps.com/covers/9780380712366/y648.png' />
 
 
 ##### 101). 715218786555547648
@@ -2222,9 +2232,9 @@ https://twitter.com/paprbckparadise/status/715218786555547648
     "docid": "rRXH-3OWVx5PZM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/Cez3sidWwAAGSCt.jpg' /> | <img src='https://img1.etsystatic.com/067/1/7110130/il_fullxfull.793950477_rata.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/Cez3sidWwAAGSCt.jpg' /> | <img width='300' src='https://img1.etsystatic.com/067/1/7110130/il_fullxfull.793950477_rata.jpg' />
 
 
 ##### 102). 714844901905567744
@@ -2244,9 +2254,9 @@ https://twitter.com/paprbckparadise/status/714844901905567744
     "docid": "kl7ncKUhik5bQM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/Ceujpj3WIAALvNy.jpg' /> | <img src='http://www4.alibris-static.com/snow-leopard/isbn/9780525457978.gif' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/Ceujpj3WIAALvNy.jpg' /> | <img width='300' src='http://www4.alibris-static.com/snow-leopard/isbn/9780525457978.gif' />
 
 
 ##### 103). 714476410765619201
@@ -2266,9 +2276,9 @@ https://twitter.com/paprbckparadise/status/714476410765619201
     "docid": "UBfew6g-XDV73M"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/CepUgljXEAItKh3.jpg' /> | <img src='http://www4.alibris-static.com/the-counterfeit-collection/isbn/9780842350495.gif' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/CepUgljXEAItKh3.jpg' /> | <img width='300' src='http://www4.alibris-static.com/the-counterfeit-collection/isbn/9780842350495.gif' />
 
 
 ##### 104). 714161617978531840
@@ -2288,9 +2298,9 @@ https://twitter.com/paprbckparadise/status/714161617978531840
     "docid": "RCR7OjJqo1ivLM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/Cek2NN7WIAErU_C.jpg' /> | <img src='http://d.gr-assets.com/books/1388459148m/313065.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/Cek2NN7WIAErU_C.jpg' /> | <img width='300' src='http://d.gr-assets.com/books/1388459148m/313065.jpg' />
 
 
 ##### 105). 713779634676957184
@@ -2310,9 +2320,9 @@ https://twitter.com/paprbckparadise/status/713779634676957184
     "docid": "8Udv29XmA0BJOM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/Cefay3TXIAELxWy.jpg' /> | <img src='https://images-na.ssl-images-amazon.com/images/I/51QSS5SAK4L.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/Cefay3TXIAELxWy.jpg' /> | <img width='300' src='https://images-na.ssl-images-amazon.com/images/I/51QSS5SAK4L.jpg' />
 
 
 ##### 106). 713449040747204608
@@ -2332,9 +2342,9 @@ https://twitter.com/paprbckparadise/status/713449040747204608
     "docid": "bhi4SfC0m8i8LM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/CeauHu9WQAAcICU.jpg' /> | <img src='https://images-na.ssl-images-amazon.com/images/I/21RDG2F97GL._AC_UL320_SR220,320_.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/CeauHu9WQAAcICU.jpg' /> | <img width='300' src='https://images-na.ssl-images-amazon.com/images/I/21RDG2F97GL._AC_UL320_SR220,320_.jpg' />
 
 
 ##### 107). 713382070450393088
@@ -2347,9 +2357,9 @@ https://twitter.com/paprbckparadise/status/713382070450393088
     "imgrefurl": "https://www.mycomicshop.com/search"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/CeZxNnhVIAEJz2-.jpg' /> | <img src='https://d1466nnw0ex81e.cloudfront.net/n_iv/600/1168947.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/CeZxNnhVIAEJz2-.jpg' /> | <img width='300' src='https://d1466nnw0ex81e.cloudfront.net/n_iv/600/1168947.jpg' />
 
 
 ##### 108). 713040129015689216
@@ -2369,9 +2379,9 @@ https://twitter.com/paprbckparadise/status/713040129015689216
     "docid": "fMEfJMDDY_TB0M"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/CeU6N_jUkAA646j.png' /> | <img src='http://d2arxad8u2l0g7.cloudfront.net/books/1256604945m/1200937.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/CeU6N_jUkAA646j.png' /> | <img width='300' src='http://d2arxad8u2l0g7.cloudfront.net/books/1256604945m/1200937.jpg' />
 
 
 ##### 109). 712769838758821889
@@ -2391,9 +2401,9 @@ https://twitter.com/paprbckparadise/status/712769838758821889
     "docid": "KX8D4Q6ixjLjDM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/CeREZA9UsAAUBou.jpg' /> | <img src='http://www.shiversbooks.com/humano-morphs/images/04_large.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/CeREZA9UsAAUBou.jpg' /> | <img width='300' src='http://www.shiversbooks.com/humano-morphs/images/04_large.jpg' />
 
 
 ##### 110). 712676589528461312
@@ -2413,9 +2423,9 @@ https://twitter.com/paprbckparadise/status/712676589528461312
     "docid": "fMEfJMDDY_TB0M"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/CePvlPSVAAAQlul.jpg' /> | <img src='http://d2arxad8u2l0g7.cloudfront.net/books/1256604945m/1200937.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/CePvlPSVAAAQlul.jpg' /> | <img width='300' src='http://d2arxad8u2l0g7.cloudfront.net/books/1256604945m/1200937.jpg' />
 
 
 ##### 111). 712419926963654657
@@ -2435,9 +2445,9 @@ https://twitter.com/paprbckparadise/status/712419926963654657
     "docid": "oghbfN1NKd8M5M"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/CeMGJgzUkAA4wJP.jpg' /> | <img src='https://images-na.ssl-images-amazon.com/images/I/5150Nmusm8L.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/CeMGJgzUkAA4wJP.jpg' /> | <img width='300' src='https://images-na.ssl-images-amazon.com/images/I/5150Nmusm8L.jpg' />
 
 
 ##### 112). 712310942181122048
@@ -2457,9 +2467,9 @@ https://twitter.com/paprbckparadise/status/712310942181122048
     "docid": "hMjQNkLzdJljlM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/CeKjBwMVIAARWUY.png' /> | <img src='http://www.series-books.com/nancydrew/minstrel/drewl58.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/CeKjBwMVIAARWUY.png' /> | <img width='300' src='http://www.series-books.com/nancydrew/minstrel/drewl58.jpg' />
 
 
 ##### 113). 712027796604723200
@@ -2479,9 +2489,9 @@ https://twitter.com/paprbckparadise/status/712027796604723200
     "docid": "v04Da-otvijpIM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/CeGhghLUsAA6BNt.jpg' /> | <img src='https://img0.etsystatic.com/064/1/7110130/il_fullxfull.794196902_eau6.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/CeGhghLUsAA6BNt.jpg' /> | <img width='300' src='https://img0.etsystatic.com/064/1/7110130/il_fullxfull.794196902_eau6.jpg' />
 
 
 ##### 114). 711939361089060866
@@ -2501,9 +2511,9 @@ https://twitter.com/paprbckparadise/status/711939361089060866
     "docid": "p1E5a2J5vdlAmM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/CeFRE5JUUAAlWpZ.jpg' /> | <img src='https://i.harperapps.com/covers/9780380724697/x500.png' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/CeFRE5JUUAAlWpZ.jpg' /> | <img width='300' src='https://i.harperapps.com/covers/9780380724697/x500.png' />
 
 
 ##### 115). 711590017928286208
@@ -2523,9 +2533,9 @@ https://twitter.com/paprbckparadise/status/711590017928286208
     "docid": "tU89O7G8nDqk8M"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/CeATWcaUEAAjKzW.jpg' /> | <img src='http://www.theshepherdsdog.com/JocksIsland.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/CeATWcaUEAAjKzW.jpg' /> | <img width='300' src='http://www.theshepherdsdog.com/JocksIsland.jpg' />
 
 
 ##### 116). 711241128251555840
@@ -2545,9 +2555,9 @@ https://twitter.com/paprbckparadise/status/711241128251555840
     "docid": "Cd2QVA368URkNM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/Cd7WCY8UIAACSYj.jpg' /> | <img src='http://www.fictiondb.com/coversth/th_0440492769.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/Cd7WCY8UIAACSYj.jpg' /> | <img width='300' src='http://www.fictiondb.com/coversth/th_0440492769.jpg' />
 
 
 ##### 117). 710916326378700800
@@ -2567,9 +2577,9 @@ https://twitter.com/paprbckparadise/status/710916326378700800
     "docid": "v04Da-otvijpIM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/Cd2uoayUAAAleD6.jpg' /> | <img src='https://img0.etsystatic.com/064/1/7110130/il_570xN.794196902_eau6.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/Cd2uoayUAAAleD6.jpg' /> | <img width='300' src='https://img0.etsystatic.com/064/1/7110130/il_570xN.794196902_eau6.jpg' />
 
 
 ##### 118). 710504687061979136
@@ -2589,9 +2599,9 @@ https://twitter.com/paprbckparadise/status/710504687061979136
     "docid": "hroE4Co_5B1NeM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/Cdw4P3lUAAEkv6j.jpg' /> | <img src='http://thumbs2.ebaystatic.com/d/l225/m/mnDRwui8UyaqT2TOPT5n6pA.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/Cdw4P3lUAAEkv6j.jpg' /> | <img width='300' src='http://thumbs2.ebaystatic.com/d/l225/m/mnDRwui8UyaqT2TOPT5n6pA.jpg' />
 
 
 ##### 119). 710203403029389313
@@ -2611,9 +2621,9 @@ https://twitter.com/paprbckparadise/status/710203403029389313
     "docid": "fK000av-Q3yh_M"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/CdsmO08UUAA6taE.jpg' /> | <img src='http://kirstygreenwood.typepad.com/.a/6a010536b33b69970b01a511491b51970c-600wi' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/CdsmO08UUAA6taE.jpg' /> | <img width='300' src='http://kirstygreenwood.typepad.com/.a/6a010536b33b69970b01a511491b51970c-600wi' />
 
 
 ##### 120). 709911763374845952
@@ -2633,9 +2643,9 @@ https://twitter.com/paprbckparadise/status/709911763374845952
     "docid": "yuuGtlRN1IPNkM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/Cdoc_LKVAAA044E.png' /> | <img src='https://images-na.ssl-images-amazon.com/images/I/51yzKajmr6L.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/Cdoc_LKVAAA044E.png' /> | <img width='300' src='https://images-na.ssl-images-amazon.com/images/I/51yzKajmr6L.jpg' />
 
 
 ##### 121). 709460919164674049
@@ -2655,9 +2665,9 @@ https://twitter.com/paprbckparadise/status/709460919164674049
     "docid": "zzZx2xyLsQcSYM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/CdiC8lWVAAEaspk.png' /> | <img src='https://covers.openlibrary.org/b/id/6983018-M.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/CdiC8lWVAAEaspk.png' /> | <img width='300' src='https://covers.openlibrary.org/b/id/6983018-M.jpg' />
 
 
 ##### 122). 709407230404112385
@@ -2677,9 +2687,9 @@ https://twitter.com/paprbckparadise/status/709407230404112385
     "docid": "fK000av-Q3yh_M"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/CdhSHfKUUAQ49kJ.jpg' /> | <img src='http://kirstygreenwood.typepad.com/.a/6a010536b33b69970b01a511491b51970c-600wi' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/CdhSHfKUUAQ49kJ.jpg' /> | <img width='300' src='http://kirstygreenwood.typepad.com/.a/6a010536b33b69970b01a511491b51970c-600wi' />
 
 
 ##### 123). 709076016178667520
@@ -2699,9 +2709,9 @@ https://twitter.com/paprbckparadise/status/709076016178667520
     "docid": "gBGhcmcMy2KMDM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/Cdck4SGUkAIKyJb.png' /> | <img src='https://scontent.cdninstagram.com/t51.2885-15/sh0.08/e35/12912755_978896642159423_1400608906_n.jpg?ig_cache_key=MTIyMzM3MjcwMDA4NzI2NzM3OQ%3D%3D.2' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/Cdck4SGUkAIKyJb.png' /> | <img width='300' src='https://scontent.cdninstagram.com/t51.2885-15/sh0.08/e35/12912755_978896642159423_1400608906_n.jpg?ig_cache_key=MTIyMzM3MjcwMDA4NzI2NzM3OQ%3D%3D.2' />
 
 
 ##### 124). 708700694845345793
@@ -2721,9 +2731,9 @@ https://twitter.com/paprbckparadise/status/708700694845345793
     "docid": "ba_BKaz0oZOg4M"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/CdXPhtIUEAArlrx.jpg' /> | <img src='http://images.scribblelive.com/2014/10/20/de758fbc-d99e-4a4e-971c-45bfb82d2ce1.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/CdXPhtIUEAArlrx.jpg' /> | <img width='300' src='http://images.scribblelive.com/2014/10/20/de758fbc-d99e-4a4e-971c-45bfb82d2ce1.jpg' />
 
 
 ##### 125). 708473713558032384
@@ -2743,9 +2753,9 @@ https://twitter.com/paprbckparadise/status/708473713558032384
     "docid": "iD5nbzHFvYpiHM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/CdUBFp6UkAAp0Nr.jpg' /> | <img src='http://gabrielricci.com/images/shocker-alien_gr.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/CdUBFp6UkAAp0Nr.jpg' /> | <img width='300' src='http://gabrielricci.com/images/shocker-alien_gr.jpg' />
 
 
 ##### 126). 708381447032217601
@@ -2765,8 +2775,8 @@ https://twitter.com/paprbckparadise/status/708381447032217601
     "docid": "wkiNzreD1gkvDM"
   }
 }```
-IMG | RESULT
---- | ------
-<img src='http://pbs.twimg.com/media/CdStLA7UIAEwvSQ.jpg' /> | <img src='http://i6.photobucket.com/albums/y217/swallowrazorblades/svt13-2.jpg' />
+ORIGINAL | RESULT
+-------- | ------
+<img src='http://pbs.twimg.com/media/CdStLA7UIAEwvSQ.jpg' /> | <img width='300' src='http://i6.photobucket.com/albums/y217/swallowrazorblades/svt13-2.jpg' />
 
-Total: 148, failed: 22
+Total: 148, failed: 22 (not displayed)

@@ -7,7 +7,7 @@
     "start": "node index.js",
     "lint": "standard -v",
     "readme": "node util/read.js > results.md && cat notes.md results.md > README.md && rm results.md",
-    "test": "npm run lint"
+    "test": "npm run readme && npm run lint"
   },
   "engines" : {
     "node" : ">=4"
