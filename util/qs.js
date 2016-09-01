@@ -1,14 +1,13 @@
 const qs = (src) => {
-  const params = {}
   const qrystr = src.split('?')[1]
-  if (qrystr) {
-    qrystr.split('&').forEach((p, i) => {
-      const ps = p.replace(/\/$/, '').split('=')
+  return qrystr
+    ? qrystr.split('&').reduce((o, v, i) => {
+      const ps = v.replace(/\/$/, '').split('=')
       const k = ps[0].replace(/^\?/, '')
-      params[k] = ps[1] || true
-    })
-  }
-  return params
+      o[k] = ps[1] || true
+      return o
+    }, {})
+    : undefined
 }
 
 module.exports = qs
