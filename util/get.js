@@ -14,7 +14,7 @@ const GET = (url, callback) => request({
       body: body
     })
   } else {
-    throw new Error(error)
+    throw error
   }
 })
 
